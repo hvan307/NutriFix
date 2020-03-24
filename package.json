@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "seed": "node backend/seeds.js",
+    "seed": "node backend/seed.js",
     "serve:back": "nodemon backend/app.js",
     "serve:front": "webpack-dev-server --mode-development"
   },
