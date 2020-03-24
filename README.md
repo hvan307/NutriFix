@@ -1,8 +1,5 @@
 # project3
 
 
-<<<<<<< HEAD
-new recipe project
-=======
+new recipe project, fin loves a guiness
 hello project 3
->>>>>>> hannas-branch
