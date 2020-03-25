@@ -17,8 +17,9 @@ const schema = new mongoose.Schema({
   macronutrients: { type: Object, required: true },
   tags: { type: Array },
   servings: { type: Number, required: true },
-  totalTime: { type: String, required: true }
-  // user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
+  totalTime: { type: String, required: true },
+  isPublic: { type: Boolean, required: true },
+  user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   // comments: [ commentSchema ]
 })
 
