@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const recipeController = require('./controllers/recipeController')
 const userController = require('./controllers/userController')
-const secureRoute = require('./lib/secureRoute')
+// const secureRoute = require('./lib/secureRoute')
 
 router.route('/recipes')
   .get(recipeController.allRecipes) // maybe add secureRoute
@@ -12,6 +12,7 @@ router.route('/recipe/:id')
   .delete(recipeController.removeRecipe)  // maybe add secureRoute
 
 router.route('/myrecipes')
+  .get(recipeController.allRecipes)
   .post(recipeController.createRecipe) // maybe add secureRoute
 
 router.route('/register')
