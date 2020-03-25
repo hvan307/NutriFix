@@ -6,6 +6,7 @@ function allRecipes(req, res) {
     .then(recipes => {
       res.send(recipes)
     })
+    .catch(error => console.error(error))
 
 }
 
