@@ -12,7 +12,7 @@ router.route('/recipe/:id')
   .delete(recipeController.removeRecipe)  // maybe add secureRoute
 
 router.route('/myrecipes')
-  .get(recipeController.allRecipes)
+  .get(recipeController.myRecipes)
   .post(recipeController.createRecipe) // maybe add secureRoute
 
 router.route('/register')

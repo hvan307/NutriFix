@@ -8,15 +8,6 @@ function allRecipes(req, res) {
     })
 }
 
-function createRecipe(req, res) {
-  req.body.user = req.currentUser
-  Recipe
-    .create(req.body)
-    .then(recipe => {
-      res.status(201).send(recipe)
-    })
-}
-
 function singleRecipe(req, res) {
   const id = req.params.id
   Recipe
@@ -27,12 +18,12 @@ function singleRecipe(req, res) {
 }
 
 function removeRecipe(req, res) {
-  const currentUser = req.currentUser
+  // const currentUser = req.currentUser
   const id = req.params.id
   Recipe 
     .findById(id)
     .then(recipe => {
-      if (!recipe.user.equals(currentUser._id)) return res.status(401).send({ message: 'Unauthorized' })
+      // if (!recipe.user.equals(currentUser._id)) return res.status(401).send({ message: 'Unauthorized' })
       return recipe.remove()
     })
     .then(() => {
@@ -41,12 +32,12 @@ function removeRecipe(req, res) {
 }
 
 function editRecipe(req, res) {
-  const currentUser = req.currentUser
+  // const currentUser = req.currentUser
   const id = req.params.id
   Recipe
     .findById(id)
     .then(recipe => {
-      if (!recipe.user.equals(currentUser._id)) return res.status(401).send({ message: 'Unauthorized' })
+      // if (!recipe.user.equals(currentUser._id)) return res.status(401).send({ message: 'Unauthorized' })
       return recipe.set(req.body)
     })
     .then(recipe => {
@@ -57,11 +48,29 @@ function editRecipe(req, res) {
     })
 }
 
+function myRecipes(req, res) {
+  Recipe
+    .find()
+    .then(myrecipes => {
+      res.send(myrecipes)
+    })
+}
+
+function createRecipe(req, res) {
+  req.body.user = req.currentUser
+  Recipe
+    .create(req.body)
+    .then(myrecipe => {
+      res.status(201).send(myrecipe)
+    })
+}
+
 
 module.exports = {
   allRecipes,
   createRecipe,
   singleRecipe,
   removeRecipe,
-  editRecipe
+  editRecipe,
+  myRecipes
 }
