@@ -4,16 +4,16 @@ const userController = require('./controllers/userController')
 const secureRoute = require('./lib/secureRoute')
 
 router.route('/recipes')
-  .get(recipeController.allRecipes) // maybe add secureRoute
+  .get(recipeController.allRecipes)
 
 router.route('/recipe/:id')
-  .get(secureRoute, recipeController.singleRecipe) // maybe add secureRoute
-  .put(secureRoute, recipeController.editRecipe) // maybe add secureRoute
-  .delete(secureRoute, recipeController.removeRecipe)  // maybe add secureRoute
+  .get(recipeController.singleRecipe) 
+  .put(secureRoute, recipeController.editRecipe) 
+  .delete(secureRoute, recipeController.removeRecipe)  
 
 router.route('/myrecipes')
   .get(secureRoute, recipeController.myRecipes)
-  .post(secureRoute, recipeController.createRecipe) // maybe add secureRoute
+  .post(secureRoute, recipeController.createRecipe) 
 
 router.route('/register')
   .post(userController.register)

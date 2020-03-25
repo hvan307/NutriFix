@@ -19,12 +19,12 @@ function singleRecipe(req, res) {
 }
 
 function removeRecipe(req, res) {
-  // const currentUser = req.currentUser
+  const currentUser = req.currentUser
   const id = req.params.id
   Recipe 
     .findById(id)
     .then(recipe => {
-      // if (!recipe.user.equals(currentUser._id)) return res.status(401).send({ message: 'Unauthorized' })
+      if (!recipe.user.equals(currentUser._id)) return res.status(401).send({ message: 'Unauthorized' })
       return recipe.remove()
     })
     .then(() => {
@@ -33,12 +33,12 @@ function removeRecipe(req, res) {
 }
 
 function editRecipe(req, res) {
-  // const currentUser = req.currentUser
+  const currentUser = req.currentUser
   const id = req.params.id
   Recipe
     .findById(id)
     .then(recipe => {
-      // if (!recipe.user.equals(currentUser._id)) return res.status(401).send({ message: 'Unauthorized' })
+      if (!recipe.user.equals(currentUser._id)) return res.status(401).send({ message: 'Unauthorized' })
       return recipe.set(req.body)
     })
     .then(recipe => {
