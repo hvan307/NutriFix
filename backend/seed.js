@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const Recipe = require('./models/recipe')
-// const User = require('./models/user')
+const User = require('./models/user')
 const dbURI = 'mongodb://localhost/recipe-db'
 
 mongoose.connect(
@@ -12,13 +12,17 @@ mongoose.connect(
     }
     console.log('Successfully connected to mongo!')
     db.dropDatabase()
-      // .then(() => {
-      //   return User.create([
-      //     {
-      //     }
-      //   ])
-      // })
-      .then(()=> {
+      .then(() => {
+        return User.create([
+          {
+            username: 'Admin',
+            email: 'admin@admin.com',
+            password: 'recipe',
+            passwordConfirmation: 'recipe'
+          }
+        ])
+      })
+      .then(users => {
         return Recipe.create([
           {
             recipeName: 'pesto pasta',
@@ -38,7 +42,9 @@ mongoose.connect(
               'vegetarian'
             ],
             servings: 2,
-            totalTime: '40 minutes'
+            totalTime: '40 minutes',
+            isPublic: true,
+            user: users[0]
           }
         ])
       })
