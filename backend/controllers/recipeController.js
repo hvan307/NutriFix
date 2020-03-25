@@ -52,8 +52,11 @@ function editRecipe(req, res) {
 function myRecipes(req, res) {
   Recipe
     .find()
-    .then(myrecipes => {
-      res.send(myrecipes)
+    .then(recipes => {
+      const myRecipes = recipes.filter(recipe => {
+        return req.currentUser._id.equals(recipe.user)
+      })
+      res.send(myRecipes)
     })
 }
 
@@ -69,9 +72,9 @@ function createRecipe(req, res) {
 
 module.exports = {
   allRecipes,
-  createRecipe,
   singleRecipe,
   removeRecipe,
   editRecipe,
-  myRecipes
+  myRecipes,
+  createRecipe
 }

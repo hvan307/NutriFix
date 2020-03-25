@@ -19,7 +19,7 @@ const schema = new mongoose.Schema({
   servings: { type: Number, required: true },
   totalTime: { type: String, required: true },
   isPublic: { type: Boolean, required: true },
-  user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
+  user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
   // comments: [ commentSchema ]
 })
 
