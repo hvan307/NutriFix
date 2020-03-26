@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+// import Hero from './components/Hero'
 
 class DisplaySingleRecipe extends React.Component {
 
@@ -23,7 +24,9 @@ class DisplaySingleRecipe extends React.Component {
 
   render() {
     const recipe = this.state.recipes
-    return <div className="tile is-ancestor">
+    return <>
+    {/* <Hero/> */}
+    <div className="tile is-ancestor">
       <div className="tile is-4 is-vertical is-parent">
         <div className="tile is-child box">
 
@@ -48,6 +51,7 @@ class DisplaySingleRecipe extends React.Component {
         </div>
       </div>
     </div>
+    </>
   }
 }
 
