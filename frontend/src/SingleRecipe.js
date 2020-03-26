@@ -35,6 +35,7 @@ class DisplaySingleRecipe extends React.Component {
           <p className="title">Macros</p>
           <p>Protein: {recipe.macronutrients.protein}</p>
           <p>Carbohydrates: {recipe.macronutrients.carbohydrates}</p>
+          <p>Fat: {recipe.macronutrients.fat}</p>
           <p>Sugar: {recipe.macronutrients.sugars}</p>
         </div>
       </div>
