@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import 'bulma'
 import { Link } from 'react-router-dom'
-
+import Hero from './components/Hero'
 
 
 class DisplayRecipes extends React.Component {
@@ -20,7 +20,9 @@ class DisplayRecipes extends React.Component {
     // console.log(this.state.recipeList)
   }
   render() {
-    return <section className="section">
+    return <>
+    <Hero />
+    <section className="section">
       <div className="container">
         <div className="columns is-multiline">
           {this.state.recipeList.map((recipe) => {
@@ -48,6 +50,7 @@ class DisplayRecipes extends React.Component {
         </div>
       </div>
     </section>
+    </>
   }
 
 
