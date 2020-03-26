@@ -32,9 +32,6 @@ class Login extends React.Component {
       .catch(err => this.setState({ error: err.response.data.message }))
   }
 
-
-
-
   render() {
     const { error } = this.state
     return <section className="section">
@@ -51,23 +48,19 @@ class Login extends React.Component {
             <div className="control has-icons-left has-icons-right">
               <input
                 onChange={(event) => this.handleChange(event)}
-                type="text"
+                type="email"
                 name="email"
-                className="input"
+                className="input is-medium"
                 placeholder="youremail@email.com"
               />
               <span className="icon is-small is-left">
                 <i className="fas fa-envelope"></i>
-              </span>
-              <span className="icon is-small is-right">
-                <i className="fas fa-exclamation-triangle"></i>
               </span>
             </div>
             {error && <small className="help is-danger">
               {error}
             </small>}
           </div>
-
           <div className="field">
             <label className="label">Password</label>
             <div className="control has-icons-left has-icons-right">
@@ -75,14 +68,11 @@ class Login extends React.Component {
                 onChange={(event) => this.handleChange(event)}
                 type="password"
                 name="password"
-                className="input"
+                className="input is medium"
                 placeholder="**********"
               />
               <span className="icon is-small is-left">
-                <i className="fas fa-user"></i>
-              </span>
-              <span className="icon is-small is-right">
-                <i className="fas fa-check"></i>
+                <i className="fas fa-lock"></i>
               </span>
             </div>
             {error && <small className="help is-danger">
@@ -94,7 +84,6 @@ class Login extends React.Component {
           </div>
         </form>
       </div>
-      {/* </div> */}
     </section>
   }
 }

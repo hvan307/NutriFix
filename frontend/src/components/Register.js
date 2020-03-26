@@ -86,7 +86,6 @@ class Register extends React.Component {
                 name="password"
                 className="input"
                 placeholder="Password"
-
               />
             </div>
             {errors.password && <small className="help is-danger">
