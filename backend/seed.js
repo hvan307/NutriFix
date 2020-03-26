@@ -118,6 +118,36 @@ mongoose.connect(
             totalTime: '15 minutes',
             isPublic: true,
             user: users[0]
+          },
+          {
+            recipeName: 'Gluten-Free Vegan Chocolate Brownie Waffles',
+            image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/vegan-choocolate-brownie-waffle-1.jpg',
+            ingredients: [ 
+              '20  wonton wrappers, sliced diagonally to create 40 chips',
+              '1lb sushi-grade salmon, diced into 1/2-inch cubes',
+              '1 ripe avocado, diced',
+              '1/2 cup diced red onion',
+              '1 toasted nori seaweed sheet, crumbled and finely diced',
+              '1 1/2 tablespoons fresh ginger',
+              '1 tablespoon sesame oil',
+              '2 tablespoons low sodium soy sauce',
+              '1 tablespoon black sesame seeds'
+            ],
+            instructions: '1. Set air-fryer to 350F (or set oven to 400F). 2. Fill the air fryer basket (or a baking tray lined with parchment) with the wonton wrapper slices.  Lightly spray the chips with avocado oil, then air fry (or bake) for 4 to 6 minutes, or until the edges are brown and crispy. 3. To a large bowl, add the remaining ingredients and gently fold everything together. 4. Add low sodium soy sauce and ginger to taste.',
+            calories: 384,
+            macronutrients: {
+              protein: '28g',
+              carbohydrates: '26g',
+              Fat: '19g',
+              sugars: '3g'
+            },
+            tags: [
+              'seafood', 'sweets & snacks'
+            ],
+            servings: 4,
+            totalTime: '15 minutes',
+            isPublic: true,
+            user: users[0]
           }
         ])
       })
