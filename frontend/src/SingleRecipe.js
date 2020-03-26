@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 class DisplaySingleRecipe extends React.Component {
 
@@ -25,7 +26,7 @@ class DisplaySingleRecipe extends React.Component {
     return <div className="tile is-ancestor">
       <div className="tile is-4 is-vertical is-parent">
         <div className="tile is-child box">
-          
+
           <img src={recipe.image} />
 
           {console.log(recipe)}
@@ -39,7 +40,9 @@ class DisplaySingleRecipe extends React.Component {
       </div>
       <div className="tile is-parent">
         <div className="tile is-child box">
-          <p className="title">Instructions</p>
+          <p className="title title-cross">Instructions
+            <Link className="delete" to="/recipes"></Link>
+          </p>
           <p>{recipe.instructions}</p>
         </div>
       </div>
