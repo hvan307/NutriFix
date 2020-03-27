@@ -4,9 +4,9 @@ import auth from '../lib/auth'
 
 class NavBar extends React.Component {
 
-  HandleLogout(props) {
+  HandleLogout() {
     auth.logOut()
-    props.history.push('/')
+    this.props.history.push('/')
   }
 
   render() {
@@ -27,7 +27,7 @@ class NavBar extends React.Component {
               </Link>
             }
             {isLoggedIn &&
-              <Link onClick={() => this.HandleLogout()} to="/" className="navbar-item is-active">
+              <Link onClick={() => this.HandleLogout()} className="navbar-item is-active">
                 Log out
               </Link>
             }
