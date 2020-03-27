@@ -386,7 +386,242 @@ mongoose.connect(
             isPublic: true,
             user: users[0]
           },
-
+          {
+            recipeName: 'Quinoa Pudding',
+            image: 'https://images.cookforyourlife.org/wp-content/uploads/2018/08/Quinoa-Pudding-min-1068x708.jpg',
+            ingredients: [
+              '1 cup quinoa',
+              '1 cup water',
+              '3 cups unsweetened almond milk, plus more',
+              '2 (3-inch) cinnamon sticks',
+              '½ cup golden raisins',
+              '1/3 cup honey (vegans See Ann’s Tips)',
+              '1 teaspoon vanilla extract',
+              '½ tablespoon ground cinnamon',
+              '½ cup sliced almonds',
+            ],
+            instructions: [
+              'Place quinoa in a strainer and rinse with water, let it drain for a couple of minutes. Transfer quinoa to a large saucepan and add water, almond milk and cinnamon sticks. Bring to a boil over medium high heat; reduce to a simmer and cook for 30 minutes, stirring frequently to avoid sticking.',
+              'Add raisins, honey, vanilla extract and ground cinnamon. Stir to combine and remove from the heat. Let it cool to room temperature or refrigerate. Add more almond milk as need it, if pudding gets too thick.  Serve with sliced almonds.',
+            ],
+            calories: 266,
+            macronutrients: {
+              protein: '7g',
+              carbohydrates: '48g',
+              fat: '7g',
+              sugars: '23g'
+            },
+            tags: [
+              'gluten-free', 'sweet', 'vegan', 'breakfast'
+            ],
+            servings: 6,
+            totalTime: '15 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Tahini and Apple Oatmeal',
+            image: 'https://images.cookforyourlife.org/wp-content/uploads/2018/08/shutterstock_277720400.jpg',
+            ingredients: [
+              '2 cups water',
+              '1 cup rolled oats',
+              'pinch of sea salt',
+              '2 medium apples, Gala or Golden Delicious, peeled, cored, and cut into a small dice. (about 2 cups)',
+              '½ cup tahini',
+            ],
+            instructions: [
+              'Pour water into a medium pot and bring to a boil.',
+              'Once boiling, add oats, salt, and apples and turn heat down to a simmer.',
+              'Cook until the oats and apples are soft, about 10 minutes. The oatmeal should be thick and the water should be absorbed.',
+              'Remove from the heat. Stir in the tahini and serve immediately.',
+            ],
+            calories: 301,
+            macronutrients: {
+              protein: '8g',
+              carbohydrates: '32g',
+              fat: '18g',
+              sugars: '9g'
+            },
+            tags: [
+              'breakfast', 'dairy-free', 'vegan', 'sweet'
+            ],
+            servings: 4,
+            totalTime: '15 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Pumpkin Oatmeal',
+            image: 'https://images.cookforyourlife.org/wp-content/uploads/2018/08/shutterstock_326159303.jpg',
+            ingredients: [
+              '½ cup unsweetened pumpkin puree',
+              '1½ cups regular, almond milk or soy milk',
+              '2 tablespoons raisins',
+              '¼ teaspoon pumpkin pie spice (See Ann’s Tips)',
+              '¼ teaspoon salt',
+              '1 cup rolled oats',
+              '¼ cup roughly chopped roasted pecans or walnuts',
+              'Maple syrup',
+            ],
+            instructions: [
+              'In a medium saucepan, whisk together the pumpkin puree, milk, raisins, pumpkin pie spice and salt until smooth. Bring to a boil.',
+              'Add the oatmeal, then turn down the heat to a simmer and cook, stirring occasionally, until the oats are tender, about 8 minutes.',
+              'Serve topped with pecans and a drizzle of maple syrup.',
+            ],
+            calories: 318,
+            macronutrients: {
+              protein: '9g',
+              carbohydrates: '44g',
+              fat: '15g',
+              sugars: '9g'
+            },
+            tags: [
+              'breakfast', 'vegan', 'sweet'
+            ],
+            servings: 2,
+            totalTime: '15 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Arugula & Avocado Breakfast Sandwich',
+            image: 'https://www.cookforyourlife.org/wp-content/uploads/2018/08/Arugula-and-Avocado-Breakfast-Sandwich-CFYL-1.jpg',
+            ingredients: [
+              '¼ cup plain yogurt',
+              '1 lemon, zested and juiced',
+              '2 eggs',
+              '4 slices multigrain bread, toasted (Looking for Low Fiber? See Ann’s Tips)',
+              '1 cup arugula',
+              '1 avocado, peeled, pitted and sliced',
+              '1 tablespoon pepitas (optional)',
+            ],
+            instructions: [
+              'In a small bowl, mix together yogurt, lemon juice, and lemon zest. Season with a pinch of salt and pepper.',
+              'Heat a greased non-stick pan on medium low heat. Crack and pour eggs into the pan. Cook until whites are set, flip and cook for 1 minute for a runny yolk, 3 minutes for a fully cooked yolk. Turn off the heat and let sit while assembling sandwich.',
+              'Place 2 slices of bread on 2 plates. Spread an even layer of the yogurt sauce over the toast. Top with a portion of arugula, avocado and egg, and pepitas if using. Top with other slice of bread. Cut the sandwich down the middle and serve.',
+            ],
+            calories: 408,
+            macronutrients: {
+              protein: '17g',
+              carbohydrates: '39g',
+              fat: '23g',
+              sugars: '7g'
+            },
+            tags: [
+              'quick and easy', 'high protein', 'vegetarian'
+            ],
+            servings: 2,
+            totalTime: '15 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Watermelon Feta Salad',
+            image: 'https://www.cookforyourlife.org/wp-content/uploads/2018/08/shutterstock_300760616-min.jpg',
+            ingredients: [
+              '1 medium shallot or ½ small red onion, sliced very thin',
+              '½ cup cider vinegar',
+              '1 small watermelon, chilled',
+              '4 ounces fresh feta cheese or ricotta salata, cut or crumbled into small chunks',
+              '1 handful torn mint leaves',
+              'Juice of 1 to 2 limes, or to taste',
+              '4 cups loosely packed arugula, rinsed',
+            ],
+            instructions: [
+              'In a bowl combine the thinly sliced onion and vinegar. Let sit for at least 30 minutes. Drain.',
+              'Meanwhile, cut the melon into 8-12 slices. Cut away the rind and cut the flesh into 1-inch chunks. Put into a large bowl.',
+              'Mix the watermelon with half of the lime juice. Add more lime juice to taste. Let sit in the fridge to marinate and chill.',
+              'Just before serving, quickly toss together with the cheese and the mint.  Lay arugula down on a serving platter and top with watermelon and cheese mixture, and dot the onions over the top. Serve immediately.',
+            ],
+            calories: 237,
+            macronutrients: {
+              protein: '7g',
+              carbohydrates: '47g',
+              fat: '5g',
+              sugars: '37g'
+            },
+            tags: [
+              'low fat', 'lunch', 'vegetarian'
+            ],
+            servings: 6,
+            totalTime: '20 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Coconut Gluten-Free Pancakes with Berry Syrup',
+            image: 'https://images.cookforyourlife.org/wp-content/uploads/2018/08/Gluten-Free-Coconut-Pancakes-Blueberry-Sauce-min-e1500923287837.jpg',
+            ingredients: [
+              '2 cups mixed berries',
+              '⅓ cup brown sugar',
+              '2 cups gluten free flour blend',
+              '2 tablespoons sugar',
+              '½ teaspoon baking soda',
+              '1 teaspoon baking powder',
+              '½ teaspoon salt',
+              '2 tablespoons olive oil',
+              '3 eggs',
+              '1 cup coconut milk',
+              '½ cup water',
+              '1 cup shredded coconut',
+              '2 tablespoons butter',
+            ],
+            instructions: [
+              'In a small pot over medium low heat, combine berries, brown sugar and ¼ cup water. Stir and bring to a simmer. Cook for about 10 minutes or until berries begin to break down.',
+              'In a large bowl, combine flour, sugar, baking soda, baking powder and salt.',
+              'In a separate medium bowl, whisk together olive oil, eggs, coconut milk, water and shredded coconut. Add to dry ingredients and mix until just combined.',
+              'Heat a griddle or non-stick sauté pan over medium heat and add butter. Working in batches, portion batter into pan for desired size pancakes. Cook until bubbles start to form along edge. Once this happens, flip pancakes.',
+              'Serve topped with berry syrup.',
+            ],
+            calories: 739,
+            macronutrients: {
+              protein: '14g',
+              carbohydrates: '84g',
+              fat: '44g',
+              sugars: '29g'
+            },
+            tags: [
+              'breakfast', 'vegan', 'sweet'
+            ],
+            servings: 4,
+            totalTime: '20 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Kale & Fennel Salad',
+            image: 'https://www.cookforyourlife.org/wp-content/uploads/2018/08/Kale-Fennel-Salad-1.jpg',
+            ingredients: [
+              '1 navel orange',
+              '2 tablespoons olive oil',
+              '1 tablespoon balsamic',
+              'Salt and pepper, to taste',
+              '¼ cup slivered almonds, toasted',
+              '3 tablespoons dried cherries',
+              '4 cups shredded kale leaves',
+              '2 cups thinly sliced fennel',
+            ],
+            instructions: [
+              'Cut the top and bottom of the orange off. Set the orange on a cut side, so it does not wobble. Using a sharp knife, rotate and cut around the shape of the orange to remove the pith and peel.',
+              'Over a large salad bowl, using a paring knife, cut along each side of the white piths so that each orange segment is cut out cleanly. Let them drop into the salad bowl along with any juice that results.',
+              'Add the olive oil and balsamic vinegar to the orange segments and juice. Gently whisk until combined. Add in the almonds, and cherries, plus salt and pepper to taste.',
+              'Top with the shredded kale and sliced fennel. Toss and serve.',
+            ],
+            calories: 111,
+            macronutrients: {
+              protein: '2g',
+              carbohydrates: '12g',
+              fat: '7g',
+              sugars: '7g'
+            },
+            tags: [
+              'gluten-free', 'lunch', 'vegan'
+            ],
+            servings: 6,
+            totalTime: '20 minutes',
+            isPublic: true,
+            user: users[0]
+          },
 
         ])
       })
