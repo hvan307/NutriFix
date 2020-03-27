@@ -6,7 +6,6 @@ class NavBar extends React.Component {
 
   HandleLogout() {
     auth.logOut()
-    this.props.history.push('/')
   }
 
   render() {
@@ -21,13 +20,13 @@ class NavBar extends React.Component {
                 Register
               </Link>
             }
-            {isLoggedIn &&
+            {!isLoggedIn &&
               <Link to="/login" className="navbar-item is-active">
                 Login
               </Link>
             }
             {isLoggedIn &&
-              <Link onClick={() => this.HandleLogout()} className="navbar-item is-active">
+              <Link to="/recipes" onClick={() => this.HandleLogout()} className="navbar-item is-active">
                 Log out
               </Link>
             }
