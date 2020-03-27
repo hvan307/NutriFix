@@ -74,10 +74,6 @@ class NewRecipe extends React.Component {
       .catch(err => this.setState({ error: err.response.data.errors }))
   }
 
-  handleTag() {
-    p.style.backgroundColor = 'blue'
-  }
-
   render() {
     const { errors } = this.state
     console.log(this.state.data)

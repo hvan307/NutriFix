@@ -31,11 +31,11 @@ class Tags extends React.Component {
   }
 
   handleTag(event) {
-    // const tag = document.querySelectorAll('.tag')
     const emptyTags = this.state.emptyTags
     // console.log(tag.innerHTML)
     // console.log(event.target.innerHTML)
     // if (tag.innerHTML === event.target.innerHTML) {
+  
     event.target.style.backgroundColor = 'blue'
     console.log('hello')
     emptyTags.push(event.target.innerHTML)
