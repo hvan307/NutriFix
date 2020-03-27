@@ -9,8 +9,9 @@ class DisplaySingleRecipe extends React.Component {
     super()
     this.state = {
       recipes: {
-        macronutrients: {}
-      }
+        macronutrients: {},
+      },
+      instructions: []
     }
   }
 
@@ -25,32 +26,36 @@ class DisplaySingleRecipe extends React.Component {
   render() {
     const recipe = this.state.recipes
     return <>
-    {/* <Hero/> */}
-    <div className="tile is-ancestor">
-      <div className="tile is-4 is-vertical is-parent">
-        <div className="tile is-child box">
+      {/* <Hero/> */}
+      <div className="tile is-ancestor">
+        <div className="tile is-4 is-vertical is-parent">
+          <div className="tile is-child box">
 
-          <img src={recipe.image} />
+            <img src={recipe.image} />
 
-          {console.log(recipe)}
+            {console.log(recipe)}
+          </div>
+          <div className="tile is-child box">
+            <p className="title">Macros</p>
+            <p>Protein: {recipe.macronutrients.protein}</p>
+            <p>Carbohydrates: {recipe.macronutrients.carbohydrates}</p>
+            <p>Fat: {recipe.macronutrients.fat}</p>
+            <p>Sugar: {recipe.macronutrients.sugars}</p>
+          </div>
         </div>
-        <div className="tile is-child box">
-          <p className="title">Macros</p>
-          <p>Protein: {recipe.macronutrients.protein}</p>
-          <p>Carbohydrates: {recipe.macronutrients.carbohydrates}</p>
-          <p>Fat: {recipe.macronutrients.fat}</p>
-          <p>Sugar: {recipe.macronutrients.sugars}</p>
+        <div className="tile is-parent">
+          <div className="tile is-child box">
+            <p className="title title-cross">Instructions
+              <Link className="delete" to="/recipes"></Link>
+            </p>
+            {recipe.insturctions.map((recipes, i) => {
+              return <li
+                key={i}>
+                {recipes.instructions}</li>
+            })}
+          </div>
         </div>
       </div>
-      <div className="tile is-parent">
-        <div className="tile is-child box">
-          <p className="title title-cross">Instructions
-            <Link className="delete" to="/recipes"></Link>
-          </p>
-          <p>{recipe.instructions}</p>
-        </div>
-      </div>
-    </div>
     </>
   }
 }
