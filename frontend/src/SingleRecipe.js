@@ -10,8 +10,14 @@ class DisplaySingleRecipe extends React.Component {
     this.state = {
       recipes: {
         macronutrients: {},
+<<<<<<< HEAD
       },
       instructions: []
+=======
+        instructions: []
+      }
+      
+>>>>>>> fa02c3b0ff71b4cc6579057e6a70f9e83f5c10c3
     }
   }
 
@@ -22,9 +28,11 @@ class DisplaySingleRecipe extends React.Component {
         this.setState({ recipes: res.data })
       })
   }
+  
 
   render() {
     const recipe = this.state.recipes
+
     return <>
       {/* <Hero/> */}
       <div className="tile is-ancestor">
@@ -33,7 +41,7 @@ class DisplaySingleRecipe extends React.Component {
 
             <img src={recipe.image} />
 
-            {console.log(recipe)}
+            {/* {console.log(recipe)} */}
           </div>
           <div className="tile is-child box">
             <p className="title">Macros</p>
@@ -48,17 +56,20 @@ class DisplaySingleRecipe extends React.Component {
             <p className="title title-cross">Instructions
               <Link className="delete" to="/recipes"></Link>
             </p>
-            {recipe.insturctions.map((recipes, i) => {
-              return <li
-                key={i}>
-                {recipes.instructions}</li>
-            })}
+            <ol>
+              {this.state.recipes.instructions.map((step, key) => {
+                return <li key={key}>
+                  {step}
+                </li>
+              })}
+            </ol>
           </div>
         </div>
       </div>
     </>
   }
 }
+
 
 
 export default DisplaySingleRecipe
