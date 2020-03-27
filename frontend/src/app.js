@@ -7,12 +7,14 @@ import Register from './components/Register'
 import Login from './components/Login'
 import './style.scss'
 import MyRecipes from './MyRecipes'
+import NewRecipe from './components/NewRecipe'
 
 const App = () => {
   return <BrowserRouter>
     <Switch>
       <Route exact path="/recipe/:id" component={DisplaySingleRecipe} />
       <Route exact path="/register" component={Register}/>
+      <Route exact path="/myrecipes/new" component={NewRecipe} />
       <Route exact path="/myrecipes" component={MyRecipes} />
       <Route exact path="/recipes" component={DisplayRecipes} />
       <Route path="/login" component={Login} />
