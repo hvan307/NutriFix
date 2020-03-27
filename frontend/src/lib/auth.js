@@ -10,7 +10,7 @@ function getToken() {
   return localStorage.getItem('token')
 }
 
-function logout() {
+function logOut() {
   localStorage.removeItem('token')
 }
 
@@ -25,6 +25,6 @@ export default {
   setToken,
   isLoggedIn, 
   getToken,
-  logout,
+  logOut,
   getUserId
 }
