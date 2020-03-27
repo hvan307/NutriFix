@@ -12,7 +12,7 @@ const schema = new mongoose.Schema({
   recipeName: { type: String, required: true, unique: true },
   image: { type: String, required: true },
   ingredients: { type: Array, required: true }, // check items 
-  instructions: { type: String, required: true },
+  instructions: { type: Array, required: true },
   calories: { type: Number, required: true },
   macronutrients: { type: Object, required: true },
   tags: { type: Array },
