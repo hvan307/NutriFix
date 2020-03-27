@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import NavBar from './NavBar'
-
+import auth from '../lib/auth'
 
 const Hero = () => {
+  const isLoggedIn = auth.isLoggedIn()
   return <section className="hero is-info is-medium">
     <div className="hero-head">
       <NavBar />
@@ -27,11 +28,11 @@ const Hero = () => {
             <li className="">
               <Link to="/recipes">All Recipes</Link>
             </li>
-            <li>
-
-              <Link to="/myrecipes">My Recipes</Link>
-
-            </li>
+            {isLoggedIn &&
+              <li>
+                <Link to="/myrecipes">My Recipes</Link>
+              </li>
+            }
             {/* <li>
               <a>Grid</a>
             </li>
