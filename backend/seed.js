@@ -25,6 +25,7 @@ mongoose.connect(
       .then(users => {
         return Recipe.create([
           {
+
             recipeName: 'Vegan Shepherd’s Pie With Cauliflower',
             image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/vegan-shepherds-pie-4.jpg',
             ingredients: [
@@ -829,7 +830,7 @@ mongoose.connect(
               '1 tablespoon olive oil',
               'Salt and pepper, to taste',
               'Zest of half a lemon',
-              
+
             ],
             instructions: [
               'Preheat the oven to 500 degrees. Put 2 baking trays into the oven, or pizza stone if you have one.',
@@ -1166,9 +1167,7 @@ mongoose.connect(
             totalTime: '20 minutes',
             isPublic: true,
             user: users[0]
-          },
-
-
+          }
         ])
       })
       .then(recipes => console.log(`${'🍏'.repeat(recipes.length)} created`))

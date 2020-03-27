@@ -27,7 +27,6 @@ class DisplaySingleRecipe extends React.Component {
 
   render() {
     const recipe = this.state.recipes
-    console.log(this.state.instructions)
 
     return <>
       {/* <Hero/> */}
@@ -53,9 +52,9 @@ class DisplaySingleRecipe extends React.Component {
               <Link className="delete" to="/recipes"></Link>
             </p>
             <ol>
-              {this.state.instructions.map((instruction, key) => {
+              {this.state.recipes.instructions.map((step, key) => {
                 return <li key={key}>
-                  {instruction.instructions}
+                  {step}
                 </li>
               })}
             </ol>
