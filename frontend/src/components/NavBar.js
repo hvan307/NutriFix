@@ -6,10 +6,7 @@ class NavBar extends React.Component {
 
   HandleLogout() {
     auth.logOut()
-<<<<<<< HEAD
-=======
     // this.props.history.push('/recipes')
->>>>>>> development
   }
 
   render() {
