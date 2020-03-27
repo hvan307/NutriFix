@@ -1,244 +1,221 @@
 import React from 'react'
+import Tags from './Tags'
 
-const RecipeForm = ({ handleChange, handleSubmit, errors }) => {
-  return <section classNameName="section">
-    <div classNameName="container">
+const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, data }) => {
+  const { recipeName, image, ingredients, instructions, calories, servings, totalTime } = data
+  return <section className="section">
+    <div className="container">
       <form
-        classNameName="form"
+        className="form"
         onSubmit={(event) => handleSubmit(event)}
       >
-        <div classNameName="field">
-          <label classNameName="label">
+        <div className="field">
+          <label className="label">
             Recipe Name
           </label>
-          <div classNameName="control">
+          <div className="control">
             <input
               onChange={(event) => handleChange(event)}
               type="text"
-              name="name"
-              classNameName="input"
+              name="recipeName"
+              className="input"
+              value={recipeName}
             />
           </div>
-          {errors.name && <small classNameName="help is-danger">
-            {errors.name}
+          {errors.name && <small className="help is-danger">
+            {errors.recipeName}
           </small>}
         </div>
-        <div classNameName="field">
-          <label classNameName="label">
+        <div className="field">
+          <label className="label">
             Image
           </label>
-          <div classNameName="control">
+          <div className="control">
             <input
               onChange={(event) => handleChange(event)}
               type="text"
               name="image"
-              classNameName="input"
+              className="input"
+              value={image}
             />
           </div>
-          {errors.image && <small classNameName="help is-danger">
+          {errors.image && <small className="help is-danger">
             {errors.image}
           </small>}
         </div>
-        <div classNameName="field">
-          <label classNameName="label">
+        <div className="field">
+          <label className="label">
             Ingredients
           </label>
-          <div classNameName="control">
+          <div className="control">
             <input
               onChange={(event) => handleChange(event)}
               type="text"
               name="ingredients"
-              classNameName="input"
+              className="input"
+              value={ingredients}
             />
           </div>
-          {errors.ingredients && <small classNameName="help is-danger">
+          {errors.ingredients && <small className="help is-danger">
             {errors.ingredients}
           </small>}
         </div>
-        <div classNameName="field">
-          <label classNameName="label">
+        <div className="field">
+          <label className="label">
             Instructions
           </label>
-          <div classNameName="control">
+          <div className="control">
             <input
               onChange={(event) => handleChange(event)}
               type="text"
               name="instructions"
-              classNameName="input"
+              className="input"
+              value={instructions}
             />
           </div>
-          {errors.instructions && <small classNameName="help is-danger">
+          {errors.instructions && <small className="help is-danger">
             {errors.instructions}
           </small>}
         </div>
-        <div classNameName="field">
-          <label classNameName="label">
+        <div className="field">
+          <label className="label">
             Calories
           </label>
-          <div classNameName="control">
+          <div className="control">
             <input
               onChange={(event) => handleChange(event)}
               type="number"
               name="calories"
-              classNameName="input"
+              className="input"
+              value={calories}
             />
           </div>
-          {errors.calories && <small classNameName="help is-danger">
+          {errors.calories && <small className="help is-danger">
             {errors.calories}
           </small>}
         </div>
-        <div classNameName="field">
-          <h2 classNameName="subtitle">Macronutrients</h2>
-          <label classNameName="label">
+        <div className="field">
+          <div className="subtitle">Macronutrients</div>
+          <label className="label">
             Fat
           </label>
-          <div classNameName="control">
+          <div className="control">
             <input
-              onChange={(event) => handleChange(event)}
+              onChange={(event) => handleMacroChange(event)}
               type="text"
               name="fat"
-              classNameName="input"
+              className="input"
             />
           </div>
-          {errors.fat && <small classNameName="help is-danger">
+          {errors.fat && <small className="help is-danger">
             {errors.fat}
           </small>}
         </div>
-        <div classNameName="field">
-          <label classNameName="label">
+        <div className="field">
+          <label className="label">
             Carbohydrates
           </label>
-          <div classNameName="control">
+          <div className="control">
             <input
-              onChange={(event) => handleChange(event)}
+              onChange={(event) => handleMacroChange(event)}
               type="text"
               name="carbohydrates"
-              classNameName="input"
+              className="input"
             />
           </div>
-          {errors.carbohydrates && <small classNameName="help is-danger">
+          {errors.carbohydrates && <small className="help is-danger">
             {errors.carbohydrates}
           </small>}
         </div>
-        <div classNameName="field">
-          <label classNameName="label">
+        <div className="field">
+          <label className="label">
             Sugars
           </label>
-          <div classNameName="control">
+          <div className="control">
             <input
-              onChange={(event) => handleChange(event)}
+              onChange={(event) => handleMacroChange(event)}
               type="text"
               name="sugars"
-              classNameName="input"
+              className="input"
             />
           </div>
-          {errors.sugars && <small classNameName="help is-danger">
+          {errors.sugars && <small className="help is-danger">
             {errors.sugars}
           </small>}
         </div>
-        <div classNameName="field">
-          <label classNameName="label">
-            Proteins
+        <div className="field">
+          <label className="label">
+            Protein
           </label>
-          <div classNameName="control">
+          <div className="control">
             <input
-              onChange={(event) => handleChange(event)}
+              onChange={(event) => handleMacroChange(event)}
               type="text"
-              name="proteins"
-              classNameName="input"
+              name="protein"
+              className="input"
             />
           </div>
-          {errors.proteins && <small classNameName="help is-danger">
-            {errors.proteins}
+          {errors.protein && <small className="help is-danger">
+            {errors.protein}
           </small>}
         </div>
-        <div classNameName="field">
-          <label classNameName="label">
+        <div className="field">
+          <label className="label">
             Servings
           </label>
-          <div classNameName="control">
+          <div className="control">
             <input
               onChange={(event) => handleChange(event)}
               type="number"
               name="servings"
-              classNameName="input"
+              className="input"
+              value={servings}
             />
           </div>
-          {errors.servings && <small classNameName="help is-danger">
+          {errors.servings && <small className="help is-danger">
             {errors.servings}
           </small>}
         </div>
-      </form>
-      <div className="field is-grouped is-grouped-multiline">
-        <p className="control">
-          <a className="button">
-            One
-          </a>
-        </p>
-        <p className="control">
-          <a className="button">
-            Two
-          </a>
-        </p>
-        <p className="control">
-          <a className="button">
-            Three
-          </a>
-        </p>
-        <p className="control">
-          <a className="button">
-            Four
-          </a>
-        </p>
-        <p className="control">
-          <a className="button">
-            Five
-          </a>
-        </p>
-        <p className="control">
-          <a className="button">
-            Size
-          </a>
-        </p>
-        <p className="control">
-          <a className="button">
-            Seven
-          </a>
-        </p>
-        <p className="control">
-          <a className="button">
-            Eight
-          </a>
-        </p>
-        <p className="control">
-          <a className="button">
-            Nine
-          </a>
-        </p>
-        <p className="control">
-          <a className="button">
-            Ten
-          </a>
-        </p>
-        <p className="control">
-          <a className="button">
-            Eleven
-          </a>
-        </p>
-        <p className="control">
-          <a className="button">
-            Twelve
-          </a>
-        </p>
-        <p className="control">
-          <a className="button">
-            Thirteen
-          </a>
-        </p>
-      </div>
-      <button classNameName="button is-success">
+        <div className="field">
+          <label className="label">
+            Total Time
+          </label>
+          <div className="control">
+            <input
+              onChange={(event) => handleChange(event)}
+              type="text"
+              name="totalTime"
+              className="input"
+              value={totalTime}
+            />
+          </div>
+          {errors.totalTime && <small className="help is-danger">
+            {errors.totalTime}
+          </small>}
+        </div>
+
+        <h3 className="subtitle">Select Categories:</h3>
+        <Tags />
+
+
+        {/* <div className="field is-grouped is-grouped-multiline">
+          {tags.map((tag, key) => {
+            return <p
+              key={key}
+              className="control"
+            >
+              <a className="button">
+                {tag}
+              </a>
+            </p>
+          })}
+        </div> */}
+        <button
+          onClick={() => handleSubmit(event)}
+          className="button is-success">
           Add your recipe
-      </button>
+        </button>
+      </form>
     </div>
   </section>
 
