@@ -307,7 +307,7 @@ mongoose.connect(
             user: users[0]
           },
           {
-            recipeName: 'Cauliflower, Corn and Zucchini Fritters',
+            recipeName: 'Zucchini Fritters',
             image: 'https://www.cookforyourlife.org/wp-content/uploads/2018/08/Cauliflower-Corn-and-Zucchini-Fritters-1068x787.jpg',
             ingredients: [
               '1 cup cauliflower rice',
@@ -622,6 +622,552 @@ mongoose.connect(
             isPublic: true,
             user: users[0]
           },
+          {
+            recipeName: 'Spicy Sausage Pasta with Greens',
+            image: 'https://www.cookforyourlife.org/wp-content/uploads/2018/08/Spicy-Sausage-Pasta-With-Greens-696x464.jpg',
+            ingredients: [
+              'Whole wheat pasta like penne, rigatoni or any other chunky pasta, 2 ounces per person',
+              '1 bunch of either Swiss chard, kale, collards, beet greens, broccoli rabe or spinach',
+              '3 tablespoons olive oil',
+              '1 stalk of rosemary, leaves stripped and chopped or ½ teaspoon dried',
+              '2 hot Italian style chicken sausages, squeezed out of their casings (see Ann’s Tips)',
+              '1 small dried red chili pepper, deseeded and broken into small pieces',
+              '1 small onion, halved and thinly sliced',
+              '1 to 2 cloves of garlic, smashed peeled and slice lengthways',
+              'Freshly grated Parmesan cheese, to taste (optional)',
+              '1 tablespoon chopped fresh Italian parsley',
+              'Salt and black pepper, to taste',
+            ],
+            instructions: [
+              'Put water on for the pasta to boil.',
+              'Strip the tender parts of leaves from the stalks of the greens. Wash in a sink full of cold water. (See Ann’s Tip)',
+              'Heat the oil in a heavy frying pan at medium high heat. Add the rosemary and fry for a minute then add the sausage, breaking it up into small pieces as it cooks. Once browned, add the chili pepper, the onion, and the garlic, and fry until the onion is starting to caramelize.',
+              'Once the water is boiling add in the pasta. After 5 minutes, add greens to the pasta water.  Cook for another 4 minutes.',
+              'Meanwhile add ½ cup of pasta water to the sausage and onions. Cook until the sauce looks syrupy. Stir in Parmesan to taste and parsley.',
+              'Pour pasta and greens into a colander.  Drain well and add to the pan with the sausage mixture.  Turn to mix well and cook for a few seconds over a medium high heat until the pasta and greens are coated in sauce, about 1 minute. Season with salt and pepper. Serve with more grated Parmesan cheese.',
+            ],
+            calories: 452,
+            macronutrients: {
+              protein: '17g',
+              carbohydrates: '38g',
+              fat: '29g',
+              sugars: '5g'
+            },
+            tags: [
+              'quick and easy', 'dinner', 'meat'
+            ],
+            servings: 2,
+            totalTime: '20 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Thai-style Savory Coconut Quinoa',
+            image: 'https://images.cookforyourlife.org/wp-content/uploads/2018/08/shutterstock_156632234-696x464.jpg',
+            ingredients: [
+              '2 cups quinoa',
+              '1 (14 ounce) can coconut milk',
+              '2 cups vegetable stock',
+              '2 tablespoons minced scallion, divided',
+              '2 tablespoons finely chopped cilantro, divided',
+              '1 red bell pepper, finely diced',
+              '1 medium carrot, finely diced',
+              '¼ cup Sriracha',
+              '1 lime, juiced and zested',
+              '⅓ cup sesame oil',
+              '1 tablespoon brown sugar',
+              '1 tablespoon minced garlic',
+              '1 tablespoon chopped toasted peanut (optional)',
+              'Salt and pepper to taste',
+            ],
+            instructions: [
+              'In a large pot, add quinoa, coconut milk, vegetable stock, 1 tablespoon scallions, 1 tablespoon cilantro, red peppers, and carrots. Season with salt and pepper. Bring to a boil then reduce to a simmer. Cook for about 20 minutes, or until liquid is absorbed and quinoa is soft.',
+              'Meanwhile, in a small bowl, whisk together Sriracha, lime juice, sesame oil, brown sugar, and garlic.',
+              'Serve quinoa topped with spicy sauce. Garnish with remaining scallions and cilantro, toasted peanuts, and lime zest.',
+            ],
+            calories: 706,
+            macronutrients: {
+              protein: '15g',
+              carbohydrates: '67g',
+              fat: '45g',
+              sugars: '5g'
+            },
+            tags: [
+              'gluten-free', 'lunch', 'vegan'
+            ],
+            servings: 4,
+            totalTime: '40 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+
+          {
+            recipeName: 'Zucchini Pasta alla Nerano',
+            image: 'https://images.cookforyourlife.org/wp-content/uploads/2018/08/zucchini-_pasta_alla_nerano_shutterstock_402629713-696x522.jpg',
+            ingredients: [
+              '3 to 4 medium zucchini, very thinly sliced',
+              '4 tablespoons olive oil, divided',
+              'sea salt',
+              '3 cloves garlic, thinly sliced',
+              '8 ounces organic paccheri, pappardelle, or penne pasta',
+              '1/3 cup freshly grated pecorino or Parmesan cheese',
+              '12 basil leaves roughly torn',
+            ],
+            instructions: [
+              'Bring a large pan of salted water on to a boil.',
+              'Heat 3 tablespoons of the oil in a wide sauté pan over a medium high flame. Add the zucchini slices and sauté until they shrink and get browned at the edges, about 8 minutes. As they caramelize, remove from the pan to drain on paper towels until the pan is empty. Set the pan aside off the flame.',
+              'Move the zucchini to a sieve. Plunge the sieve into the boiling pasta water for 1 minute as if to rinse the zucchini. Set the sieve aside to drain on paper towel. Meanwhile tip the pasta into the boiling water and cook 1 minute less than the shortest time on the packet. The pasta should be just al dente and quite chewy. Drain, reserving 1 cup of the water.',
+              'Meanwhile add the remaining oil to the zucchini pan over a medium high flame. When hot, add the garlic and cook until it just starts to color, about 1 minute. Add the rinsed zucchini from the sieve and sprinkle with a pinch of sea salt. Add the pecorino, stir to mix then add ¼ cup of the pasta water. Mix well. Cook until the cheese melts, about 3 minutes. Add more water if the zucchini sauce looks dry.',
+              'Stir in the basil leaves, cook 1 minute then add the pasta, plus any remaining water if the sauce looks like it needs it. Cook stirring one minute more. Serve immediately with extra grated pecorino cheese.',
+            ],
+            calories: 371,
+            macronutrients: {
+              protein: '13g',
+              carbohydrates: '42g',
+              fat: '18g',
+              sugars: '7g'
+            },
+            tags: [
+              'vegetairan', 'dinner', 'high protein'
+            ],
+            servings: 4,
+            totalTime: '30 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+
+          {
+            recipeName: 'Grilled Cheese Caprese',
+            image: 'https://images.cookforyourlife.org/wp-content/uploads/2018/08/Grilled-Cheese-Caprese-696x464.jpg',
+            ingredients: [
+              '4 thin slices of wholewheat sourdough bread',
+              '1-2 Tablespoons extra virgin olive oil, divided',
+              '4 thin slices of mozzarella cheese cut into strips, divided (see Ann’s Tips)',
+              '1 small beefsteak tomato sliced, divided (for neutropenic diet, see Ann’s Tips)',
+              '3 fresh basil leaves torn in to small pieces, divided',
+              '1 Cup, packed, baby arugula (optional)',
+              'sea salt to taste',
+            ],
+            instructions: [
+              'Heat a griddle or non-stick skillet over a medium high flame.',
+              'Lay the slices of bread on a board. Brush them on one side with half the olive oil. Transfer the bread, oiled sides down, onto the hot griddle. Lightly brown, about 3 minutes. Remove to the board browned sides up.',
+              'Take ½ the mozzarella and evenly cover the toasted sides of 2 slices of the bread. Put half the sliced tomato on top of each and sprinkle with the torn basil leaves. Take the remaining cheese and lay over the tomato. Take the remaining slices of bread and lay them over the filling, toasted sides down and gently press together.',
+              'Take half the remaining olive oil and brush the top of each sandwich with it. Carefully turn the assembled sandwiches over and transfer them to the griddle, oiled sides down. Cook, gently pressing down on the sandwich as the cheese melts, about 3-5 minutes. Brush the tops of the sandwiches, about 3-5 minutes more, again gently pressing down on the sandwiches as they cook.',
+              'When both sides are golden and the cheese has melted, they’re ready. Serve piping hot. If using the arugula, toss with 1 teaspoon extra virgin olive oil and a pinch of salt and serve on the side.',
+            ],
+            calories: 362,
+            macronutrients: {
+              protein: '14g',
+              carbohydrates: '36g',
+              fat: '19g',
+              sugars: '5g'
+            },
+            tags: [
+              'quick and easy', 'vegetarian', 'lunch'
+            ],
+            servings: 2,
+            totalTime: '20 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+
+          {
+            recipeName: 'Pan Roasted Rosemary Chicken & Cauliflower',
+            image: 'https://images.cookforyourlife.org/wp-content/uploads/2018/08/Rosemary-Chicken-Vegetables-696x464.jpg',
+            ingredients: [
+              '1 tablespoon rosemary',
+              '1 tablespoon thyme',
+              '2 tablespoons lemon juice',
+              '3 tablespoons olive oil, divided',
+              '3 teaspoons salt, divided',
+              '2 chicken breasts',
+              '2 cups cauliflower florets',
+              '1 teaspoon paprika',
+              '¼ teaspoon cayenne',
+              '2 plum tomatoes, quartered',
+              '1 small zucchini, sliced',
+            ],
+            instructions: [
+              'Preheat oven to 400⁰F. Line a baking sheet with parchment paper.',
+              'In a small bowl mix together the rosemary, thyme, lemon juice, 1 tablespoon olive oil and 1 teaspoon salt. Add chicken breasts. Chill until needed.',
+              'In a separate small bowl, mix the cauliflower with the paprika, cayenne, 1 tablespoon olive oil and 1 teaspoon salt. Set aside.',
+              'In another small bowl, combine the sliced zucchini and tomatoes with 1 tablespoon olive oil and 1 teaspoon salt.',
+              'Place the cauliflower in the corner of a baking sheet, and roast 10 minutes.',
+              'Remove the pan from the oven and add the chicken to another section of the baking sheet. Roast the chicken and cauliflower for an additional 10 minutes.',
+              'Remove the baking sheet from the oven again and add the tomatoes and zucchini. Place the tray back in the oven and roast for another 15 minutes, until the chicken is completely cooked and the zucchini is soft.',
+              'Divide the chicken and the vegetables and serve.',
+            ],
+            calories: 538,
+            macronutrients: {
+              protein: '40g',
+              carbohydrates: '13g',
+              fat: '38g',
+              sugars: '6g'
+            },
+            tags: [
+              'meat', 'dinner', 'high protein'
+            ],
+            servings: 2,
+            totalTime: '20 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+
+          {
+            recipeName: 'Goat Cheese, Onion, Spinach & Lemon Pizza',
+            image: 'https://www.cookforyourlife.org/wp-content/uploads/2018/08/Goat-Cheese-Onion-Spinach-Lemon-Pizza-2-696x464.jpg',
+            ingredients: [
+              '1 teaspoon olive oil',
+              '1 clove garlic, smashed',
+              '2 cups packed baby spinach, washed',
+              '1 tablespoon panko, or cornmeal',
+              '1 whole wheat pizza dough, or refrigerated or frozen pizza crust',
+              '½ cup Quick Tomato Sauce',
+              '¾ cup goat cheese',
+              '½ small onion, halved and thinly sliced',
+              '½ cup cherry or grape tomatoes, halved',
+              '1 tablespoon olive oil',
+              'Salt and pepper, to taste',
+              'Zest of half a lemon',
+              
+            ],
+            instructions: [
+              'Preheat the oven to 500 degrees. Put 2 baking trays into the oven, or pizza stone if you have one.',
+              'In a medium sauté pan, over medium-high heat, add the 1 teaspoon of olive oil and clove of garlic. Cook until the garlic starts to brown and become fragrant. Remove the garlic and add the baby spinach along with 1 tablespoon of water. Let sit for 1 minute and then stir. Once the spinach has wilted, remove from pan and let drain. Once cool enough, squeeze out excess liquid.',
+              'If making personal pizza split the dough into 4 equal balls. Sprinkle panko or cornmeal onto a large sheet of parchment paper. Roll out the dough onto the parchment paper; press out dough into a 12×8-inch rectangle or to fit your pizza stone. Split into two balls if necessary.',
+              'Spread the Quick Tomato Sauce evenly onto the dough. Dot the pizza with the goat cheese and top it with the drained spinach, onions, and grape tomatoes, cut sides up. Drizzle with olive oil and sprinkle with a little salt and pepper.',
+              'Using the parchment paper, slip the pizza onto the heated baking trays or pizza stone. Bake in the oven on the lowest rack for 10-15 minutes, or until the crust is golden and the cheese looks melted.',
+              'Using the parchment paper, slip the pizza onto a cutting board. Sprinkle with the lemon zest and cut into slices.',
+            ],
+            calories: 307,
+            macronutrients: {
+              protein: '12g',
+              carbohydrates: '34g',
+              fat: '14g',
+              sugars: '3g'
+            },
+            tags: [
+              'lunch', 'vegetarian', 'quick and easy'
+            ],
+            servings: 4,
+            totalTime: '20 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Chocolate Tahini Bars',
+            image: 'https://images.cookforyourlife.org/wp-content/uploads/2018/08/Chocolate-Tahini-Bars-696x465.jpg',
+            ingredients: [
+              '1 ½ cups graham cracker crumbs',
+              '¾ cup confectioners’ sugar',
+              '1 cup tahini',
+              '¼ cup coconut oil, melted',
+              '1 cup dark chocolate chips',
+              '1 cup heavy cream',
+            ],
+            instructions: [
+              'Grease a 8”x8” glass baking dish.',
+              'In a large bowl, mix together graham cracker crumbs, confectioners’ sugar, tahini, and coconut oil. Pour the mixture into dish and flatten into an even layer.',
+              'Place chocolate chips into a large bowl. In a small pot, bring cream to a simmer. Pour the cream over the chocolate and stir the chocolate until melted and smooth. Pour the chocolate over the tahini mixture and spread into an even layer.',
+              'Cover with plastic wrap and place in the refrigerator for about 45 minutes, until the chocolate is set.',
+              'Cut into 12 squares and serve.',
+            ],
+            calories: 364,
+            macronutrients: {
+              protein: '5g',
+              carbohydrates: '22g',
+              fat: '30g',
+              sugars: '12g'
+            },
+            tags: [
+              'sweet', 'vegan', 'dessert'
+            ],
+            servings: 12,
+            totalTime: '60 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Dark Chocolate Brownies',
+            image: 'https://images.cookforyourlife.org/wp-content/uploads/2018/08/shutterstock_298491788-696x464.jpg',
+            ingredients: [
+              '½ cup (1 stick) butter, melted',
+              '⅔ cup brown sugar',
+              '⅓ cup sugar',
+              '¾ cup unsweetened 100% cocoa powder',
+              '¼ teaspoon salt',
+              '1 teaspoon vanilla extract',
+              '2 large eggs plus 1 egg yolk',
+              '½ cup low-fat or whole plain Greek yogurt',
+              '⅓ cup plus 2 tablespoons whole wheat pastry flour',
+              '½ cup semisweet chocolate chips (optional)',
+            ],
+            instructions: [
+              'Preheat the oven to 300 degrees. Line the bottom and sides of 8 x 8 baking pan with parchment paper. Do this by cutting 2 equal size pieces and overlapping them, allowing some overhang. Set aside.',
+              'In a large bowl, mix together the melted butter, sugar, vanilla, and cocoa together with a wooden spoon or rubber spatula. Add the eggs and the yolk one at a time, stirring vigorously after each one. The batter should be thick and shiny. Stir in the yogurt, until well blended. Add the flour and mix well until completely absorbed. Stir in chocolate chips if using.',
+              'Evenly spread the batter into the prepared baking pan, the batter will be very thick. Bake for 30-35 minutes or until a toothpick comes out with pieces of the batter on it, but not raw. Do not over cook, or your brownie will be dry. It should not cook longer than 35 minutes. Remove from the oven and immediately use the overhang to lift the brownie out of the baking pan and onto a cutting board. Allow to cool slightly, then cut into 16 square pieces. Enjoy!',
+            ],
+            calories: 131,
+            macronutrients: {
+              protein: '3g',
+              carbohydrates: '15g',
+              fat: '8g',
+              sugars: '11g'
+            },
+            tags: [
+              'low-calories', 'sweet', 'quick and easy'
+            ],
+            servings: 16,
+            totalTime: '20 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Salad Nicoise with Grilled Tuna',
+            image: 'https://www.cookforyourlife.org/wp-content/uploads/2018/08/Salad-Ni%C3%A7oise-with-Grilled-Tuna-696x464.jpg',
+            ingredients: [
+              '2 tablespoons extra virgin olive oil',
+              '1 tablespoon chopped flat leaf parsley',
+              '2 scallions, finely chopped, divided',
+              '2 sushi grade yellow fin tuna steaks (See Ann’s Tips)',
+              '6 Hard-Boiled Eggs, peeled and cut in half',
+              '1½ pounds small Yukon Gold or Red Bliss potatoes',
+              '¾ pound French green beans, topped and tailed',
+              '½ cup oil cured olives',
+              '1 pound cherry tomatoes, halved',
+              '½ cup torn basil leaves',
+              '1 medium large head of Romaine lettuce, washed and torn ( On a neutropenic diet?  See Ann’s Tips)',
+              '1 tin anchovy fillets (optional)',
+              'Sea salt, to taste',
+            ],
+            instructions: [
+              'Put the olive oil into a shallow dish large enough to hold the tuna. Mix in the parsley and half of the scallions. Rub the herb oil mixture all over the tuna to coat. Cover with plastic wrap and leave in the fridge to marinate until ready to cook.',
+              'Bring 1-inch of water and a generous pinch of salt to a boil in a large pot. Boil the potatoes just until tender, then throw in the green beans. Cook for 2 minutes or until they are just tender. Drain the green beans and the potatoes and cool under cold running water to stop the cooking. Set aside.',
+              'Heat up a cast iron skillet. Cook the tuna for 5 minutes on the first side and 3 minutes on the other. The fish should be pink in the center but not rare.  Set the fish aside on a plate.',
+              'Rub the skins off the potatoes and cut them into quarters. Place them in a large bowl along with the green beans, olives, tomatoes, basil, and remaining chopped scallion. Prepare the Mustard Vinaigrette, and pour the full recipe over them and toss together.',
+              'Line large plate with the romaine lettuce, and in the center top with the potato mixture.',
+              'Cut the tuna steaks into ¼-inch slices and arrange around the potato mixture on the plate. Arrange the hard-boiled eggs around the edge of the platter and curl an anchovy fillet, if using, on each egg. Serve.',
+            ],
+            calories: 366,
+            macronutrients: {
+              protein: '25g',
+              carbohydrates: '34g',
+              fat: '16g',
+              sugars: '7g'
+            },
+            tags: [
+              'gluten-free', 'seafood', 'high protein'
+            ],
+            servings: 6,
+            totalTime: '30 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'One Pot Mediterranean Lamb Pasta',
+            image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/one-pot-lamb-pasta-1.jpg',
+            ingredients: [
+              'spray olive oil',
+              '2 bell peppers, chopped into chunks',
+              '1 teaspoon olive oil',
+              '1 cup diced onions',
+              '1 1/2 tablespoon garlic, minced',
+              '1lb lean ground lamb (OR turkey, chicken, lean beef, veggie ground)',
+              '2 teaspoons dried oregano',
+              '2 teaspoons dried thyme',
+              '1/3 cup kalamata olives',
+              '28oz crushed tomatoes (I used fire roasted)',
+              '8oz uncooked wheat Regenetti',
+              '2 1/2 cups low sodium chicken broth (or beef or veggie broth)',
+              '3 bay leaves',
+              '1 bundle (3 cups) fresh spinach',
+              'sea salt & pepper to taste',
+            ],
+            instructions: [
+              'Set skillet on HIGH heat.  Once hot, lightly spray with oil, then add bell pepper chunks.  Allow them to sear for 1 -2 minutes without stirring in order to blister, then begin to move them around in the skillet so they do not burn.  After about 3 minutes, place them in a bowl.',
+              'Allow the skillet to cool down to medium-high heat.  Then add oil, garlic and onions.  Cook for 2 minutes to caramelize (brown) the onion.',
+              'Add the ground lamb and continue chopping and cooking in the skillet, about 3 – 5 minutes.  As the lamb cooks, sprinkle in oregano and thyme, and continue chopping and stirring the ingredients together.',
+              'Reduce the heat to low-medium and then, one by one, add the remaining ingredients EXCEPT the spinach.  Carefully fold everything together and bring the pot to a simmer.  Do NOT increase the heat too much, just be patient.  Once it’s simmering with everything in there, cover and cook for 10 to 12 minutes, or the majority of the liquid has been absorbed and the pasta is to your liking.',
+              'Remove the skillet from the heat, then fold in the spinach and allow it to wilt.',
+              'Season to taste with sea salt & pepper, garnish and enjoy!  You can also enjoy this meal with a small, fresh garden salad.',
+            ],
+            calories: 507,
+            macronutrients: {
+              protein: '26g',
+              carbohydrates: '52g',
+              fat: '23g',
+              sugars: '11g'
+            },
+            tags: [
+              'meat', 'dinner', 'high protein'
+            ],
+            servings: 5,
+            totalTime: '25 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+
+          {
+            recipeName: 'Ratatouille Style Veggie Spaghetti',
+            image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/Ratatouille-veggie-Spaghetti-9.jpg',
+            ingredients: [
+              '1 tablespoon olive oil (avocado oil)',
+              '1 tablespoon garlic, minced',
+              '2/3 cup diced onion',
+              '1 lb 90% lean ground beef (or your choice of protein or veggie ground)',
+              '1 1/2 tablespoons The Fit Cook Land Seasoning (OR Italian Seasoning)',
+              '2 teaspoons ground fennel (OR sage OR crushed rosemary OR your favorite Italian herb)',
+              '1 can (15oz) no salt added diced tomatoes',
+              '1 can (15oz) no salt added tomato sauce',
+              '1 cup water',
+              'spray olive oil',
+              '1 tablespoon avocado oil',
+              '1 large carrot (or 2 medium carrots)',
+              '1 large red bell pepper',
+              '2 yellow squash',
+              '2 zucchini',
+              '8 thick asparagus spears, cut into strips',
+              '1 cup water',
+            ],
+            instructions: [
+              'Set a pot on medium heat.  Once hot, add oil, garlic and onion.  Cook for 2 to 3 minutes until the onions are sauteed – brown and slightly translucent.',
+              'Add the ground meat and chop it up as it cooks. Sprinkle in the seasoning as it cooks.',
+              'Add diced tomatoes and tomato sauce from the cans.  Add water to the tomato sauce can, swish it around, then pour that into the pot as well.  Add a few pinches of sea salt and pepper and stir.  Reduce the heat to low, then cover and cook for 15 minutes.',
+              'While the meat cooks, prep the veggies.  Use a Julienne peeler, or a sharp knife, to cut the veggies into thin noodles or strips.  Use a sharp knife to cut thick asparagus spears into thinner spears.',
+              'Set a large skillet on medium high heat, once hot add spray with oil and add bell pepper and asparagus.  Stir, then add 1/2 cup of water to create steam.  Cover and cook for 2 to 3 minutes, until the bell peppers and asparagus is softer.  Remove the top and allow the steam and water to evaporate, careful to ensure nothing is burning.',
+              'Add the olive oil to the skillet, then the remaining veggies.  Use tongs to continuously fold everything together.  Add the remaining water, pinch of sea salt & pepper,  and cover and cook for about 2 minutes, until wilted and soft (NOT slimy).  Remove from the heat.',
+              'Serve the meat sauce over the noodles.  Garnish and enjoy!',
+            ],
+            calories: 392,
+            macronutrients: {
+              protein: '30g',
+              carbohydrates: '27g',
+              fat: '19g',
+              sugars: '16g'
+            },
+            tags: [
+              'high protein', 'meat', 'dinner'
+            ],
+            servings: 4,
+            totalTime: '25 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Chopped Chicken Salad Wrap For Leftover Chicken',
+            image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2016/08/thumbnail_Chopped-Chicken-Salad-Wrap-for-Leftover.jpg',
+            ingredients: [
+              '1 medium whole wheat tortilla',
+              '5oz cooked chicken breast (chopped)',
+              '1 cup raw spinach',
+              '5 cherry tomatoes (cut in halves)',
+              '2 tablespoons raw walnut pieces',
+              '2 tablespoons dried cranberries',
+              '1/8 cup goat cheese crumble',
+              '2 tablespoons of your favorite vinaigrette dressing',
+            ],
+            instructions: [
+              'Place all the ingredients (except for the dressing) onto a cutting board or sheet. Using the largest and sharpest knife you have, begin to chop up the ingredients.  As you chop, continuously mix the salad together using the knife, folding the ingredients into one another. This will help the pieces become smaller as you chop.',
+              'When the salad is finely chopped, add the salad dressing and mix it into the salad.',
+              'Place the salad on a whole-wheat tortilla. Fold in the sides of the tortilla and use your hands to “cup” the salad and pack it in tightly.  Roll it over.',
+              'PRO-TIP: place the tortilla in the microwave for 10-15 seconds prior to adding the salad. This will help make it easier to roll.',
+              'Slice it open and enjoy!',
+            ],
+            calories: 529,
+            macronutrients: {
+              protein: '55g',
+              carbohydrates: '52g',
+              fat: '14g',
+              sugars: '22g'
+            },
+            tags: [
+              'quick and easy', 'meat', 'high protein'
+            ],
+            servings: 1,
+            totalTime: '15 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Spicy Asian Peanut Turkey Salad',
+            image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/asian-leftover-turkey-salad-big-7.jpg',
+            ingredients: [
+              '10 1/2 oz  (~310g) chopped turkey breast meat, no skin',
+              '10z (~290g) broccoli slaw (mix of carrots, cabbage, Bok Choy)',
+              '1/2 red bell pepper, chopped',
+              '5 tablespoons natural peanut butter with oil',
+              '4oz 2% Greek yogurt',
+              '1 1/2 tablespoons rice vinegar OR apple cider vinegar',
+              '1 tablespoon minced garlic',
+              'juice from 1/2 lime (or more/less to taste)',
+              '2 tablespoons sriracha (or more/less to taste)',
+              '1 tablespoon soy sauce (or more/less to taste)',
+              '1/3 cup chopped peanuts (optional)',
+            ],
+            instructions: [
+              'Mix together the ingredients for the sauce in a small bowl.  I recommend adding the lite soy sauce last so you can season it “just right” for your tastebuds.  Remember, if you’re using leftover turkey from Thanksgiving, you may get some of the flavor from that too so be careful about over seasoning. Adjust the level of lime, sriracha and soy sauce to your liking.  Set aside.',
+              'In a large bowl, toss the turkey, broccoli slaw and bell pepper together.  Add the creamy sauce and mix it up using a spatula.  Toss in chopped peanuts, and fold in freshly chopped cilantro and green onions if desired.',
+              'Stuff in a whole wheat pita OR enjoy over a bed of chopped lettuce for a low-carbohydrate meal.',
+            ],
+            calories: 278,
+            macronutrients: {
+              protein: '29g',
+              carbohydrates: '10g',
+              fat: '14g',
+              sugars: '5g'
+            },
+            tags: [
+              'lunch', 'meat', 'low calories'
+            ],
+            servings: 5,
+            totalTime: '10 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Healthy Chicken Pho',
+            image: 'https://www.simplyrecipes.com/wp-content/uploads/2017/02/2017-02-07-ChickenPho-14.jpg',
+            ingredients: [
+              '6 cups no salt added chicken broth (or you can use 7 cups broth with 2 cups water for added flavor)',
+              '3 cups water (or 2 cups water with 7 cups broth for added flavor)',
+              '~1 lb skinless chicken breast',
+              '4oz brown rice noodles',
+              '2 tbsp garlic paste',
+              '2/3 cup chopped onion',
+              'sea salt to taste',
+              '1 cinnamon stick',
+              '4-5 green cardamom pods/seeds (for extra flavor, break these open)',
+              '4 cloves',
+              '1.5 tsp fennel seeds',
+              '1/2 tbsp lemongrass',
+              '1 star anise (recommended if you can find it)',
+            ],
+            instructions: [
+              'Cut a cheesecloth into a square.  Add seasonings to the cheesecloth and then tie a knot around the cheesecloth to secure the seasonings.',
+              'Slice yellow onion into thin pieces.',
+              'Spray a pot with coconut oil and set on medium high heat. Toss in onion and garlic paste. Sauté until the onions brown and become translucent.',
+              'Pour chicken broth and water into the pot and allow it to boil. Reduce heat so that it simmers and add the cheesecloth pouch with the seasonings.  Cover and cook for at least 30 minutes.  Add sea salt to taste.',
+              'Boil water in a separate pot and toss in chicken breast.  Cook for about about 6 to 8 minutes until the chicken has completely cooked, be careful not to overcook.  Remove from the water and set aside.  Once the chicken has somewhat cooled, pull the chicken apart into pieces.',
+              'In another pot, boil water and cook the brown rice noodles according to the instructions.  Careful not to overcook so they do not turn to mush. Drain the noodles and set aside.',
+              'Add your portion of noodles and chicken to a bowl.  Pour in the chicken broth, then add the garnish and don’t forget the lime!',
+              'Enjoy!',
+            ],
+            calories: 339,
+            macronutrients: {
+              protein: '47g',
+              carbohydrates: '31g',
+              fat: '2g',
+              sugars: '0g'
+            },
+            tags: [
+              'high protein', 'low sugar', 'quick and easy'
+            ],
+            servings: 3,
+            totalTime: '20 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+
 
         ])
       })
