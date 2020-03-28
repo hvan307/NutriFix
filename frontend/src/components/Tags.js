@@ -1,5 +1,4 @@
 import React from 'react'
-import update from 'react-addons-update'
 
 let selectedTags = []
 class Tags extends React.Component {
