@@ -3,3 +3,24 @@
   justify-content: space-between;
   flex-direction: row;
 }
+
+.hero {
+  // background-image: url('https://res.cloudinary.com/sanitarium/image/fetch/q_auto/https://www.sanitarium.com.au/getmedia%2Fae51f174-984f-4a70-ad3d-3f6b517b6da1%2Ffruits-vegetables-healthy-fats.jpg%3Fwidth%3D1180%26height%3D524%26ext%3D.jpg');
+  // background-image: url('https://www.anourishedlifenutrition.com/wp-content/uploads/2016/07/vegetables-wooden-background-croppedx2.jpg');
+  background-image: url('https://visitindianrivercounty.com/wp-content/uploads/2015/12/iStock_76355911_LARGE.jpg');
+  // background-position: center;
+  background-size: cover;
+}
+
+div.tile.is-child {
+  margin: 10px !important;
+}
+
+h1 {
+  align-items: center !important;
+  padding-left: 30px !important;
+}
+
+li {
+  padding: 5px !important;
+}
