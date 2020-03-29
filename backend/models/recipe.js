@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 
 // }, {
 //   timestamps: true
-// })
+
 
 const schema = new mongoose.Schema({
   recipeName: { type: String, required: true, unique: true },

@@ -27,7 +27,7 @@ mongoose.connect(
           {
             recipeName: 'pesto pasta',
             image: 'https://4fbiobvvqqs19u27y3vblno6-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/DSC_0150-1-1030x1030-1.jpg',
-            ingredients: [ 
+            ingredients: [
               'pesto',
               'pasta'
             ],
@@ -49,7 +49,7 @@ mongoose.connect(
           {
             recipeName: 'Vegan Shepherd’s Pie With Cauliflower',
             image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/vegan-shepherds-pie-4.jpg',
-            ingredients: [ 
+            ingredients: [
               '1 tablespoon olive oil (or avocado oil)',
               '1 tablespoon fresh garlic, minced',
               '2/3 cup diced onion',
@@ -92,7 +92,7 @@ mongoose.connect(
           {
             recipeName: 'Salmon Poke With Air-Fried Wonton Chips',
             image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/salmon-poke-wonton-chips-4.jpg',
-            ingredients: [ 
+            ingredients: [
               '20  wonton wrappers, sliced diagonally to create 40 chips',
               '1lb sushi-grade salmon, diced into 1/2-inch cubes',
               '1 ripe avocado, diced',
@@ -122,7 +122,7 @@ mongoose.connect(
           {
             recipeName: 'Gluten-Free Vegan Chocolate Brownie Waffles',
             image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/vegan-choocolate-brownie-waffle-1.jpg',
-            ingredients: [ 
+            ingredients: [
               '20  wonton wrappers, sliced diagonally to create 40 chips',
               '1lb sushi-grade salmon, diced into 1/2-inch cubes',
               '1 ripe avocado, diced',
@@ -146,6 +146,38 @@ mongoose.connect(
             ],
             servings: 4,
             totalTime: '15 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+            recipeName: 'Vegan pesto',
+            image: 'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2020/03/vegan-pesto.jpg?itok=OVymH417',
+            ingredients: [
+              '50g pine nuts',
+              'large bunch of basil, roughly chopped',
+              '2 tbsp nutritional yeast',
+              '150ml olive oil, plus extra for the jar',
+              '2 garlic cloves, roughly chopped',
+              '½ lemon, juiced'
+            ],
+            instructions: ['Toast the pine nuts in a small pan over a low heat for 3-4 mins until golden brown. Set aside to cool.',
+
+              'Blitz the pine nuts with the remaining ingredients in a food processor until smooth. Season to taste.',
+
+              'Spoon the pesto into a jar and top with a thick drizzle of olive oil. Will keep stored in the fridge for up to a week',
+            ],
+            calories: 574,
+            macronutrients: {
+              protein: '43g',
+              carbohydrates: '9g',
+              fat: '37g',
+              sugars: '3g'
+            },
+            tags: [
+              'Dairy-free', 'Vegetarian', 'Vegan'
+            ],
+            servings: 1,
+            totalTime: '7 minutes',
             isPublic: true,
             user: users[0]
           }
