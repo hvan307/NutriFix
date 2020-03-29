@@ -60,3 +60,7 @@ class MyRecipes extends React.Component {
 }
 
 export default MyRecipes
+
+// isOwner() {
+//   return auth.getUserId() === this.state.myRecipes.user._id
+// }

@@ -1,5 +1,6 @@
 import React from 'react'
 
+let selectedTags = []
 class Tags extends React.Component {
 
   constructor() {
@@ -26,25 +27,29 @@ class Tags extends React.Component {
         'spicy',
         'seafood'
       ],
-      emptyTags: []
+      submissionTags: []
     }
   }
 
   handleTag(event) {
-    const emptyTags = this.state.emptyTags
-    // console.log(tag.innerHTML)
-    // console.log(event.target.innerHTML)
-    // if (tag.innerHTML === event.target.innerHTML) {
-  
-    event.target.style.backgroundColor = 'blue'
-    console.log('hello')
-    emptyTags.push(event.target.innerHTML)
-    this.setState({ emptyTags })
-
+    const { submissionTags } = this.state
+    if (submissionTags.includes(event.target.innerHTML)) {
+      console.log('submission tags', submissionTags)
+      event.target.style.backgroundColor = 'transparent'
+      const filteredTags = selectedTags.filter((selectedTag) => {
+        return selectedTag !== event.target.innerHTML
+      })
+      selectedTags = filteredTags
+      this.setState({ submissionTags: selectedTags })
+    } else {
+      event.target.style.backgroundColor = 'blue'
+      selectedTags.push(event.target.innerHTML)
+      this.setState({ submissionTags: selectedTags })
+    }
   }
 
   render() {
-    console.log(this.state.emptyTags)
+    // console.log('state', this.state.submissionTags)
     return <div className="field is-grouped is-grouped-multiline">
       {this.state.tags.map((tag, key) => {
         return <p
