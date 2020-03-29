@@ -15,7 +15,6 @@ class MyRecipes extends React.Component {
 
   componentDidMount() {
     axios.get('/api/myrecipes',
-      this.state.data,
       { headers: { Authorization: `Bearer ${auth.getToken()}` } })
       .then(res => this.setState({ myRecipes: res.data }))
       .catch(err => console.error(err))
@@ -61,6 +60,3 @@ class MyRecipes extends React.Component {
 
 export default MyRecipes
 
-// isOwner() {
-//   return auth.getUserId() === this.state.myRecipes.user._id
-// }
