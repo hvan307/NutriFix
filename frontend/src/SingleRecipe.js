@@ -100,7 +100,7 @@ class DisplaySingleRecipe extends React.Component {
               })}
             </ol>
           </div>
-
+        
         </div>
       </div>
     </>
