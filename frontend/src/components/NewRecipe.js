@@ -25,30 +25,7 @@ class NewRecipe extends React.Component {
         servings: '',
         totalTime: '',
         isPublic: false,
-<<<<<<< HEAD
-        tags: [
-          'gluten-free',
-          'dairy-free',
-          'quick and easy',
-          'high protein',
-          'low carbs',
-          'low fat',
-          'low sugar',
-          'low calories',
-          'breakfast',
-          'lunch',
-          'dinner',
-          'meat',
-          'vegetarian',
-          'vegan',
-          'sweet',
-          'salty',
-          'spicy',
-          'seafood'
-        ]
-=======
         tags: []
->>>>>>> b05ee64f69ad87c60a7a42833839094010b0c90d
       },
       errors: {},
       staticTags: [
