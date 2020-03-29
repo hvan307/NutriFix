@@ -1,5 +1,6 @@
 function setToken(token) {
   localStorage.setItem('token', token)
+  console.log(token)
 }
 
 function isLoggedIn() {
