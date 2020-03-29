@@ -9,7 +9,6 @@ class Tags extends React.Component {
       tags: [
         'gluten-free',
         'dairy-free',
-        'low-fat',
         'quick and easy',
         'high protein',
         'low carbs',
