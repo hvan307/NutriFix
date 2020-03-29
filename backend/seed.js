@@ -25,6 +25,31 @@ mongoose.connect(
       .then(users => {
         return Recipe.create([
           {
+<<<<<<< HEAD
+=======
+            recipeName: 'pesto pasta',
+            image: 'https://4fbiobvvqqs19u27y3vblno6-wpengine.netdna-ssl.com/wp-content/uploads/2018/09/DSC_0150-1-1030x1030-1.jpg',
+            ingredients: [
+              'pesto',
+              'pasta'
+            ],
+            instructions: 'cook pasta, add pesto',
+            calories: 342,
+            macronutrients: {
+              protein: '20g',
+              carbohydrates: '10g',
+              sugars: '2g'
+            },
+            tags: [
+              'vegetarian'
+            ],
+            servings: 2,
+            totalTime: '40 minutes',
+            isPublic: true,
+            user: users[0]
+          },
+          {
+>>>>>>> development
             recipeName: 'Vegan Shepherd’s Pie With Cauliflower',
             image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/vegan-shepherds-pie-4.jpg',
             ingredients: [
@@ -51,6 +76,7 @@ mongoose.connect(
               'sea salt & pepper to taste',
               'fresh parsley'
             ],
+<<<<<<< HEAD
             instructions: [
               '1. Set oven to 400F.',
               '2. Place cauliflower in a microwave safe bowl and cook in the microwave – according to instructions given – for 6 to 8 minutes, or until the cauliflower is soft.  Set aside.',
@@ -61,15 +87,18 @@ mongoose.connect(
               '7. Remove the cover from the skillet and remove from the heat.  Use a spatula to evenly spread the cauliflower mash on top, then use the back of a fork to spread it out to create a textured top.',
               '8. Place the shepherd’s pie in the oven to bake for 20 minutes. 9. After baking let it cool  down for 15 to 20 minutes, then garnish and enjoy!'
             ],
+=======
+            instructions: '1. Set oven to 400F. 2. Place cauliflower in a microwave safe bowl and cook in the microwave – according to instructions given – for 6 to 8 minutes, or until the cauliflower is soft.  Set aside. 3. Set a large skillet on medium heat.  Once hot, add oil, garlic, onion, mushrooms and celery and sauté for 2 to 3 minutes, then sprinkle in seasoning and cook for an additional 1 minute. 4. Add the meatless crumbles and chop it up as it cooks in the skillet.  Continue folding the ingredients as they cook for 2 to 3 additional minutes. 5. Add lentils, tomatoes, frozen peas & carrots and fold everything together.  Then add BBQ sauce and dijon mustard, and finally the veggie broth.  Bring to a light simmer, then reduce the heat to low and cover and cook while you prepare the topping. 6. In a large bowl add the ingredients for the topping.  Use a potato masher OR an immersion blender to whip together the cauliflower mash. 7. Remove the cover from the skillet and remove from the heat.  Use a spatula to evenly spread the cauliflower mash on top, then use the back of a fork to spread it out to create a textured top. 8. Place the shepherd’s pie in the oven to bake for 20 minutes. 9. After baking let it cool  down for 15 to 20 minutes, then garnish and enjoy!',
+>>>>>>> development
             calories: 330,
             macronutrients: {
               protein: '24g',
               carbohydrates: '34g',
-              fat: '12g',
+              Fat: '12g',
               sugars: '12g'
             },
             tags: [
-              'vegetarian', 'vegan', 'dinner', 'dairy-free'
+              'vegetarian', 'vegan', 'meal prep'
             ],
             servings: 5,
             totalTime: '40 minutes',
@@ -90,21 +119,16 @@ mongoose.connect(
               '2 tablespoons low sodium soy sauce',
               '1 tablespoon black sesame seeds'
             ],
-            instructions: [
-              'Set air-fryer to 350F (or set oven to 400F)',
-              'Fill the air fryer basket (or a baking tray lined with parchment) with the wonton wrapper slices.  Lightly spray the chips with avocado oil, then air fry (or bake) for 4 to 6 minutes, or until the edges are brown and crispy.',
-              'To a large bowl, add the remaining ingredients and gently fold everything together.',
-              'Add low sodium soy sauce and ginger to taste.'
-            ],
+            instructions: '1. Set air-fryer to 350F (or set oven to 400F). 2. Fill the air fryer basket (or a baking tray lined with parchment) with the wonton wrapper slices.  Lightly spray the chips with avocado oil, then air fry (or bake) for 4 to 6 minutes, or until the edges are brown and crispy. 3. To a large bowl, add the remaining ingredients and gently fold everything together. 4. Add low sodium soy sauce and ginger to taste.',
             calories: 384,
             macronutrients: {
               protein: '28g',
               carbohydrates: '26g',
-              fat: '19g',
+              Fat: '19g',
               sugars: '3g'
             },
             tags: [
-              'lunch', 'quick and easy', 'seafood'
+              'seafood', 'sweets & snacks'
             ],
             servings: 4,
             totalTime: '15 minutes',
@@ -115,6 +139,7 @@ mongoose.connect(
             recipeName: 'Gluten-Free Vegan Chocolate Brownie Waffles',
             image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2019/11/vegan-choocolate-brownie-waffle-1.jpg',
             ingredients: [
+<<<<<<< HEAD
               '1 1/4 cups (measured) fine almond flour',
               '3/4 cup arrowroot flour/powder (substitute: tapioca flour, cassava flour)',
               '1/3 cup dark chocolate (cacao) powder',
@@ -329,10 +354,23 @@ mongoose.connect(
               'In a large bowl, combine cauliflower rice, zucchini, chickpeas, corn, eggs, almond meal, parsley, salt, pepper, turmeric and cumin.',
               'Heat a non-stick sauté pan with olive oil. Using a 2-tablespoon scoop, portion fritters into pan, cooking on both sides for about 3 minutes, or until golden brown.',
               'Meanwhile, in a small bowl, whisk together sriracha and yogurt. Serve with fritters.'
+=======
+              '20  wonton wrappers, sliced diagonally to create 40 chips',
+              '1lb sushi-grade salmon, diced into 1/2-inch cubes',
+              '1 ripe avocado, diced',
+              '1/2 cup diced red onion',
+              '1 toasted nori seaweed sheet, crumbled and finely diced',
+              '1 1/2 tablespoons fresh ginger',
+              '1 tablespoon sesame oil',
+              '2 tablespoons low sodium soy sauce',
+              '1 tablespoon black sesame seeds'
+>>>>>>> development
             ],
-            calories: 708,
+            instructions: '1. Set air-fryer to 350F (or set oven to 400F). 2. Fill the air fryer basket (or a baking tray lined with parchment) with the wonton wrapper slices.  Lightly spray the chips with avocado oil, then air fry (or bake) for 4 to 6 minutes, or until the edges are brown and crispy. 3. To a large bowl, add the remaining ingredients and gently fold everything together. 4. Add low sodium soy sauce and ginger to taste.',
+            calories: 384,
             macronutrients: {
               protein: '28g',
+<<<<<<< HEAD
               carbohydrates: '87g',
               fat: '30g',
               sugars: '10g'
@@ -441,9 +479,14 @@ mongoose.connect(
               carbohydrates: '32g',
               fat: '18g',
               sugars: '9g'
+=======
+              carbohydrates: '26g',
+              Fat: '19g',
+              sugars: '3g'
+>>>>>>> development
             },
             tags: [
-              'breakfast', 'dairy-free', 'vegan', 'sweet'
+              'seafood', 'sweets & snacks'
             ],
             servings: 4,
             totalTime: '15 minutes',
@@ -451,6 +494,7 @@ mongoose.connect(
             user: users[0]
           },
           {
+<<<<<<< HEAD
             recipeName: 'Pumpkin Oatmeal',
             image: 'https://images.cookforyourlife.org/wp-content/uploads/2018/08/shutterstock_326159303.jpg',
             ingredients: [
@@ -754,27 +798,44 @@ mongoose.connect(
               'Take ½ the mozzarella and evenly cover the toasted sides of 2 slices of the bread. Put half the sliced tomato on top of each and sprinkle with the torn basil leaves. Take the remaining cheese and lay over the tomato. Take the remaining slices of bread and lay them over the filling, toasted sides down and gently press together.',
               'Take half the remaining olive oil and brush the top of each sandwich with it. Carefully turn the assembled sandwiches over and transfer them to the griddle, oiled sides down. Cook, gently pressing down on the sandwich as the cheese melts, about 3-5 minutes. Brush the tops of the sandwiches, about 3-5 minutes more, again gently pressing down on the sandwiches as they cook.',
               'When both sides are golden and the cheese has melted, they’re ready. Serve piping hot. If using the arugula, toss with 1 teaspoon extra virgin olive oil and a pinch of salt and serve on the side.'
+=======
+            recipeName: 'Vegan pesto',
+            image: 'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2020/03/vegan-pesto.jpg?itok=OVymH417',
+            ingredients: [
+              '50g pine nuts',
+              'large bunch of basil, roughly chopped',
+              '2 tbsp nutritional yeast',
+              '150ml olive oil, plus extra for the jar',
+              '2 garlic cloves, roughly chopped',
+              '½ lemon, juiced'
             ],
-            calories: 362,
+            instructions: ['Toast the pine nuts in a small pan over a low heat for 3-4 mins until golden brown. Set aside to cool.',
+
+              'Blitz the pine nuts with the remaining ingredients in a food processor until smooth. Season to taste.',
+
+              'Spoon the pesto into a jar and top with a thick drizzle of olive oil. Will keep stored in the fridge for up to a week',
+>>>>>>> development
+            ],
+            calories: 574,
             macronutrients: {
-              protein: '14g',
-              carbohydrates: '36g',
-              fat: '19g',
-              sugars: '5g'
+              protein: '43g',
+              carbohydrates: '9g',
+              fat: '37g',
+              sugars: '3g'
             },
             tags: [
-              'quick and easy', 'vegetarian', 'lunch'
+              'Dairy-free', 'Vegetarian', 'Vegan'
             ],
-            servings: 2,
-            totalTime: '20 minutes',
+            servings: 1,
+            totalTime: '7 minutes',
             isPublic: true,
             user: users[0]
           },
-
           {
-            recipeName: 'Pan Roasted Rosemary Chicken & Cauliflower',
-            image: 'https://images.cookforyourlife.org/wp-content/uploads/2018/08/Rosemary-Chicken-Vegetables-696x464.jpg',
+            recipeName: 'Vegan pesto',
+            image: 'https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2020/03/vegan-pesto.jpg?itok=OVymH417',
             ingredients: [
+<<<<<<< HEAD
               '1 tablespoon rosemary',
               '1 tablespoon thyme',
               '2 tablespoons lemon juice',
@@ -796,23 +857,18 @@ mongoose.connect(
               'Remove the pan from the oven and add the chicken to another section of the baking sheet. Roast the chicken and cauliflower for an additional 10 minutes.',
               'Remove the baking sheet from the oven again and add the tomatoes and zucchini. Place the tray back in the oven and roast for another 15 minutes, until the chicken is completely cooked and the zucchini is soft.',
               'Divide the chicken and the vegetables and serve.'
+=======
+              '50g pine nuts',
+              'large bunch of basil, roughly chopped',
+              '2 tbsp nutritional yeast',
+              '150ml olive oil, plus extra for the jar',
+              '2 garlic cloves, roughly chopped',
+              '½ lemon, juiced'
+>>>>>>> development
             ],
-            calories: 538,
-            macronutrients: {
-              protein: '40g',
-              carbohydrates: '13g',
-              fat: '38g',
-              sugars: '6g'
-            },
-            tags: [
-              'meat', 'dinner', 'high protein'
-            ],
-            servings: 2,
-            totalTime: '20 minutes',
-            isPublic: true,
-            user: users[0]
-          },
+            instructions: ['Toast the pine nuts in a small pan over a low heat for 3-4 mins until golden brown. Set aside to cool.',
 
+<<<<<<< HEAD
           {
             recipeName: 'Goat Cheese, Onion, Spinach & Lemon Pizza',
             image: 'https://www.cookforyourlife.org/wp-content/uploads/2018/08/Goat-Cheese-Onion-Spinach-Lemon-Pizza-2-696x464.jpg',
@@ -840,13 +896,21 @@ mongoose.connect(
               'Using the parchment paper, slip the pizza onto a cutting board. Sprinkle with the lemon zest and cut into slices.'
             ],
             calories: 307,
+=======
+              'Blitz the pine nuts with the remaining ingredients in a food processor until smooth. Season to taste.',
+
+              'Spoon the pesto into a jar and top with a thick drizzle of olive oil. Will keep stored in the fridge for up to a week',
+            ],
+            calories: 574,
+>>>>>>> development
             macronutrients: {
-              protein: '12g',
-              carbohydrates: '34g',
-              fat: '14g',
+              protein: '43g',
+              carbohydrates: '9g',
+              fat: '37g',
               sugars: '3g'
             },
             tags: [
+<<<<<<< HEAD
               'lunch', 'vegetarian', 'quick and easy'
             ],
             servings: 4,
@@ -1164,6 +1228,12 @@ mongoose.connect(
             ],
             servings: 3,
             totalTime: '20 minutes',
+=======
+              'Dairy-free', 'Vegetarian', 'Vegan'
+            ],
+            servings: 1,
+            totalTime: '7 minutes',
+>>>>>>> development
             isPublic: true,
             user: users[0]
           },
