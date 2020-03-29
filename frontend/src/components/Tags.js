@@ -1,8 +1,7 @@
 import React from 'react'
 
-let selectedTags = []
-class Tags extends React.Component {
 
+<<<<<<< HEAD
   constructor() {
     super()
     this.state = {
@@ -51,19 +50,27 @@ class Tags extends React.Component {
     // console.log('state', this.state.submissionTags)
     return <div className="field is-grouped is-grouped-multiline">
       {this.state.tags.map((tag, key) => {
+=======
+const Tags = ({ staticTags, handleTag }) => {
+  return <>
+    <div className="field is-grouped is-grouped-multiline">
+      {staticTags.map((tag, key) => {
+>>>>>>> b05ee64f69ad87c60a7a42833839094010b0c90d
         return <p
           key={key}
           className="control"
         >
           <a className="button tag"
-            onClick={() => this.handleTag(event)}>
+            style={{ backgroundColor: 'white' }}
+            onClick={handleTag}
+          >
             {tag}
           </a>
         </p>
 
       })}
     </div>
-  }
+  </>
 }
 
 export default Tags
