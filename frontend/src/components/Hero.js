@@ -33,6 +33,12 @@ const Hero = () => {
                 <Link to="/myrecipes">My Recipes</Link>
               </li>
             }
+            {isLoggedIn &&
+              <li>
+                <Link to="/myrecipe/new">New Recipe</Link>
+              </li>
+            }
+
             {/* <li>
               <a>Grid</a>
             </li>
