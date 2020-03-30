@@ -104,7 +104,7 @@ class DisplayRecipes extends React.Component {
                 >
                   <div className="card">
                     <div className="card-image">
-                      <figure className="image is-3by3">
+                      <figure className="card-image is-3by3">
                         <img src={recipe.image}></img>
                       </figure>
                     </div>
