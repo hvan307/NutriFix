@@ -41,10 +41,10 @@ const Hero = () => {
             </li>
             <li>
               <a>Components</a>
-            </li>
-            <li>
-              <a>Layout</a>
             </li> */}
+            <li>
+              <Link to="/foodsearch">Search Ingredients</Link>
+            </li>
           </ul>
         </div>
       </nav>

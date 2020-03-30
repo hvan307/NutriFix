@@ -9,6 +9,7 @@ import './style.scss'
 import MyRecipes from './MyRecipes'
 import NewRecipe from './components/NewRecipe'
 import Navbar from './components/NavBar'
+import FoodSearchBar from './components/FoodSearchBar'
 
 const App = () => {
   return <BrowserRouter>
@@ -19,7 +20,8 @@ const App = () => {
       <Route exact path="/register" component={Register}/>
       <Route exact path="/myrecipes" component={MyRecipes} />
       <Route exact path="/recipes" component={DisplayRecipes} />
-      <Route path="/login" component={Login} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/foodsearch" component={FoodSearchBar} />
     </Switch>
   </BrowserRouter>
 }
