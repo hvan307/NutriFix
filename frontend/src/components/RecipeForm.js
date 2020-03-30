@@ -1,7 +1,7 @@
 import React from 'react'
 import Tags from './Tags'
 
-const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, data }) => {
+const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, data, staticTags, handleTag }) => {
   const { recipeName, image, ingredients, instructions, calories, servings, totalTime } = data
   return <section className="section">
     <div className="container">
@@ -195,7 +195,7 @@ const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, dat
         </div>
 
         <h3 className="subtitle">Select Categories:</h3>
-        <Tags />
+     
 
 
         {/* <div className="field is-grouped is-grouped-multiline">
@@ -210,11 +210,16 @@ const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, dat
             </p>
           })}
         </div> */}
+        <Tags
+          handleTag={handleTag}
+          staticTags={staticTags}
+        />
         <button
           onClick={() => handleSubmit(event)}
           className="button is-success">
           Add your recipe
         </button>
+
       </form>
     </div>
   </section>
