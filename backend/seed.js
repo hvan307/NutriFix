@@ -164,7 +164,7 @@ mongoose.connect(
 
               'Blitz the pine nuts with the remaining ingredients in a food processor until smooth. Season to taste.',
 
-              'Spoon the pesto into a jar and top with a thick drizzle of olive oil. Will keep stored in the fridge for up to a week',
+              'Spoon the pesto into a jar and top with a thick drizzle of olive oil. Will keep stored in the fridge for up to a week'
             ],
             calories: 574,
             macronutrients: {
@@ -196,7 +196,7 @@ mongoose.connect(
 
               'Blitz the pine nuts with the remaining ingredients in a food processor until smooth. Season to taste.',
 
-              'Spoon the pesto into a jar and top with a thick drizzle of olive oil. Will keep stored in the fridge for up to a week',
+              'Spoon the pesto into a jar and top with a thick drizzle of olive oil. Will keep stored in the fridge for up to a week'
             ],
             calories: 574,
             macronutrients: {
