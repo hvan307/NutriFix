@@ -24,3 +24,15 @@ h1 {
 li {
   padding: 5px !important;
 }
+
+.button {
+  box-shadow: 1px 1px #afaaaa;
+}
+
+.button.tag {
+  background-color: white;
+} 
+
+.button.tag.tag-selected {
+  background-color: #79767660;
+}

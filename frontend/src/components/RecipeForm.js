@@ -5,6 +5,12 @@ const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, dat
   const { recipeName, image, ingredients, instructions, calories, servings, totalTime } = data
   return <section className="section">
     <div className="container">
+      <div className="title has-text-centered">
+       Your Recipe
+      </div>
+      <div className="subtitle has-text-centered">
+        Add your own recipe to the mix, so you don't lose it the next time you look for a dose of NutriFix!
+      </div>
       <form
         className="form"
         onSubmit={(event) => handleSubmit(event)}
@@ -193,33 +199,18 @@ const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, dat
             {errors.totalTime}
           </small>}
         </div>
-
-        <h3 className="subtitle">Select Categories:</h3>
-     
-
-
-        {/* <div className="field is-grouped is-grouped-multiline">
-          {tags.map((tag, key) => {
-            return <p
-              key={key}
-              className="control"
-            >
-              <a className="button">
-                {tag}
-              </a>
-            </p>
-          })}
-        </div> */}
-        <Tags
-          handleTag={handleTag}
-          staticTags={staticTags}
-        />
+        <div className="label">
+          <label className="label">Select Categories:</label>
+          <Tags
+            handleTag={handleTag}
+            staticTags={staticTags}
+          />
+        </div>
         <button
           onClick={() => handleSubmit(event)}
           className="button is-success">
           Add your recipe
         </button>
-
       </form>
     </div>
   </section>
