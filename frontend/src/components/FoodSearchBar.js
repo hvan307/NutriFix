@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import FoodSearchForm from './FoodSearchForm'
+// import Spinner from './Spinner'
 
 class FoodSearchBar extends React.Component {
   constructor() {
@@ -24,16 +25,22 @@ class FoodSearchBar extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault()
+    // setTimeout(() => {
     axios.get(`https://api.edamam.com/api/food-database/parser?ingr=${this.state.query}&app_id=456922e8&app_key=ab36bb266c8b99d0bfedb91299cf6bf3`)
       .then(res => {
-        console.log(res.data.parsed)
+        console.log(res.data)
         this.setState({ parsed: res.data.parsed })
       })
       .catch(err => console.error(err))
+    // }, 1000)
+
   }
 
 
   render() {
+    // if (!this.state.query) {
+    //   return <Spinner />
+    // } else {
     return <section className="section">
       <div className="container">
         <FoodSearchForm
@@ -60,6 +67,7 @@ class FoodSearchBar extends React.Component {
         </div>
       </div>
     </section>
+    // }
     //   }
   }
 }

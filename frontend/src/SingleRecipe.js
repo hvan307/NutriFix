@@ -35,6 +35,9 @@ class DisplaySingleRecipe extends React.Component {
       .catch(err => console.error(err))
   }
 
+  isOwner() {
+    return auth.getUserId() === this.state.recipes.user
+  }
 
 
   render() {
@@ -48,14 +51,14 @@ class DisplaySingleRecipe extends React.Component {
             <img src={recipe.image} />
             {/* {console.log(recipe)} */}
           </div>
-          <button
+          {this.isOwner() && <button
             onClick={() => this.handleDelete()}
             className="button is-danger"
           >
-            {'Delete Site'}
-          </button>
+            {'Delete Recipe'}
+          </button>}
           <div className="tile is-child box">
-            <p className="title">Macros</p>
+            <p className="recipeTitle">Macros</p>
             <p>Protein: {recipe.macronutrients.protein}</p>
             <p>Carbohydrates: {recipe.macronutrients.carbohydrates}</p>
             <p>Fat: {recipe.macronutrients.fat}</p>
@@ -65,7 +68,7 @@ class DisplaySingleRecipe extends React.Component {
             <p>Total Time: {recipe.totalTime}</p>
           </div>
           <div className="tile is-child box">
-            <p className="title title-cross">Categories
+            <p className="recipeTitle title-cross">Categories
             </p>
             <ul>
               {this.state.recipes.tags.map((category, key) => {

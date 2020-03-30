@@ -72,7 +72,7 @@ class NewRecipe extends React.Component {
     axios.post('/api/myrecipes',
       this.state.data,
       { headers: { Authorization: `Bearer ${auth.getToken()}` } })
-      .then(res => this.props.history.push(`/myrecipes/${res.data._id}`))
+      .then(res => this.props.history.push(`/recipe/${res.data._id}`))
       .catch(err => this.setState({ error: err.response.data.errors }))
   }
 

@@ -24,3 +24,23 @@ h1 {
 li {
   padding: 5px !important;
 }
+
+.Loading {
+  display: flex;
+  justify-content: center;
+  }
+
+  p.title {
+    font-size: 70px;
+  }
+
+
+  p.subtitle {
+    font-size: 30px;
+  }
+
+  p.recipeTitle {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
