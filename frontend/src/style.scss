@@ -36,6 +36,25 @@ li {
   padding: 5px !important;
 }
 
+.Loading {
+  display: flex;
+  justify-content: center;
+  }
+
+  p.title {
+    font-size: 70px;
+  }
+
+
+  p.subtitle {
+    font-size: 30px;
+  }
+
+  p.recipeTitle {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
 .button {
   box-shadow: 1px 1px #afaaaa;
 }
@@ -61,3 +80,5 @@ li {
 // .card {
 //   height: 300px
 // }
+=======
+>>>>>>> 402affa1eabe9b7704b5dc9d8627d7987d09edb3

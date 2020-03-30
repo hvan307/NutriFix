@@ -780,7 +780,7 @@ mongoose.connect(
               '1 tablespoon olive oil',
               'Salt and pepper, to taste',
               'Zest of half a lemon'
-              
+
             ],
             instructions: [
               'Preheat the oven to 500 degrees. Put 2 baking trays into the oven, or pizza stone if you have one.',
@@ -1598,7 +1598,7 @@ mongoose.connect(
               sugars: '27g'
             },
             tags: [
-              'gluten-free', 'dinner', 'quick and easy', 'high protein', 'dairy-free', 'low carbs', 'low fat', 'low calories', 'meat','salty'
+              'gluten-free', 'dinner', 'quick and easy', 'high protein', 'dairy-free', 'low carbs', 'low fat', 'low calories', 'meat', 'salty'
             ],
             servings: 1,
             totalTime: '10 minutes',
@@ -1680,7 +1680,7 @@ mongoose.connect(
               sugars: '13.5g'
             },
             tags: [
-              'gluten-free', 'low-fat', 'high protein', 'quick and easy', 'breakfast', 'vegetarian', 'sweet'
+              'gluten-free', 'low fat', 'high protein', 'quick and easy', 'breakfast', 'vegetarian', 'sweet'
             ],
             servings: 1,
             totalTime: '5 minutes',
@@ -1794,7 +1794,7 @@ mongoose.connect(
               sugars: '7g'
             },
             tags: [
-              'dairy-free', 'quick and easy', 'low-fat', 'low carbs', 'low sugar', 'low calories', 'vegetarian', 'vegan', 'salty'
+              'dairy-free', 'quick and easy', 'low fat', 'low carbs', 'low sugar', 'low calories', 'vegetarian', 'vegan', 'salty'
             ],
             servings: 5,
             totalTime: '15 minutes',
@@ -1826,7 +1826,7 @@ mongoose.connect(
               sugars: '2g'
             },
             tags: [
-              'gluten-free', 'dairy-free', 'quick and easy', 'low-fat', 'low carbs', 'low fat', 'low sugar', 'low calories', 'lunch', 'dinner', 'meat', 'salty', 'spicy'
+              'gluten-free', 'dairy-free', 'quick and easy', 'low fat', 'low carbs', 'low fat', 'low sugar', 'low calories', 'lunch', 'dinner', 'meat', 'salty', 'spicy'
             ],
             servings: 2,
             totalTime: '20 minutes',
@@ -1864,7 +1864,7 @@ mongoose.connect(
               sugars: '8g'
             },
             tags: [
-              'gluten-free', 'low-fat', 'low fat', 'low sugar', 'breakfast', 'lunch', 'meat', 'salty'
+              'gluten-free', 'low fat', 'low fat', 'low sugar', 'breakfast', 'lunch', 'meat', 'salty'
             ],
             servings: 1,
             totalTime: '35 minutes',
@@ -1881,7 +1881,7 @@ mongoose.connect(
               '1/2 cup (63g) + 1 tablespoon (22g) fine almond flour',
               '3/4 cup (60g) grated parmesan',
               '1 teaspoon garlic powder',
-              '1 teaspoon red pepper (or to taste)',
+              '1 teaspoon red pepper (or to taste)'
             ],
             instructions: [
               'Warm up the waffle iron.',
@@ -1953,14 +1953,14 @@ mongoose.connect(
               '1 red bell pepper, sliced',
               'juice from 1 lime',
               'Beans',
-                '1 tablespoon avocado oil (or olive oil)',
-                '1 tablespoon garlic, minced',
-                '1/2 cup diced onion',
-                '1 teaspoon smoked paprika',
-                '2 teaspoons cumin',
-                '1 1/2 cans (638g) no salt added black beans, drained (1 can = 425g, 1/2 can = 213g)',
-                '1 cup water (or more as needed)',
-                'sea salt to taste',
+              '1 tablespoon avocado oil (or olive oil)',
+              '1 tablespoon garlic, minced',
+              '1/2 cup diced onion',
+              '1 teaspoon smoked paprika',
+              '2 teaspoons cumin',
+              '1 1/2 cans (638g) no salt added black beans, drained (1 can = 425g, 1/2 can = 213g)',
+              '1 cup water (or more as needed)',
+              'sea salt to taste',
               '4 low carbohydrate wheat tortillas',
               '1 1/2 cups Mexican cheese blend'
             ],
@@ -2037,22 +2037,22 @@ mongoose.connect(
             image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/boostrap-paella-weber-grills-7.jpg',
             ingredients: [
               '1 1/2 cups uncooked brown rice',
-                'Kebabs',
-                '2 lb shrimp,  peeled and deveined',
-                '1 green bell pepper',
-                '1 red bell pepper',
-                '2 tablespoons olive oil (or avocado oil)',
-                '2/3 cup white onion, diced',
-                '1 1/2 tablespoon garlic',
-                '1 tablespoon smoked paprika',
-                '1 1/2 teaspoons turmeric',
-                '2  teaspoons dried thyme',
-                '2 cups low sodium chicken stock',
-                '2 cups water (OR you can use an additional 2 cups stock)',
-                '1 can (28oz) fire roasted tomatoes',
-                '1 tablespoon sea salt',
-                '1 tablespoon pepper',
-                '1 cup frozen peas',
+              'Kebabs',
+              '2 lb shrimp,  peeled and deveined',
+              '1 green bell pepper',
+              '1 red bell pepper',
+              '2 tablespoons olive oil (or avocado oil)',
+              '2/3 cup white onion, diced',
+              '1 1/2 tablespoon garlic',
+              '1 tablespoon smoked paprika',
+              '1 1/2 teaspoons turmeric',
+              '2  teaspoons dried thyme',
+              '2 cups low sodium chicken stock',
+              '2 cups water (OR you can use an additional 2 cups stock)',
+              '1 can (28oz) fire roasted tomatoes',
+              '1 tablespoon sea salt',
+              '1 tablespoon pepper',
+              '1 cup frozen peas',
               'Garnish',
               'fresh parsley'
             ],
@@ -2088,21 +2088,21 @@ mongoose.connect(
             image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2020/02/mediterranean-salmon-tomato-1.jpg',
             ingredients: [
               '4 Roma tomatoes',
-                'Salmon',
-                '10oz raw (wild caught) salmon',
-                '1 tablespoon The Fit Cook Sea Blend',
-                'Substitute: 1/2 teaspoon turmeric + pinch of sea salt + 1 teaspoon cracked pepper + 1 tablespoon of lemon zest',
-                '1 teaspoon olive oil',
-                '3 tablespoons olive oil, divided into 2 portions',
-                '1/2 cup diced white onion',
-                '1 tablespoon garlic, minced',
-                '2 tablespoons capers',
-                '1 1/2 cups chicken broth',
-                '1 tablespoon tomato paste',
-                '2 teaspoons lemon zest',
-                '2 teaspoons oregano',
-                '1 teaspoon dried thyme',
-                'sea salt &  pepper to taste',
+              'Salmon',
+              '10oz raw (wild caught) salmon',
+              '1 tablespoon The Fit Cook Sea Blend',
+              'Substitute: 1/2 teaspoon turmeric + pinch of sea salt + 1 teaspoon cracked pepper + 1 tablespoon of lemon zest',
+              '1 teaspoon olive oil',
+              '3 tablespoons olive oil, divided into 2 portions',
+              '1/2 cup diced white onion',
+              '1 tablespoon garlic, minced',
+              '2 tablespoons capers',
+              '1 1/2 cups chicken broth',
+              '1 tablespoon tomato paste',
+              '2 teaspoons lemon zest',
+              '2 teaspoons oregano',
+              '1 teaspoon dried thyme',
+              'sea salt &  pepper to taste',
               'Garnish',
               'fresh parsley',
               'zaatar'
@@ -2183,20 +2183,20 @@ mongoose.connect(
               '1 medium carrot, finely grated',
               '2/3 cup diced (white) onion',
               '4 tablespoons Berbere seasoning, divided',
-                'Substitute mix',
-                  '2 tablespoons (sweet or smoked) paprika',
-                  '1 1/2 tablespoons ground dried red chilies',
-                  '1/2 teaspoon turmeric',
-                  '1 teaspoon ground coriander seeds',
-                  '1 teaspoon ground cumin seeds',
-                  '½ teaspoon ground fenugreek seeds',
-                  '1 teaspoon ground black peppercorns',
-                  '¼ teaspoon nutmeg',
-                  '½ teaspoon ginger',
-                  '¼ teaspoon cinnamon',
-                  '1 teaspoon ground cardamom',
-                  '1/2 teaspoon (or more) garlic powder',
-                  'pinch of salt',
+              'Substitute mix',
+              '2 tablespoons (sweet or smoked) paprika',
+              '1 1/2 tablespoons ground dried red chilies',
+              '1/2 teaspoon turmeric',
+              '1 teaspoon ground coriander seeds',
+              '1 teaspoon ground cumin seeds',
+              '½ teaspoon ground fenugreek seeds',
+              '1 teaspoon ground black peppercorns',
+              '¼ teaspoon nutmeg',
+              '½ teaspoon ginger',
+              '¼ teaspoon cinnamon',
+              '1 teaspoon ground cardamom',
+              '1/2 teaspoon (or more) garlic powder',
+              'pinch of salt',
               '5oz tomato paste (NOT sauce)',
               '1 1/2 lb 95% lean ground beef',
               '1 can (15oz) diced tomatoes, drained',
@@ -2281,7 +2281,7 @@ mongoose.connect(
               '11oz (306g) canned (albacore) tuna, drained',
               '2 teaspoons smoked paprika',
               '1 red bell pepper, diced',
-              '1 1/2 cups raw or frozen broccoli florets (TIP: if raw, lightly steam and soften in the microwave for 4 – 5 minutes)', 
+              '1 1/2 cups raw or frozen broccoli florets (TIP: if raw, lightly steam and soften in the microwave for 4 – 5 minutes)',
               'add water or chicken broth if needed for added moisture',
               'sea salt & pepper to taste'
             ],

@@ -3,10 +3,7 @@ import axios from 'axios'
 import 'bulma'
 import { Link } from 'react-router-dom'
 import Hero from './components/Hero'
-
-
 class DisplayRecipes extends React.Component {
-
   constructor() {
     super()
     this.state = {
@@ -36,24 +33,30 @@ class DisplayRecipes extends React.Component {
       clickedTags: []
     }
   }
-
   handleTags() {
-    const clickedTags = this.state.clickedTags
-    if (event.innerHTML === event.target.value) {
-      // console.log('same')
-      event.target.style.backgroundColor = 'blue'
-      clickedTags.push(event.target.innerHTML)
-      this.setState({ clickedTags })
+    const clickedTags = [...this.state.clickedTags]
+    console.log(event.target.value)
+    if (clickedTags.includes(event.target.innerHTML)) {
+      clickedTags.splice(clickedTags.indexOf(event.target.innerHTML), 1)
+      event.target.style.backgroundColor = 'transparent'
 
-      const filteredRecipes = 
+    } else {
+      clickedTags.push(event.target.innerHTML)
+      event.target.style.backgroundColor = 'blue'
+    }
+
+    this.setState({ clickedTags })
+    const filteredRecipes =
       this.state.recipeList.filter((recipe) => {
-        return recipe.tags.some((recipeTag) => {
-          return clickedTags.includes(recipeTag.toLowerCase())
+        return clickedTags.every((recipeTag) => {
+          return recipe.tags.includes(recipeTag.toLowerCase())
+          
+
+
         })
       })
-      // console.log('filteredRecipes: ', filteredRecipes)
-      this.setState({ filteredRecipes })
-    }
+    
+    this.setState({ filteredRecipes })
 
     // clickedTags
     // clickedTags.map((clickedTag) => {
@@ -63,13 +66,9 @@ class DisplayRecipes extends React.Component {
     //         return recipe
     //       }
     //     })
-
-
     //   })
     // })
   }
-
-
   componentDidMount() {
     axios.get('/api/recipes')
       .then((res) => this.setState({ recipeList: res.data, filteredRecipes: res.data }))
@@ -81,16 +80,16 @@ class DisplayRecipes extends React.Component {
       <section className="section">
         <div className="field is-grouped is-grouped-multiline">
           {this.state.tags.map((tag, key) => {
-            return <p
+            return <div
               key={key}
               className="control"
             >
               <a className="button tag"
+                value={'hello'}
                 onClick={() => this.handleTags(event)}>
                 {tag}
               </a>
-            </p>
-
+            </div>
           })}
         </div>
         <div className="container">
@@ -112,9 +111,7 @@ class DisplayRecipes extends React.Component {
                       <h2 className="subtitle">{recipe.recipeName}</h2>
                     </div>
                   </div>
-
                 </Link>
-
               </div>
             })}
           </div>
@@ -122,8 +119,7 @@ class DisplayRecipes extends React.Component {
       </section>
     </>
   }
-
-
 }
-
 export default DisplayRecipes
+
+
