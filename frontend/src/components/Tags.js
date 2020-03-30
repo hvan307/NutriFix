@@ -7,8 +7,7 @@ const Tags = ({ staticTags, handleTag }) => {
           key={key}
           className="control"
         >
-          <a className="button tag"
-            style={{ backgroundColor: 'white' }}
+          <a className="button tag is-transparent"
             onClick={handleTag}
           >
             {tag}
