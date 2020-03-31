@@ -17,6 +17,25 @@ html, body {
   background-size: cover;
   margin-top: 57px;
 }
+.hero-body.home-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.homepage-text {
+  color: white;
+  font-size: 80px;
+}
+.title-hero {
+  align-self: center;
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 div.tile.is-child {
   margin: 10px !important;

@@ -69,7 +69,6 @@ function createRecipe(req, res) {
     })
 }
 
-
 module.exports = {
   allRecipes,
   singleRecipe,

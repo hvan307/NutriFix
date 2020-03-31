@@ -13,10 +13,10 @@ const Hero = () => {
     <div className="hero-body">
       <div className="container has-text-centered">
         <p className="title">
-          NUTRIFIX
+          NutriFix<small>™</small>
         </p>
         <p className="subtitle">
-          MAKING NUTRITION QUICK AND EASY
+          Making Nutrition Quick And Easy
         </p>
       </div>
     </div>
