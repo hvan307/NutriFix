@@ -61,7 +61,7 @@ class DisplaySingleRecipe extends React.Component {
             className="button is-warning"
           >
             <Link to={`/recipe/${recipe._id}/edit`}>
-              Edit cheese
+              Edit Recipe
             </Link>
           </button>}
           <div className="tile is-child box">
