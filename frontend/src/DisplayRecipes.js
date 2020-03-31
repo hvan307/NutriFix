@@ -3,6 +3,8 @@ import axios from 'axios'
 import 'bulma'
 import { Link } from 'react-router-dom'
 import Hero from './components/Hero'
+// import Spinner from './components/Spinner'
+
 class DisplayRecipes extends React.Component {
   constructor() {
     super()
@@ -49,12 +51,9 @@ class DisplayRecipes extends React.Component {
       this.state.recipeList.filter((recipe) => {
         return clickedTags.every((recipeTag) => {
           return recipe.tags.includes(recipeTag.toLowerCase())
-          
-
-
         })
       })
-    
+
     this.setState({ filteredRecipes })
 
     // clickedTags
@@ -69,11 +68,17 @@ class DisplayRecipes extends React.Component {
     // })
   }
   componentDidMount() {
+    // setTimeout(() => {
     axios.get('/api/recipes')
       .then((res) => this.setState({ recipeList: res.data, filteredRecipes: res.data }))
     // console.log(this.state.recipeList)
+    // }, 1000)
+
   }
   render() {
+    // if (!this.state.recipeList || !this.state.filteredRecipes) {
+    //   return <Spinner />
+    // } else {
     return <>
       <Hero />
       <section className="section">
@@ -103,7 +108,7 @@ class DisplayRecipes extends React.Component {
                   <div className="card">
                     <div className="card-image">
                       <figure className="card-image is-3by3">
-                        <img src={recipe.image}></img>
+                        <img src={recipe.image} className="recipe-image"></img>
                       </figure>
                     </div>
                     <div className="card-content">
@@ -119,6 +124,7 @@ class DisplayRecipes extends React.Component {
     </>
   }
 }
+
 export default DisplayRecipes
 
 

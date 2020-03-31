@@ -23,6 +23,7 @@ class FoodSearchBar extends React.Component {
     this.setState({ query })
   }
 
+
   handleSubmit(event) {
     event.preventDefault()
     // setTimeout(() => {
@@ -33,14 +34,9 @@ class FoodSearchBar extends React.Component {
       })
       .catch(err => console.error(err))
     // }, 1000)
-
   }
 
-
   render() {
-    // if (!this.state.query) {
-    //   return <Spinner />
-    // } else {
     return <section className="section">
       <div className="container">
         <FoodSearchForm
@@ -58,18 +54,17 @@ class FoodSearchBar extends React.Component {
               <p>Carbohydrates: {parse.food.nutrients.CHOCDF}g</p>
               <p>Fat: {parse.food.nutrients.FAT}g</p>
               <p>Fiber: {parse.food.nutrients.FIBTG}g</p>
-
             </div>
-
-
           })
           }
+
+
         </div>
       </div>
     </section>
-    // }
-    //   }
   }
+  //   }
 }
+// }
 
 export default FoodSearchBar
