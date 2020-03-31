@@ -48,6 +48,7 @@ class FoodSearchBar extends React.Component {
           query={this.state.query}
         />
         <div className="food-card">
+
           {!this.state.query ? null : this.state.parsed.map((parse, key) => {
             return <div key={key}>
               <h4>{parse.food.label}</h4>
@@ -57,6 +58,10 @@ class FoodSearchBar extends React.Component {
               <p className="nutrients">Carbohydrates: {parse.food.nutrients.CHOCDF}g</p>
               <p className="nutrients">Fat: {parse.food.nutrients.FAT}g</p>
               <p className="nutrients">Fiber: {parse.food.nutrients.FIBTG}g</p>
+              <button
+                onClick={() => this.handleAddItem()}
+              >
+                Add to Shopping List</button>
 
             </div>
           })
