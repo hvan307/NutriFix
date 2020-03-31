@@ -42,7 +42,7 @@ class DisplaySingleRecipe extends React.Component {
 
   render() {
     const recipe = this.state.recipes
-    return <>
+    return <div id="big-container">
       {/* <Hero/> */}
       <div className="tile is-ancestor">
         <div className="tile is-4 is-vertical is-parent">
@@ -106,7 +106,7 @@ class DisplaySingleRecipe extends React.Component {
         
         </div>
       </div>
-    </>
+    </div>
   }
 }
 

@@ -54,11 +54,11 @@ const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, dat
             Ingredients
           </label>
           <div className="control">
-            <input
+            <textarea
               onChange={(event) => handleChange(event)}
               type="text"
               name="ingredients"
-              className="input"
+              className="textarea"
               value={ingredients}
             />
           </div>
@@ -71,11 +71,11 @@ const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, dat
             Instructions
           </label>
           <div className="control">
-            <input
+            <textarea
               onChange={(event) => handleChange(event)}
               type="text"
               name="instructions"
-              className="input"
+              className="textarea"
               value={instructions}
             />
           </div>

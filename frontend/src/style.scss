@@ -15,13 +15,13 @@ html, body {
   background-image: url('https://visitindianrivercounty.com/wp-content/uploads/2015/12/iStock_76355911_LARGE.jpg');
   // background-position: center;
   background-size: cover;
-  // margin-top: 50px;
+  margin-top: 57px;
 }
 
-.hero-body {
-  margin-top: 50px;
+// .hero-body {
+//   margin-top: 50px;
 
-}
+// }
 
 div.tile.is-child {
   margin: 10px !important;
@@ -68,17 +68,26 @@ li {
 }
 
 .navbar {
-  position: fixed;
+  // position: fixed;
   width: 100%;
-  background-color: rgba($color: #ffffff, $alpha: 0.7)
+  background-color: rgba($color: #ffffff, $alpha: 0.7);
+  // margin-bottom: 50px;
 }
 
-// .navbar-item {
-//   background-color: transparent;
-// }
+.navbar-menu {
+  background-color: transparent;
+}
 
-// .card {
-//   height: 300px
-// }
-=======
->>>>>>> 402affa1eabe9b7704b5dc9d8627d7987d09edb3
+.a.navbar-item {
+  background-color: transparent;
+}
+
+#big-container {
+  margin-top: 70px;
+}
+
+.navbar-logo {
+  position: relative;
+  margin-left: 20px;
+  margin-top: 8px;
+}

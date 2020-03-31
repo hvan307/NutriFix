@@ -52,14 +52,15 @@ mongoose.connect(
               'fresh parsley'
             ],
             instructions: [
-              '1. Set oven to 400F.',
-              '2. Place cauliflower in a microwave safe bowl and cook in the microwave – according to instructions given – for 6 to 8 minutes, or until the cauliflower is soft.  Set aside.',
-              '3. Set a large skillet on medium heat.  Once hot, add oil, garlic, onion, mushrooms and celery and sauté for 2 to 3 minutes, then sprinkle in seasoning and cook for an additional 1 minute.',
-              '4. Add the meatless crumbles and chop it up as it cooks in the skillet.  Continue folding the ingredients as they cook for 2 to 3 additional minutes.',
-              '5. Add lentils, tomatoes, frozen peas & carrots and fold everything together.  Then add BBQ sauce and dijon mustard, and finally the veggie broth.  Bring to a light simmer, then reduce the heat to low and cover and cook while you prepare the topping.',
-              '6. In a large bowl add the ingredients for the topping.  Use a potato masher OR an immersion blender to whip together the cauliflower mash.',
-              '7. Remove the cover from the skillet and remove from the heat.  Use a spatula to evenly spread the cauliflower mash on top, then use the back of a fork to spread it out to create a textured top.',
-              '8. Place the shepherd’s pie in the oven to bake for 20 minutes. 9. After baking let it cool  down for 15 to 20 minutes, then garnish and enjoy!'
+              'Set oven to 400F.',
+              'Place cauliflower in a microwave safe bowl and cook in the microwave – according to instructions given – for 6 to 8 minutes, or until the cauliflower is soft.  Set aside.',
+              'Set a large skillet on medium heat.  Once hot, add oil, garlic, onion, mushrooms and celery and sauté for 2 to 3 minutes, then sprinkle in seasoning and cook for an additional 1 minute.',
+              'Add the meatless crumbles and chop it up as it cooks in the skillet.  Continue folding the ingredients as they cook for 2 to 3 additional minutes.',
+              'Add lentils, tomatoes, frozen peas & carrots and fold everything together.  Then add BBQ sauce and dijon mustard, and finally the veggie broth.  Bring to a light simmer, then reduce the heat to low and cover and cook while you prepare the topping.',
+              'In a large bowl add the ingredients for the topping.  Use a potato masher OR an immersion blender to whip together the cauliflower mash.',
+              'Remove the cover from the skillet and remove from the heat.  Use a spatula to evenly spread the cauliflower mash on top, then use the back of a fork to spread it out to create a textured top.',
+              'Place the shepherd’s pie in the oven to bake for 20 minutes.',
+              'After baking let it cool  down for 15 to 20 minutes, then garnish and enjoy!'
             ],
             calories: 330,
             macronutrients: {
@@ -90,7 +91,9 @@ mongoose.connect(
               '2 tablespoons low sodium soy sauce',
               '1 tablespoon black sesame seeds'
             ],
-            instructions: '1. Set air-fryer to 350F (or set oven to 400F). 2. Fill the air fryer basket (or a baking tray lined with parchment) with the wonton wrapper slices.  Lightly spray the chips with avocado oil, then air fry (or bake) for 4 to 6 minutes, or until the edges are brown and crispy. 3. To a large bowl, add the remaining ingredients and gently fold everything together. 4. Add low sodium soy sauce and ginger to taste.',
+            instructions: 'Set air-fryer to 350F (or set oven to 400F).', 'Fill the air fryer basket (or a baking tray lined with parchment) with the wonton wrapper slices.  Lightly spray the chips with avocado oil, then air fry (or bake) for 4 to 6 minutes, or until the edges are brown and crispy.',
+            'To a large bowl, add the remaining ingredients and gently fold everything together.',
+            'Add low sodium soy sauce and ginger to taste.'
             calories: 384,
             macronutrients: {
               protein: '28g',

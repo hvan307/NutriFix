@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import auth from '../lib/auth'
+import { withRouter } from 'react-router-dom'
 
 class NavBar extends React.Component {
 
@@ -13,19 +14,29 @@ class NavBar extends React.Component {
 
   HandleLogout() {
     auth.logOut()
-    // this.props.history.push('/recipes')
+    this.props.history.push('/recipes')
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.location.pathname !== prevProps.location.pathname) {
+      this.setState({ navMobileOpen: false })
+    }
   }
 
   render() {
     const isLoggedIn = auth.isLoggedIn()
 
-    return <nav className="navbar" role="navigation" aria-label="main navigation">
+    return <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <Link className="navbar-item" to="/recipes">
-          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28" />
+        <Link className="navbar-logo" to="/recipes">
+          <img src={('../images/LogoMakr_7lMK7T.png')} alt="Logo" width="112" height="28" />
         </Link>
 
-        <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false"
+        <a
+          role="button"
+          className={`navbar-burger burger is-transparent ${this.state.navMobileOpen ? 'is-active' : ''}`}
+          aria-label="menu"
+          aria-expanded="false"
           onClick={() => this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
 
           <span aria-hidden="true"></span>
@@ -35,36 +46,26 @@ class NavBar extends React.Component {
       </div>
       <div className={`navbar-menu ${this.state.navMobileOpen ? 'is-active' : ''}`}>
         <div className="navbar-item">
-          <Link to="/recipes" className="navbar-item is-active"
-            onClick={() => this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
+          <Link to="/recipes"
+          // onClick={() => this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
+          >
             Home
           </Link>
         </div>
-        <div className="navbar-item">
-          {!isLoggedIn &&
-            <Link to="/register" className="navbar-item is-active" onClick={() => this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
-              Register
-            </Link>
-          }
-        </div>
-        <div className="navbar-item">
-          {!isLoggedIn &&
-            <Link to="/login" className="navbar-item is-active" onClick={() => this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
-              Login
-            </Link>
-          }
-        </div>
-        <div className="navbar-item">
-          {isLoggedIn &&
-            <Link to="/recipes" className="navbar-item is-active"
-              onClick={() =>
-                this.HandleLogout() && this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
-              Log out
-            </Link>
-          }
-        </div>
+        {!isLoggedIn && <div className="navbar-item">
+          <Link to="/register">Register</Link>
+        </div>}
+        {!isLoggedIn && <div className="navbar-item">
+          <Link to="/login">Login</Link>
+        </div>}
+        {isLoggedIn && <div
+          className="navbar-item"
+          onClick={() => this.HandleLogout()}
+        >
+          Log out
+        </div>}
       </div>
     </nav>
   }
 }
-export default NavBar
+export default withRouter(NavBar)
