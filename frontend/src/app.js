@@ -10,6 +10,7 @@ import MyRecipes from './MyRecipes'
 import NewRecipe from './components/NewRecipe'
 import Navbar from './components/NavBar'
 import FoodSearchBar from './components/FoodSearchBar'
+import EditRecipe from './components/EditRecipe'
 
 const App = () => {
   return <BrowserRouter>
@@ -17,6 +18,7 @@ const App = () => {
     <Switch>
       <Route exact path="/recipe/:id" component={DisplaySingleRecipe} />
       <Route exact path="/myrecipe/new" component={NewRecipe} />
+      <Route exact path="/recipe/:id/edit" component={EditRecipe}/>
       <Route exact path="/register" component={Register}/>
       <Route exact path="/myrecipes" component={MyRecipes} />
       <Route exact path="/recipes" component={DisplayRecipes} />

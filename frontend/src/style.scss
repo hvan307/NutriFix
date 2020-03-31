@@ -78,7 +78,8 @@ li {
 // }
 
 // .card {
-//   height: 300px
+//   height: 300px;
+//   margin-bottom: 100px;
 // }
 
 
@@ -92,4 +93,18 @@ li {
 img.recipe-image {
   height: 250px;
   width: 100%;
+}
+.ingredients-box {
+  max-height: 535px;
+  overflow: hidden scroll;
+}
+.flex-parent {
+  display: flex;
+  flex-direction: column;
+}
+.field.is-grouped {
+  display: flex;
+  flex-direction: row;
+  // flex-wrap: wrap;
+  justify-content: center;
 }

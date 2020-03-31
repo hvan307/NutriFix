@@ -36,7 +36,6 @@ class DisplayRecipes extends React.Component {
   }
   handleTags() {
     const clickedTags = [...this.state.clickedTags]
-    console.log(event.target.value)
     if (clickedTags.includes(event.target.innerHTML)) {
       clickedTags.splice(clickedTags.indexOf(event.target.innerHTML), 1)
       event.target.style.backgroundColor = 'transparent'

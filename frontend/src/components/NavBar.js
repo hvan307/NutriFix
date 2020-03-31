@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import auth from '../lib/auth'
+import { withRouter } from 'react-router-dom'
 
 class NavBar extends React.Component {
 
@@ -13,7 +14,7 @@ class NavBar extends React.Component {
 
   HandleLogout() {
     auth.logOut()
-    // console.log(this.props)
+    this.props.history.push('/recipes')
   }
 
   render() {
@@ -40,31 +41,20 @@ class NavBar extends React.Component {
             Home
           </Link>
         </div>
-        <div className="navbar-item">
-          {!isLoggedIn &&
-            <Link to="/register" className="navbar-item is-active" onClick={() => this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
-              Register
-            </Link>
-          }
-        </div>
-        <div className="navbar-item">
-          {!isLoggedIn &&
-            <Link to="/login" className="navbar-item is-active" onClick={() => this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
-              Login
-            </Link>
-          }
-        </div>
-        <div className="navbar-item">
-          {isLoggedIn &&
-            <Link to="/recipes" className="navbar-item is-active"
-              onClick={() =>
-                this.HandleLogout() && this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
-              Log out
-            </Link>
-          }
-        </div>
+        {!isLoggedIn && <div className="navbar-item">
+          <Link to="/register">Register</Link>
+        </div>}
+        {!isLoggedIn && <div className="navbar-item">
+          <Link to="/login">Login</Link>
+        </div>}
+        {isLoggedIn && <div
+          className="navbar-item"
+          onClick={() => this.HandleLogout()}
+        >
+          Log out
+        </div>}
       </div>
     </nav>
   }
 }
-export default NavBar
+export default withRouter(NavBar)
