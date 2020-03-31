@@ -58,6 +58,13 @@ class DisplaySingleRecipe extends React.Component {
           >
             {'Delete Recipe'}
           </button>}
+          {this.isOwner() && <button
+            className="button is-warning"
+          >
+            <Link to={`/recipe/${recipe._id}/edit`}>
+              Edit Recipe
+            </Link>
+          </button>}
           <div className="tile is-child box">
             <p className="recipeTitle">Macros</p>
             <p>Protein: {recipe.macronutrients.protein}</p>
