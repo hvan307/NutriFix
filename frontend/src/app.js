@@ -12,6 +12,7 @@ import Navbar from './components/NavBar'
 import FoodSearchBar from './components/FoodSearchBar'
 import EditRecipe from './components/EditRecipe'
 import WelcomePage from './components/WelcomePage'
+import ShoppingList from './components/ShoppingList'
 
 const App = () => {
   return <BrowserRouter>
@@ -25,8 +26,8 @@ const App = () => {
       <Route exact path="/recipes" component={DisplayRecipes} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/foodsearch" component={FoodSearchBar} />
+      <Route exact path="/shoppinglist" component={ShoppingList} />
       <Route exact path="/" component={WelcomePage} />
-
     </Switch>
   </BrowserRouter>
 }
