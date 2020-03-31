@@ -9,7 +9,7 @@ const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, dat
        Your Recipe
       </div>
       <div className="subtitle has-text-centered">
-        Add your own recipe to the mix, so you don't lose it the next time you look for a dose of NutriFix!
+        Add your own recipe to the mix, so you dont lose it the next time you look for a dose of NutriFix!
       </div>
       <form
         className="form"

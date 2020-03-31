@@ -91,9 +91,10 @@ mongoose.connect(
               '2 tablespoons low sodium soy sauce',
               '1 tablespoon black sesame seeds'
             ],
-            instructions: 'Set air-fryer to 350F (or set oven to 400F).', 'Fill the air fryer basket (or a baking tray lined with parchment) with the wonton wrapper slices.  Lightly spray the chips with avocado oil, then air fry (or bake) for 4 to 6 minutes, or until the edges are brown and crispy.',
-            'To a large bowl, add the remaining ingredients and gently fold everything together.',
-            'Add low sodium soy sauce and ginger to taste.'
+            instructions: ['Set air-fryer to 350F (or set oven to 400F).', 'Fill the air fryer basket (or a baking tray lined with parchment) with the wonton wrapper slices.  Lightly spray the chips with avocado oil, then air fry (or bake) for 4 to 6 minutes, or until the edges are brown and crispy.',
+              'To a large bowl, add the remaining ingredients and gently fold everything together.',
+              'Add low sodium soy sauce and ginger to taste.'
+            ],
             calories: 384,
             macronutrients: {
               protein: '28g',

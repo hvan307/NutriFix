@@ -18,11 +18,6 @@ html, body {
   margin-top: 57px;
 }
 
-// .hero-body {
-//   margin-top: 50px;
-
-// }
-
 div.tile.is-child {
   margin: 10px !important;
 }
@@ -90,4 +85,23 @@ li {
   position: relative;
   margin-left: 20px;
   margin-top: 8px;
+}
+
+img.recipe-image {
+  height: 250px;
+  width: 100%;
+}
+.ingredients-box {
+  max-height: 535px;
+  overflow: hidden scroll;
+}
+.flex-parent {
+  display: flex;
+  flex-direction: column;
+}
+.field.is-grouped {
+  display: flex;
+  flex-direction: row;
+  // flex-wrap: wrap;
+  justify-content: center;
 }

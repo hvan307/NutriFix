@@ -46,8 +46,9 @@ class DisplaySingleRecipe extends React.Component {
       {/* <Hero/> */}
       <div className="tile is-ancestor">
         <div className="tile is-4 is-vertical is-parent">
-          <h1 className="recipe title">{recipe.recipeName}</h1>
+
           <div className="tile is-child box">
+            <h1 className="recipe title">{recipe.recipeName}</h1>
             <img src={recipe.image} />
             {/* {console.log(recipe)} */}
           </div>
@@ -56,6 +57,13 @@ class DisplaySingleRecipe extends React.Component {
             className="button is-danger"
           >
             {'Delete Recipe'}
+          </button>}
+          {this.isOwner() && <button
+            className="button is-warning"
+          >
+            <Link to={`/recipe/${recipe._id}/edit`}>
+              Edit Recipe
+            </Link>
           </button>}
           <div className="tile is-child box">
             <p className="recipeTitle">Macros</p>
@@ -66,6 +74,22 @@ class DisplaySingleRecipe extends React.Component {
             <p>Calories: {recipe.calories}</p> <br />
             <p>Servings: {recipe.servings}</p> <br />
             <p>Total Time: {recipe.totalTime}</p>
+          </div>
+
+        </div>
+        <div className="tile is-parent flex-parent">
+          <div className="tile is-parent">
+            <div className="tile is-child box ingredients-box">
+              <h1 className="title title-cross">Ingredients
+              </h1>
+              <ul>
+                {this.state.recipes.ingredients.map((ingredient, key) => {
+                  return <li key={key}>
+                    {ingredient}
+                  </li>
+                })}
+              </ul>
+            </div>
           </div>
           <div className="tile is-child box">
             <p className="recipeTitle title-cross">Categories
@@ -79,32 +103,20 @@ class DisplaySingleRecipe extends React.Component {
             </ul>
           </div>
         </div>
-        <div className="tile is-parent">
-          <div className="tile is-child box">
-            <h1 className="title title-cross">Ingredients
-            </h1>
-            <ul>
-              {this.state.recipes.ingredients.map((ingredient, key) => {
-                return <li key={key}>
-                  {ingredient}
-                </li>
-              })}
-            </ul>
-          </div>
-          <div className="tile is-child box">
-            <h1 className="title title-cross">Instructions
-              <Link className="delete" to="/recipes"></Link>
-            </h1>
-            <ol>
-              {this.state.recipes.instructions.map((step, key) => {
-                return <li key={key}>
-                  {step}
-                </li>
-              })}
-            </ol>
-          </div>
-        
+        <div className="tile is-child box">
+          <h1 className="title title-cross">Instructions
+            <Link className="delete" to="/recipes"></Link>
+          </h1>
+          <ol>
+            {this.state.recipes.instructions.map((step, key) => {
+              return <li key={key}>
+                {step}
+              </li>
+            })}
+          </ol>
         </div>
+
+
       </div>
     </div>
   }

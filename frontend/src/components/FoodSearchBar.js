@@ -23,9 +23,13 @@ class FoodSearchBar extends React.Component {
     this.setState({ query })
   }
 
+
   handleSubmit(event) {
+
     event.preventDefault()
     // setTimeout(() => {
+    // console.log(nutrients.innerHTML)
+    // console.log(event)
     axios.get(`https://api.edamam.com/api/food-database/parser?ingr=${this.state.query}&app_id=456922e8&app_key=ab36bb266c8b99d0bfedb91299cf6bf3`)
       .then(res => {
         console.log(res.data)
@@ -33,14 +37,9 @@ class FoodSearchBar extends React.Component {
       })
       .catch(err => console.error(err))
     // }, 1000)
-
   }
 
-
   render() {
-    // if (!this.state.query) {
-    //   return <Spinner />
-    // } else {
     return <section className="section">
       <div className="container">
         <FoodSearchForm
@@ -53,23 +52,23 @@ class FoodSearchBar extends React.Component {
             return <div key={key}>
               <h4>{parse.food.label}</h4>
               <img src={parse.food.image} alt={parse.food.label} />
-              <p>Calories: {parse.food.nutrients.ENERC_KCAL}kcal</p>
-              <p>Protein: {parse.food.nutrients.PROCNT}g</p>
-              <p>Carbohydrates: {parse.food.nutrients.CHOCDF}g</p>
-              <p>Fat: {parse.food.nutrients.FAT}g</p>
-              <p>Fiber: {parse.food.nutrients.FIBTG}g</p>
+              <p className="nutrients">Calories: {parse.food.nutrients.ENERC_KCAL}kcal</p>
+              <p className="nutrients">Protein: {parse.food.nutrients.PROCNT}g</p>
+              <p className="nutrients">Carbohydrates: {parse.food.nutrients.CHOCDF}g</p>
+              <p className="nutrients">Fat: {parse.food.nutrients.FAT}g</p>
+              <p className="nutrients">Fiber: {parse.food.nutrients.FIBTG}g</p>
 
             </div>
-
-
           })
           }
+
+
         </div>
       </div>
     </section>
-    // }
-    //   }
   }
+  //   }
 }
+// }
 
 export default FoodSearchBar
