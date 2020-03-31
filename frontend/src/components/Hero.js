@@ -5,7 +5,7 @@ import auth from '../lib/auth'
 
 const Hero = () => {
   const isLoggedIn = auth.isLoggedIn()
-  return <section className="hero is-info is-medium-with-navbar">
+  return <section className="hero is-info is-medium">
     {/* <div className="hero-head"> */}
     {/* <NavBar /> */}
     {/* </div> */}
@@ -13,10 +13,10 @@ const Hero = () => {
     <div className="hero-body">
       <div className="container has-text-centered">
         <p className="title">
-          NUTRIFIX
+          NutriFix<small>™</small>
         </p>
         <p className="subtitle">
-          MAKING NUTRITION QUICK AND EASY
+          Making Nutrition Quick And Easy
         </p>
       </div>
     </div>

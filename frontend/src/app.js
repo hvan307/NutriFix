@@ -11,19 +11,22 @@ import NewRecipe from './components/NewRecipe'
 import Navbar from './components/NavBar'
 import FoodSearchBar from './components/FoodSearchBar'
 import EditRecipe from './components/EditRecipe'
+import WelcomePage from './components/WelcomePage'
 
 const App = () => {
   return <BrowserRouter>
     <Navbar />
     <Switch>
+      <Route exact path="/recipe/:id/edit" component={EditRecipe}/>
       <Route exact path="/recipe/:id" component={DisplaySingleRecipe} />
       <Route exact path="/myrecipe/new" component={NewRecipe} />
-      <Route exact path="/recipe/:id/edit" component={EditRecipe}/>
       <Route exact path="/register" component={Register}/>
       <Route exact path="/myrecipes" component={MyRecipes} />
       <Route exact path="/recipes" component={DisplayRecipes} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/foodsearch" component={FoodSearchBar} />
+      <Route exact path="/" component={WelcomePage} />
+
     </Switch>
   </BrowserRouter>
 }
