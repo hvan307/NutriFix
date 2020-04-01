@@ -47,7 +47,7 @@ class ShoppingList extends React.Component {
   
   render() {
     const { todos } = this.state
-    return <section className="section">
+    return <section className="section" scroll="no" height="100%">
       <div className="container">
         <h1>You have {this.countRemainingTodos()} thing(s) to get!</h1>
         <ul>
