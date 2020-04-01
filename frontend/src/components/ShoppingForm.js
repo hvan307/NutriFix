@@ -1,5 +1,4 @@
 import React from 'react'
-
 const ShoppingForm = (props) => {
   const { newIngredient, onChange, onSubmit } = props
   return <section className="section">
