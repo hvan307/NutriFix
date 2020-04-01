@@ -1,5 +1,6 @@
 import React from 'react'
 import ShoppingForm from './ShoppingForm'
+
 class ShoppingList extends React.Component {
   constructor() {
     super()
@@ -8,9 +9,11 @@ class ShoppingList extends React.Component {
       todos: []
     }
   }
+
   handleChange(event) {
     this.setState({ newIngredient: event.target.value })
   }
+
   handleSubmit(event) {
     event.preventDefault()
     const ingredient = {
@@ -25,6 +28,7 @@ class ShoppingList extends React.Component {
     })
     console.log(updatedTodos)
   }
+
   toggleCompleted(id) {
     console.log('toggling', id)
     const updatedTodos = this.state.todos.map(todo => {
@@ -35,11 +39,12 @@ class ShoppingList extends React.Component {
       newTask: ''
     })
   }
+
   countRemainingTodos() {
     const remainingTodos = this.state.todos.filter(todo => !todo.completed)
     return remainingTodos.length
   }
-  
+
   render() {
     const { todos } = this.state
     return <section className="section">
@@ -61,11 +66,14 @@ class ShoppingList extends React.Component {
                   
                   // value='completed'
                 />
+
               </label>
+
               {todo.task}
             </li>
           ))}
         </ul>
+
         <ShoppingForm
           onChange={() => this.handleChange(event)}
           onSubmit={() => this.handleSubmit(event)}

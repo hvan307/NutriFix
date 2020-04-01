@@ -105,7 +105,8 @@ li {
 
 
 .navbar {
-  // position: fixed;
+  // position: absolute !important;
+  
   width: 100%;
   background-color: rgba($color: #ffffff, $alpha: 0.7);
   // margin-bottom: 50px;
@@ -151,3 +152,4 @@ li {
 .field.is-grouped.is-grouped-multiline {
   margin-bottom: 30px !important;
 }
+
