@@ -4,7 +4,7 @@ import FoodSearchForm from './FoodSearchForm'
 import { Link } from 'react-router-dom'
 import auth from '../lib/auth'
 import Spinner from './Spinner'
-
+import Hero from './Hero'
 class FoodSearchBar extends React.Component {
   constructor() {
     super()
@@ -43,20 +43,28 @@ class FoodSearchBar extends React.Component {
 
 
   render() {
+
     if (!this.state.query) {
-      return <section className="section">
-        <div className="container">
-          <FoodSearchForm
-            handleChange={(event) => this.handleChange(event)}
-            handleSubmit={(event) => this.handleSubmit(event)}
-            query={this.state.query}
-          />
-          <Spinner />
-        </div>
-      </section>
+
+      return <>
+        <Hero />
+        <section className="section">
+          <div className="container">
+            <FoodSearchForm
+              handleChange={(event) => this.handleChange(event)}
+              handleSubmit={(event) => this.handleSubmit(event)}
+              query={this.state.query}
+            />
+            <Spinner />
+          </div>
+        </section>
+      </>
     } else {
       const isLoggedIn = auth.isLoggedIn()
-      return <section className="section">
+
+      return <>
+      <Hero />
+      <section className="section">
         <div className="container">
           <FoodSearchForm
             handleChange={(event) => this.handleChange(event)}
@@ -88,6 +96,7 @@ class FoodSearchBar extends React.Component {
           </div>
         </div>
       </section>
+      </>
     }
   }
 }

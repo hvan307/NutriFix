@@ -3,7 +3,8 @@ html, body {
   // margin-top: 50px;
 } 
 
-.title-cross {
+.title-cross,
+.recipe-cross {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -105,7 +106,8 @@ li {
 
 
 .navbar {
-  // position: fixed;
+  // position: absolute !important;
+  
   width: 100%;
   background-color: rgba($color: #ffffff, $alpha: 0.7);
   // margin-bottom: 50px;
@@ -129,10 +131,10 @@ li {
   margin-top: 8px;
 }
 
-// img.recipe-image {
-//   height: 250px;
-//   width: 100%;
-// }
+img.recipe-image {
+  height: 300px;
+  width: 100%;
+}
 .ingredients-box {
   max-height: 535px;
   overflow: hidden scroll;

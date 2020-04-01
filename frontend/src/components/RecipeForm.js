@@ -1,12 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Tags from './Tags'
 
 const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, data, staticTags, handleTag }) => {
   const { recipeName, image, ingredients, instructions, calories, servings, totalTime } = data
   return <section className="section">
-    <div className="container">
+    <div className="container ">
+      <div className="recipe-cross">
+        <div></div>
+        <Link className="delete" to="/recipes"></Link>
+      </div>
       <div className="title has-text-centered">
-       Your Recipe
+        Your Recipe
       </div>
       <div className="subtitle has-text-centered">
         Add your own recipe to the mix, so you dont lose it the next time you look for a dose of NutriFix!
