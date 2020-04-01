@@ -48,18 +48,20 @@ class DisplaySingleRecipe extends React.Component {
         <div className="tile is-4 is-vertical is-parent">
 
           <div className="tile is-child box">
-            <h1 className="recipe title">{recipe.recipeName}</h1>
-            <img src={recipe.image} />
+            <h2 className="recipe title">{recipe.recipeName}</h2>
+            <img src={recipe.image} className="single-recipe-img"/>
+            <p>Servings: {recipe.servings}</p>
+            <p>Total Time: {recipe.totalTime}</p>
             {/* {console.log(recipe)} */}
           </div>
           {this.isOwner() && <button
             onClick={() => this.handleDelete()}
-            className="button is-danger"
+            className="button edit-button is-danger"
           >
             {'Delete Recipe'}
           </button>}
           {this.isOwner() && <button
-            className="button is-warning"
+            className="button edit-button is-warning"
           >
             <Link to={`/recipe/${recipe._id}/edit`}>
               Edit Recipe
@@ -72,8 +74,6 @@ class DisplaySingleRecipe extends React.Component {
             <p>Fat: {recipe.macronutrients.fat}</p>
             <p>Sugar: {recipe.macronutrients.sugars}</p> <br />
             <p>Calories: {recipe.calories}</p> <br />
-            <p>Servings: {recipe.servings}</p> <br />
-            <p>Total Time: {recipe.totalTime}</p>
           </div>
 
         </div>
@@ -92,7 +92,7 @@ class DisplaySingleRecipe extends React.Component {
             </div>
           </div>
           <div className="tile is-child box">
-            <p className="recipeTitle title-cross">Categories
+            <p className="recipeTitle title-cross categories-box">Categories
             </p>
             <ul>
               {this.state.recipes.tags.map((category, key) => {
@@ -103,11 +103,11 @@ class DisplaySingleRecipe extends React.Component {
             </ul>
           </div>
         </div>
-        <div className="tile is-child box">
+        <div className="tile is-child box instructions-box">
           <h1 className="title title-cross">Instructions
             <Link className="delete" to="/recipes"></Link>
           </h1>
-          <ol>
+          <ol className="instructions-list">
             {this.state.recipes.instructions.map((step, key) => {
               return <li key={key}>
                 {step}
