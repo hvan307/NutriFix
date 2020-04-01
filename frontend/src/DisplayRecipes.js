@@ -38,11 +38,11 @@ class DisplayRecipes extends React.Component {
     const clickedTags = [...this.state.clickedTags]
     if (clickedTags.includes(event.target.innerHTML)) {
       clickedTags.splice(clickedTags.indexOf(event.target.innerHTML), 1)
-      event.target.style.backgroundColor = 'transparent'
+      event.target.classList.remove('tag-selected')
 
     } else {
       clickedTags.push(event.target.innerHTML)
-      event.target.style.backgroundColor = 'blue'
+      event.target.classList.add('tag-selected')
     }
 
     this.setState({ clickedTags })
@@ -75,9 +75,6 @@ class DisplayRecipes extends React.Component {
 
   }
   render() {
-    // if (!this.state.recipeList || !this.state.filteredRecipes) {
-    //   return <Spinner />
-    // } else {
     return <>
       <Hero />
       <section className="section">

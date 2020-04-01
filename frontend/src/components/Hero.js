@@ -12,7 +12,7 @@ const Hero = () => {
 
     <div className="hero-body">
       <div className="container has-text-centered">
-        <p className="title">
+        <p className="title nutrifix">
           NutriFix<small>™</small>
         </p>
         <p className="subtitle">
@@ -38,19 +38,14 @@ const Hero = () => {
                 <Link to="/myrecipe/new">New Recipe</Link>
               </li>
             }
-
-            {/* <li>
-              <a>Grid</a>
-            </li>
-            <li>
-              <a>Elements</a>
-            </li>
-            <li>
-              <a>Components</a>
-            </li> */}
             <li>
               <Link to="/foodsearch">Search Ingredients</Link>
             </li>
+            {isLoggedIn &&
+              <li>
+                <Link to ="/shoppinglist">Shopping List</Link>
+              </li>
+            }
           </ul>
         </div>
       </nav>

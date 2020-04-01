@@ -39,6 +39,7 @@ class ShoppingList extends React.Component {
     const remainingTodos = this.state.todos.filter(todo => !todo.completed)
     return remainingTodos.length
   }
+  
   render() {
     const { todos } = this.state
     return <section className="section">
@@ -51,11 +52,13 @@ class ShoppingList extends React.Component {
               key={todo.id}>
               <label
                 className="checkbox"
+                
               >
                 <input
                   type="checkbox"
                   onChange={() => this.toggleCompleted(todo.id)}
                   checked={todo.completed ? true : false}
+                  
                   // value='completed'
                 />
               </label>
