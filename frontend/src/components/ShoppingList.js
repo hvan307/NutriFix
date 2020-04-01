@@ -1,35 +1,16 @@
 import React from 'react'
 import ShoppingForm from './ShoppingForm'
-
 class ShoppingList extends React.Component {
   constructor() {
     super()
     this.state = {
       newIngredient: '',
-      todos: [
-        {
-          id: 1,
-          task: 'Make a todo app',
-          completed: false
-        },
-        {
-          id: 2,
-          task: 'Display the todos',
-          completed: false
-        },
-        {
-          id: 3,
-          task: 'Profit',
-          completed: false
-        }
-      ]
+      todos: []
     }
   }
-
   handleChange(event) {
     this.setState({ newIngredient: event.target.value })
   }
-
   handleSubmit(event) {
     event.preventDefault()
     const ingredient = {
@@ -44,7 +25,6 @@ class ShoppingList extends React.Component {
     })
     console.log(updatedTodos)
   }
-
   toggleCompleted(id) {
     console.log('toggling', id)
     const updatedTodos = this.state.todos.map(todo => {
@@ -55,17 +35,16 @@ class ShoppingList extends React.Component {
       newTask: ''
     })
   }
-
   countRemainingTodos() {
     const remainingTodos = this.state.todos.filter(todo => !todo.completed)
     return remainingTodos.length
   }
-
+  
   render() {
     const { todos } = this.state
     return <section className="section">
       <div className="container">
-        <h1>You have {this.countRemainingTodos()} thing(s) to do!</h1>
+        <h1>You have {this.countRemainingTodos()} thing(s) to get!</h1>
         <ul>
           {todos.map(todo => (
             <li
@@ -73,24 +52,24 @@ class ShoppingList extends React.Component {
               key={todo.id}>
               <label
                 className="checkbox"
-                onClick={() => this.toggleCompleted(todo.id)}
+                
               >
                 <input
                   type="checkbox"
+                  onChange={() => this.toggleCompleted(todo.id)}
+                  checked={todo.completed ? true : false}
+                  
                   // value='completed'
                 />
-
               </label>
-
               {todo.task}
             </li>
           ))}
         </ul>
-
         <ShoppingForm
           onChange={() => this.handleChange(event)}
           onSubmit={() => this.handleSubmit(event)}
-          newTask={this.state.newTask} />
+          newIngredient={this.state.newIngredient} />
       </div>
     </section>
   }
