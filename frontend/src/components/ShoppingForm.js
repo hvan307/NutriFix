@@ -1,7 +1,6 @@
 import React from 'react'
-
 const ShoppingForm = (props) => {
-  const { newTask, onChange, onSubmit } = props
+  const { newIngredient, onChange, onSubmit } = props
   return <section className="section">
     <div className="container">
       <form
@@ -11,8 +10,8 @@ const ShoppingForm = (props) => {
         <input
           className="input"
           name="task"
-          value={newTask}
-          placeholder="Task"
+          value={newIngredient}
+          placeholder="Add Item Here"
           onChange={onChange}
         />
         <button type="submit">Add</button>
@@ -20,5 +19,4 @@ const ShoppingForm = (props) => {
     </div>
   </section>
 }
-
 export default ShoppingForm
