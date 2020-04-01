@@ -77,6 +77,10 @@ li {
   box-shadow: 1px 1px #afaaaa;
 }
 
+.edit-button {
+  margin: 5px 15px;
+}
+
 .button.tag {
   background-color: white;
 } 
@@ -96,6 +100,9 @@ li {
     // border-radius: 4px;
 }
 
+.instructions-list {
+ margin-left: 20px;
+}
 
 .button.tag.tag-selected {
   // background-color: #79767660;
@@ -137,6 +144,12 @@ li {
   max-height: 535px;
   overflow: hidden scroll;
 }
+
+// .instructions-box {
+//   max-height: 700px;
+//   overflow: hidden scroll;
+// }
+
 .flex-parent {
   display: flex;
   flex-direction: column;
@@ -151,3 +164,20 @@ li {
 .field.is-grouped.is-grouped-multiline {
   margin-bottom: 30px !important;
 }
+
+.tile.is-parent {
+  padding: 0px !important;
+}
+
+.single-recipe-img {
+  padding-bottom: 20px;
+}
+
+// @font-face {  
+//   font-family: 'Fredericka the Great', cursive;  
+//   src: url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+// }
+
+// .recipe {
+//   font-family: 'Fredericka the Great', cursive;
+// }
