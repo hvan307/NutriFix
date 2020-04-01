@@ -6,23 +6,7 @@ class ShoppingList extends React.Component {
     super()
     this.state = {
       newIngredient: '',
-      todos: [
-        {
-          id: 1,
-          task: 'Make a todo app',
-          completed: false
-        },
-        {
-          id: 2,
-          task: 'Display the todos',
-          completed: false
-        },
-        {
-          id: 3,
-          task: 'Profit',
-          completed: false
-        }
-      ]
+      todos: []
     }
   }
 
@@ -60,12 +44,12 @@ class ShoppingList extends React.Component {
     const remainingTodos = this.state.todos.filter(todo => !todo.completed)
     return remainingTodos.length
   }
-
+  
   render() {
     const { todos } = this.state
     return <section className="section">
       <div className="container">
-        <h1>You have {this.countRemainingTodos()} thing(s) to do!</h1>
+        <h1>You have {this.countRemainingTodos()} thing(s) to get!</h1>
         <ul>
           {todos.map(todo => (
             <li
@@ -73,24 +57,22 @@ class ShoppingList extends React.Component {
               key={todo.id}>
               <label
                 className="checkbox"
-                onClick={() => this.toggleCompleted(todo.id)}
               >
                 <input
                   type="checkbox"
-                  // value='completed'
+                  onChange={() => this.toggleCompleted(todo.id)}
+                  checked={todo.completed ? true : false}
+                // value='completed'
                 />
-
               </label>
-
               {todo.task}
             </li>
           ))}
         </ul>
-
         <ShoppingForm
           onChange={() => this.handleChange(event)}
           onSubmit={() => this.handleSubmit(event)}
-          newTask={this.state.newTask} />
+          newIngredient={this.state.newIngredient} />
       </div>
     </section>
   }

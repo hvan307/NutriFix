@@ -75,9 +75,6 @@ class DisplayRecipes extends React.Component {
 
   }
   render() {
-    // if (!this.state.recipeList || !this.state.filteredRecipes) {
-    //   return <Spinner />
-    // } else {
     return <>
       <Hero />
       <section className="section">
