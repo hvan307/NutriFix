@@ -1,5 +1,7 @@
 import React from 'react'
 import ShoppingForm from './ShoppingForm'
+import Hero from './Hero'
+
 
 class ShoppingList extends React.Component {
   constructor() {
@@ -47,39 +49,45 @@ class ShoppingList extends React.Component {
 
   render() {
     const { todos } = this.state
-    return <section className="section" scroll="no" height="100%">
-      <div className="container">
-        <h1>You have {this.countRemainingTodos()} thing(s) to get!</h1>
-        <ul>
-          {todos.map(todo => (
-            <li
-              className={todo.completed ? 'completed' : ''}
-              key={todo.id}>
-              <label
-                className="checkbox"
-                
-              >
-                <input
-                  type="checkbox"
-                  onChange={() => this.toggleCompleted(todo.id)}
-                  checked={todo.completed ? true : false}
-                  
-                  // value='completed'
-                />
+    return <>
+      <Hero />
+      <section className="section shopping">
+        <div className="container shopping">
+          <div className="title shopping">Shopping List</div>
+          <ShoppingForm
+            onChange={() => this.handleChange(event)}
+            onSubmit={() => this.handleSubmit(event)}
+            newIngredient={this.state.newIngredient} />
+          <div className="container">
+            <h2 className="remaining"
+            >{this.countRemainingTodos()} thing(s) remaining to buy!</h2>
+            <div className="shoppingList">
+              <ul className="shoppingScroll">
+                {todos.map(todo => (
+                  <li
+                    className="addedList"
+                    key={todo.id}>
+                    <label
+                      className="checkbox"
 
-              </label>
+                    >
+                      <input
+                        type="checkbox"
+                        onChange={() => this.toggleCompleted(todo.id)}
+                        checked={todo.completed ? true : false}
 
-              {todo.task}
-            </li>
-          ))}
-        </ul>
-
-        <ShoppingForm
-          onChange={() => this.handleChange(event)}
-          onSubmit={() => this.handleSubmit(event)}
-          newIngredient={this.state.newIngredient} />
-      </div>
-    </section>
+                      // value='completed'
+                      />
+                    </label>
+                    {todo.task}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   }
 }
 export default ShoppingList
