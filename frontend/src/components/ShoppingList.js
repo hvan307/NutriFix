@@ -57,12 +57,14 @@ class ShoppingList extends React.Component {
               key={todo.id}>
               <label
                 className="checkbox"
+                
               >
                 <input
                   type="checkbox"
                   onChange={() => this.toggleCompleted(todo.id)}
                   checked={todo.completed ? true : false}
-                // value='completed'
+                  
+                  // value='completed'
                 />
               </label>
               {todo.task}

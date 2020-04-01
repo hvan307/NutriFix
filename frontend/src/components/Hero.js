@@ -12,7 +12,7 @@ const Hero = () => {
 
     <div className="hero-body">
       <div className="container has-text-centered">
-        <p className="title">
+        <p className="title nutrifix">
           NutriFix<small>™</small>
         </p>
         <p className="subtitle">
