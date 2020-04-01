@@ -12,7 +12,7 @@ const WelcomePage = () => {
         </h1>
         <button className="button is-normal">
           <Link to={'/recipes'}>
-            {'Recipes'}
+            Enter Site
           </Link>
         </button>
       </div>
