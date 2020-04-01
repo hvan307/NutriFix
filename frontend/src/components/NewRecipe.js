@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import auth from '../lib/auth'
 import RecipeForm from '../components/RecipeForm'
-import Tags from './Tags'
+// import Tags from './Tags'
 let selectedTags = []
 
 class NewRecipe extends React.Component {
@@ -96,17 +96,15 @@ class NewRecipe extends React.Component {
     const { errors } = this.state
     return <section className="section">
       <div className="container">
-        <h1 className="title">
-          <RecipeForm
-            handleSubmit={(event) => this.handleSubmit(event)}
-            handleChange={(event) => this.handleChange(event)}
-            handleMacroChange={(event) => this.handleMacroChange(event)}
-            errors={errors}
-            data={this.state.data}
-            staticTags={this.state.staticTags}
-            handleTag={() => this.handleTag(event)}
-          />
-        </h1>
+        <RecipeForm
+          handleSubmit={(event) => this.handleSubmit(event)}
+          handleChange={(event) => this.handleChange(event)}
+          handleMacroChange={(event) => this.handleMacroChange(event)}
+          errors={errors}
+          data={this.state.data}
+          staticTags={this.state.staticTags}
+          handleTag={() => this.handleTag(event)}
+        />
       </div>
     </section>
   }

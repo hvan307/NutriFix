@@ -70,7 +70,7 @@ mongoose.connect(
               sugars: '12g'
             },
             tags: [
-              'vegetarian', 'vegan', 'meal prep'
+              'vegetarian', 'vegan'
             ],
             servings: 5,
             totalTime: '40 minutes',
@@ -1045,7 +1045,7 @@ mongoose.connect(
           },
           {
             recipeName: 'Spicy Asian Peanut Turkey Salad',
-            image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2018/11/asian-leftover-turkey-salad-big-7.jpg',
+            image: 'https://lh4.googleusercontent.com/proxy/vnQ9h5UpM-0vMUsR6QQNLqFvEsAkIX7TFJAM3IkYko4jse6pNz2Q_BhUkV2VlpBPGsArSFpgbkjej-X89vBFHU1TWjpjlFUdC2QESmYgjA85jDYwy10VL8jH7ZZ6pZP9Z1JsUIEVilDB42uA0d9YrEKdHQ',
             ingredients: [
               '10 1/2 oz  (~310g) chopped turkey breast meat, no skin',
               '10z (~290g) broccoli slaw (mix of carrots, cabbage, Bok Choy)',
@@ -1081,7 +1081,7 @@ mongoose.connect(
           },
           {
             recipeName: 'Healthy Chicken Pho',
-            image: 'https://www.simplyrecipes.com/wp-content/uploads/2017/02/2017-02-07-ChickenPho-14.jpg',
+            image: 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4609266.jpg',
             ingredients: [
               '6 cups no salt added chicken broth (or you can use 7 cups broth with 2 cups water for added flavor)',
               '3 cups water (or 2 cups water with 7 cups broth for added flavor)',
@@ -1316,7 +1316,7 @@ mongoose.connect(
           },
           {
             recipeName: 'Courgetti bolognese',
-            image: 'https://cdn.shopify.com/s/files/1/0447/0453/articles/Cacao_Bolognese_Courgetti_web_42c77b99-ecdf-4333-9cfa-7914c2181162.jpg?v=1578334415',
+            image: 'https://be35832fa5168a30acd6-5c7e0f2623ae37b4a933167fe83d71b5.ssl.cf3.rackcdn.com/5011/quorn-courgetti-bolognese__square.jpg',
             ingredients: [
               '2 tbsp olive oil',
               '500g turkey mince (thigh or breast)',
@@ -1458,7 +1458,7 @@ mongoose.connect(
           },
           {
             recipeName: 'Vegetable Quinoa Bake ',
-            image: 'https://images.cookforyourlife.org/wp-content/uploads/2019/02/Quinoa-Bake-w-Pesto-shutterstock_1076840888.jpg',
+            image: 'https://t.aimg.sk/magaziny/ZOub2QD4RCnBGn_kc0vIiw.1280~Zapekan-brokolica-s-vajcom-a-str-hankou.jpg?t=L2ZpdC1pbi84ODB4NDAwL2ZpbHRlcnM6d2F0ZXJtYXJrKG1hZ2F6aW55L21hcmtfcmVjZXB0eV8xLnBuZywtMTAsLTEwLDUwKQ%3D%3D&h=hSDQ1c8DylBEe-1_U9ea-A&e=2145916800&v=1',
             ingredients: [
               '2 cloves garlic',
               '2 tablespoons pumpkin seeds',
@@ -1493,7 +1493,7 @@ mongoose.connect(
           },
           {
             recipeName: 'Ahi Tuna Tacos',
-            image: 'https://fitfoodiefinds.com/wp-content/uploads/2020/03/tacos2.jpg',
+            image: 'https://fitfoodiefinds.com/wp-content/uploads/2020/03/tacos2sq.jpg',
             ingredients: [
               '4 medium avocados, ripe',
               '2 tablespoons fresh cilantro, diced',
@@ -1543,7 +1543,7 @@ mongoose.connect(
           },
           {
             recipeName: 'Healthy Sweet Potato Skins',
-            image: 'https://pinchofyum.com/wp-content/uploads/sweet-potato-skins-5-600x975.jpg',
+            image: 'https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fpinchofyum.com%2Fwp-content%2Fuploads%2Fsweet-potato-skins-recipe-1.jpg',
             ingredients: [
               '2 medium or large sweet potatoes',
               '1 1/2 tablespoons butter',
@@ -1578,7 +1578,7 @@ mongoose.connect(
           },
           {
             recipeName: 'Lamb Chops & Spicy-Sweet Potato & Dried Cranberry Waffle',
-            image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2013/05/tumblr_mmr6zoYT2U1rbxlv3o1_1280.jpg',
+            image: 'https://www.phoenixmag.com/wp-content/uploads/2014/01/PHM0114_BR3a.jpg',
             ingredients: [
               '5oz Lamb chops (fat trimmed) or your choice of protein',
               '175g sweet potato (grated)',
@@ -1659,7 +1659,7 @@ mongoose.connect(
           },
           {
             recipeName: 'Gaspari ISOFusion Peanut Butter Coffee & Chocolate Protein',
-            image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2013/04/tumblr_mlkbwlstdj1rbxlv3o2_r1_1280.jpg',
+            image: 'https://realhousemoms.com/wp-content/uploads/Banana-Bread-Smoothie-Bowl-IG.jpg',
             ingredients: [
               '1 scoop Gaspari ISOFusion protein powder',
               '1 tbsp Nescafe instant coffee',
@@ -1693,7 +1693,7 @@ mongoose.connect(
           },
           {
             recipeName: 'Healthy Breakfast Hash',
-            image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/DSC04366-2.jpg',
+            image: 'https://73f0e1518e903443913e6712-triedandtastycom.netdna-ssl.com/wp-content/uploads/2016/03/sweet-potato-sausage-breakfast-hash-square-1.jpg',
             ingredients: [
               '1 tablespoon olive oil',
               '125g raw butternut squash, chunks',
@@ -1730,7 +1730,7 @@ mongoose.connect(
           },
           {
             recipeName: 'Mango, Coconut, Banana & Walnut Baked Protein Oatmeal',
-            image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2012/09/tumblr_max0vsbFTK1rbxlv3o1_1280.jpg',
+            image: 'https://tastespace.files.wordpress.com/2012/02/dsc_5522.jpg',
             ingredients: [
               '3/4 scoop Dymatize Fusion7 Whey',
               '1/2 cup instant oatmeal',
@@ -1767,7 +1767,7 @@ mongoose.connect(
           },
           {
             recipeName: 'Instant Pot Vegan Nachos',
-            image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2020/01/super-bowl-vegan-nachos-6.jpg',
+            image: 'https://sweetsimplevegan.com/wp-content/uploads/2018/04/Classic_Vegan_Nachos_Homemade_Queso_Sweet_Simple_Vegan7-copy.jpg',
             ingredients: [
               '1 large (~340g) russet potato, peeled and chopped into large chunks',
               '1 large carrot (~75g)',
@@ -1807,7 +1807,7 @@ mongoose.connect(
           },
           {
             recipeName: 'Bacon, Jalapeño & Garlic Green Beans',
-            image: 'https://369t7u43n93dgc5pt43uc681-wpengine.netdna-ssl.com/wp-content/uploads/2016/10/IMG_0279-1.jpg',
+            image: 'https://thewanderlustkitchen.com/wp-content/uploads/2019/08/Bacon-and-Brown-Sugar-Arkansas-Green-Beans-4.jpg',
             ingredients: [
               '3 cups raw green beans',
               '3 slices bacon',
@@ -1830,7 +1830,7 @@ mongoose.connect(
               sugars: '2g'
             },
             tags: [
-              'gluten-free', 'dairy-free', 'quick and easy', 'low fat', 'low carbs', 'low fat', 'low sugar', 'low calories', 'lunch', 'dinner', 'meat', 'salty', 'spicy'
+              'gluten-free', 'dairy-free', 'quick and easy', 'low carbs', 'low fat', 'low sugar', 'low calories', 'lunch', 'dinner', 'meat', 'salty', 'spicy'
             ],
             servings: 2,
             totalTime: '20 minutes',
@@ -1868,7 +1868,7 @@ mongoose.connect(
               sugars: '8g'
             },
             tags: [
-              'gluten-free', 'low fat', 'low fat', 'low sugar', 'breakfast', 'lunch', 'meat', 'salty'
+              'gluten-free','low fat', 'low sugar', 'breakfast', 'lunch', 'meat', 'salty'
             ],
             servings: 1,
             totalTime: '35 minutes',
