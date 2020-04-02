@@ -1,4 +1,13 @@
-# project3
+### ![GA](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png) General Assembly, Software Engineering Immersive
+# NutriFix™
+
+## Overview
+
+## Brief
+
+## Technologies Used
+
+# Approach
 
 # Backend
 
@@ -197,6 +206,233 @@ JWT (json web token) allows the user to access routes, services, and resources t
 ```
 Additionally, a secret was implemented, to further elevate security for the user. We stored this secret in an environment.js file, which is only accessible by the developers.
 
+# Frontend
+
+## DisplayRecipes
+
+### Tags
+``` js
+handleTags() {
+    const clickedTags = [...this.state.clickedTags]
+    if (clickedTags.includes(event.target.innerHTML)) {
+      clickedTags.splice(clickedTags.indexOf(event.target.innerHTML), 1)
+      event.target.classList.remove('tag-selected')
+} else {
+      clickedTags.push(event.target.innerHTML)
+      event.target.classList.add('tag-selected')
+    }
+    this.setState({ clickedTags })
+    const filteredRecipes =
+      this.state.recipeList.filter((recipe) => {
+        return clickedTags.every((recipeTag) => {
+          return recipe.tags.includes(recipeTag.toLowerCase())
+        })
+      })
+    this.setState({ filteredRecipes })
+```
+- We wrote the handleTags function to handle the select and deselect of the tags.
+- This function also filtered all the recipes on the page to only show the recipes that contained one or more of the selected tags.
+- The tag selecting proved to be quite difficult as it was hard to not mutate state directly. The way we resolved this problem was by spreading the tags into a new array and storing the filtered recipes in a separate piece of state rather than modifying the original recipes.
+``` js
+{this.state.tags.map((tag, key) => {
+            return <div
+              key={key}
+              className="control"
+            >
+              <a className="button tag"
+                value={'hello'}
+                onClick={() => this.handleTags(event)}>
+                {tag}
+              </a>
+            </div>
+          })}
+```
+- We also mapped over the tags in this.state to render the tags below the hero.
+
+### Getting the recipes from the back-end API
+```js
+componentDidMount() {
+    axios.get('/api/recipes')
+      .then((res) => this.setState({ recipeList: res.data, filteredRecipes: res.data }))
+  }
+```
+- We used Axios to get the data from the backend and stored it in the state as an empty array.
+
+
+### Rendering Recipes
+``` js
+<div className="container">
+          <div className="columns is-multiline">
+            {this.state.filteredRecipes.map((recipe) => {
+              return <div className="column is-one-third" key={recipe._id}>
+                <Link
+                  to={{
+                    pathname: `recipe/${recipe._id}`
+                  }}
+                >
+                  <div className="card">
+                    <div className="card-image">
+                      <figure className="card-image is-3by3">
+                        <img src={recipe.image} className="recipe-image"></img>
+                      </figure>
+                    </div>
+                    <div className="card-content">
+                      <h2 className="subtitle recipe">{recipe.recipeName}</h2>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            })}
+          </div>
+        </div>
+```
+- To display the recipes on the page we used a CDN called Bulma. This proved to be quite useful in terms of time efiiciency as we could use preset SCSS classes rather than styling the whole page manually.
+- We mapped over the recipes to display them (similar to the tags).
+
+### My Recipes (creating your own)
+```js
+componentDidMount() {
+    axios.get('/api/myrecipes',
+      { headers: { Authorization: `Bearer ${auth.getToken()}` } })
+      .then(res => this.setState({ myRecipes: res.data }))
+      .catch(err => console.error(err))
+  }
+```
+- For creating your own recipes we used similar logic to diplay the recipes. However, we had decided to make it a 'secure route' so that only users that were logged in could create their own recipes.
+- To achieve this we needed to check if the user has a JWT (JSONWebToken) using the function getToken().
+
+### Single Recipe
+- Single recipe is a page that displays more information about a recipe when the card is clicked from display recipes using Bulma tiles. This page would display information such as Macronutrients, calories, ingredients and instructions on how to make said recipe.
+``` js
+handleDelete() {
+    const id = this.props.match.params.id
+    axios.delete(`/api/recipe/${id}`,
+      { headers: { Authorization: `Bearer ${auth.getToken()}` } })
+      .then(() => this.props.history.push('/recipes'))
+      .catch(err => console.error(err))
+  }
+```
+- The single recipe also had a delete recipe function which would allow a user to delete a recipe that they have created. The function would check the user is logged and and the recipe is their own and delete it on the users request.
+
+
+## NavBar
+The navbar consists of four key site navigation links; Home, Login, Logout, and Register.
+Imported from the auth.js, the logOut function is used in HandleLogout().
+```js
+HandleLogout() {
+    auth.logOut()
+    this.props.history.push('/recipes')
+  }
+```
+The navbar also utilises a burger feature, that will display when the browser window is reduced past a set width of 800px.
+```js
+<a
+          role="button"
+          className={`navbar-burger burger is-transparent ${this.state.navMobileOpen ? 'is-active' : ''}`}
+          aria-label="menu"
+          aria-expanded="false"
+          onClick={() => this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+```
+The navMobileOpen state is initially set as ‘false’, meaning the burger is closed. When the user clicks the burger icon, the state will toggle between ‘true’ and ‘false’, opening and closing the dropdown.
+```js
+ constructor() {
+    super()
+    this.state = {
+      navMobileOpen: false
+    }
+  }
+onClick={() => this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
+```
+
+## Ingredient Search
+The single ingredient search required two components; FoodSearchForm and FoodSearchBar. The FoodSearchBar takes the query passed down from the FoodSearchForm setting a new state value. The query is inserted into the external API’s URL forming an axios get request.
+```js
+  handleChange(event) {
+    const query = event.target.value
+    this.setState({ query })
+  }
+  handleSubmit(event) {
+    event.preventDefault()
+    setTimeout(() => {
+      axios.get(`https://api.edamam.com/api/food-database/parser?ingr=${this.state.query}&app_id=456922e8&app_key=ab36bb266c8b99d0bfedb91299cf6bf3`)
+        .then(res => {
+          console.log(res.data)
+          this.setState({ parsed: res.data.parsed, submitted: true })
+        })
+        .catch(err => console.error(err))
+    }, 1000)
+  }
+```
+Once the data has been retrieved from the API, it parses the nutrient values to be displayed in the render.
+```js
+  constructor() {
+    super()
+    this.state = {
+      query: '',
+      parsed: [
+        {
+          food: {
+            nutrients: {}
+          }
+        }
+      ],
+      submitted: false
+    }
+  }
+return <div className="card food-card" key={key}>
+	<img className="card-image is-3by3" src={parse.food.image} alt={parse.food.label} />
+    	<div className="card-content">
+        	<h2 className="search-item-name">{parse.food.label}</h2>
+          	<p className="nutrients">Calories: {parse.food.nutrients.ENERC_KCAL}kcal</p>
+            <p className="nutrients">Protein: {parse.food.nutrients.PROCNT}g</p>
+            <p className="nutrients">Carbohydrates: {parse.food.nutrients.CHOCDF}g</p>
+            <p className="nutrients">Fat: {parse.food.nutrients.FAT}g</p>
+            <p className="nutrients">Fiber: {parse.food.nutrients.FIBTG}g</p>
+            {isLoggedIn && <button className="button" id="go-to-shopping">
+            	<Link to={'/shoppinglist'} style={{ color: 'white' }}>
+                	Go to Shopping List
+                </Link>
+             </button>}
+        </div>
+  	</div>
+```
+
+## Shopping List
+Similar to the ingredient search, the shopping list also required a second form component to parse the data into a rendered list.
+Once the user has inputted and submitted the new ingredient in the ShoppingForm component, the data is parsed to the ShoppingList component, where the new state is set by handleChange(event).
+```js
+class ShoppingList extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      newIngredient: '',
+      todos: []
+    }
+  }
+  handleChange(event) {
+    this.setState({ newIngredient: event.target.value })
+  }
+```
+After the user has submitted the new ingredient, handleSubmit(event) adds the item to the todos array using concat(ingredient).
+```js
+  handleSubmit(event) {
+    event.preventDefault()
+    const ingredient = {
+      id: this.state.todos.length + 1,
+      task: this.state.newIngredient,
+      completed: false
+    }
+    const updatedTodos = this.state.todos.concat(ingredient)
+    this.setState({
+      todos: updatedTodos,
+      newIngredient: ''
+    })
+  }
+```
 
 ## Potential Future Features
 
