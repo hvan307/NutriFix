@@ -49,7 +49,7 @@ class DisplaySingleRecipe extends React.Component {
 
           <div className="tile is-child box">
             <h2 className="recipe title">{recipe.recipeName}</h2>
-            <img src={recipe.image} className="single-recipe-img"/>
+            <img src={recipe.image} className="single-recipe-img" />
             <p>Servings: {recipe.servings}</p>
             <p>Total Time: {recipe.totalTime}</p>
             {/* {console.log(recipe)} */}
@@ -80,8 +80,7 @@ class DisplaySingleRecipe extends React.Component {
         <div className="tile is-parent flex-parent">
           <div className="tile is-parent">
             <div className="tile is-child box ingredients-box">
-              <h1 className="title title-cross">Ingredients
-              </h1>
+              <p className="recipeTitle">Ingredients</p>
               <ul>
                 {this.state.recipes.ingredients.map((ingredient, key) => {
                   return <li key={key}>
@@ -104,9 +103,9 @@ class DisplaySingleRecipe extends React.Component {
           </div>
         </div>
         <div className="tile is-child box instructions-box">
-          <h1 className="title title-cross">Instructions
+          <p className="recipeTitle">Instructions
             <Link className="delete" to="/recipes"></Link>
-          </h1>
+          </p>
           <ol className="instructions-list">
             {this.state.recipes.instructions.map((step, key) => {
               return <li key={key}>

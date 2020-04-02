@@ -69,13 +69,22 @@ li {
     font-size: 30px;
   }
 
+  h2.recipe.title {
+    font-family: 'Merienda', cursive;
+  }
+
   p.recipeTitle {
     font-size: 30px;
     font-weight: bold;
     padding-bottom: 10px;
+    font-family: 'Merienda', cursive;
   }
 .button {
   box-shadow: 1px 1px #afaaaa;
+}
+
+.subtitle.recipe {
+  font-family: 'Merienda', cursive;
 }
 
 .edit-button {
@@ -254,4 +263,44 @@ form.form.shopping{
 
 .checkbox{
   margin: 5px;
+}
+
+.container.register {
+  padding-top: 50px;
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  padding-left: 400px;
+}
+
+.control.has-icons-left.has-icons-right {
+  width: 500px;
+}
+
+.container.login {
+  padding-top: 50px;
+  display: flex !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  padding-left: 400px;
+}
+
+h1.title.login {
+  padding-left: 170px !important;
+
+}
+
+h1.title.register {
+  padding-left: 170px !important;
+
+}
+
+.button.is-success {
+  border-radius: 20px;
+  width: 500px;
+}
+
+button.is-link {
+  border-radius: 20px;
+  width: 500px;
 }

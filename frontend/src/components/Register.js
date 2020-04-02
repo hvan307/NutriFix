@@ -35,79 +35,96 @@ class Register extends React.Component {
   render() {
     const { errors } = this.state
     return <section className="section">
-      <div className="container">
-        <h1 className="title">Register</h1>
+      <div className="container register">
+        <h1 className="title register">Register</h1>
         <form
           className="form"
           onSubmit={(event) => this.handleSubmit(event)}
         >
           <div className="field">
-            <div className="control">
-              {/* <span className="icon is-small is-left">
-                <i className="fas fa-envelope"></i>
-              </span> */}
+            <div className="control has-icons-left has-icons-right">
               <input
                 onChange={(event) => this.handleChange(event)}
                 type="text"
                 name="email"
-                className="input"
+                className="input is-rounded"
                 placeholder="Email"
               />
-              {/* <span className="icon is-small is-right">
+              <span className="icon is-small is-left">
+                <i className="fas fa-envelope"></i>
+              </span>
+              <span className="icon is-small is-right">
                 <i className="fas fa-check"></i>
-              </span> */}
+              </span>
             </div>
             {errors.email && <small className="help is-danger">
               {errors.email}
             </small>}
           </div>
           <div className="field">
-            <div className="control">
+            <div className="control has-icons-left has-icons-right">
               <input
                 onChange={(event) => this.handleChange(event)}
                 type="text"
                 name="username"
-                className="input"
+                className="input is-rounded"
                 placeholder="Username"
               />
+              <span className="icon is-small is-left">
+                <i className="fas fa-user"></i>
+              </span>
+              <span className="icon is-small is-right">
+                <i className="fas fa-check"></i>
+              </span>
             </div>
             {errors.username && <small className="help is-danger">
               {errors.username}
             </small>}
           </div>
           <div className="field">
-            <div className="control">
-              {/* <span className="icon is-small is-left">
-                <i className="fas fa-lock"></i>
-              </span> */}
+            <div className="control has-icons-left has-icons-right">
               <input
                 onChange={(event) => this.handleChange(event)}
                 type="password"
                 name="password"
-                className="input"
+                className="input is-rounded"
                 placeholder="Password"
               />
+              <span className="icon is-small is-left">
+                <i className="fas fa-lock"></i>
+              </span>
+              <span className="icon is-small is-right">
+                <i className="fas fa-check"></i>
+              </span>
             </div>
             {errors.password && <small className="help is-danger">
               {errors.password}
             </small>}
           </div>
           <div className="field">
-            <div className="control">
+            <div className="control has-icons-left has-icons-right">
               <input
                 onChange={(event) => this.handleChange(event)}
                 type="password"
                 name="passwordConfirmation"
-                className="input"
+                className="input is-rounded"
                 placeholder="Confirm Password"
 
               />
+              <span className="icon is-small is-left">
+                <i className="fas fa-lock"></i>
+              </span>
+              <span className="icon is-small is-right">
+                <i className="fas fa-check"></i>
+              </span>
             </div>
             {errors.passwordConfirmation && <small className="help is-danger">
               {errors.passwordConfirmation}
             </small>}
           </div>
-          <button className="button is-success">Register</button>
+          <button className="button is-success"
+          >Register
+          </button>
         </form>
       </div>
     </section>

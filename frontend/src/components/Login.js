@@ -40,23 +40,21 @@ class Login extends React.Component {
   render() {
     const { error } = this.state
     return <section className="section">
-      <div className="container">
-        <h1 className="title">Login</h1>
+      <div className="container login">
+        <h1 className="title login">User Login</h1>
         <form
           className="form"
           onSubmit={(event) => this.handleSubmit(event)}
         >
           <div className="field">
-            <label className="label">
-              Email
-            </label>
+            {/* <label className="label">Email</label> */}
             <div className="control has-icons-left has-icons-right">
               <input
                 onChange={(event) => this.handleChange(event)}
                 type="text"
                 name="email"
-                className="input"
-                placeholder="youremail@email.com"
+                className="input is-rounded"
+                placeholder="Email"
               />
               <span className="icon is-small is-left">
                 <i className="fas fa-envelope"></i>
@@ -71,17 +69,17 @@ class Login extends React.Component {
           </div>
 
           <div className="field">
-            <label className="label">Password</label>
+            {/* <label className="label">Password</label> */}
             <div className="control has-icons-left has-icons-right">
               <input
                 onChange={(event) => this.handleChange(event)}
                 type="password"
                 name="password"
-                className="input"
-                placeholder="**********"
+                className="input is-rounded"
+                placeholder="Password"
               />
               <span className="icon is-small is-left">
-                <i className="fas fa-user"></i>
+                <i className="fas fa-lock"></i>
               </span>
               <span className="icon is-small is-right">
                 <i className="fas fa-check"></i>

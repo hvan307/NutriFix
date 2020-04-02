@@ -108,7 +108,7 @@ class DisplayRecipes extends React.Component {
                       </figure>
                     </div>
                     <div className="card-content">
-                      <h2 className="subtitle">{recipe.recipeName}</h2>
+                      <h2 className="subtitle recipe">{recipe.recipeName}</h2>
                     </div>
                   </div>
                 </Link>
