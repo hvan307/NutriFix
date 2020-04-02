@@ -65,34 +65,35 @@ class FoodSearchBar extends React.Component {
       return <>
         <Hero />
         <section className="section">
-          <FoodSearchForm
-            handleChange={(event) => this.handleChange(event)}
-            handleSubmit={(event) => this.handleSubmit(event)}
-            query={this.state.query}
-          />
           <div className="container search-and-card">
+            <FoodSearchForm
+              handleChange={(event) => this.handleChange(event)}
+              handleSubmit={(event) => this.handleSubmit(event)}
+              query={this.state.query}
+            />
+            <div className="container search-card-flex">
+              <div className="column is-one-third is-centered">
+                {!this.state.submitted ? null : this.state.parsed.map((parse, key) => {
+                  return <div className="card food-card" key={key}>
+                    <img className="card-image is-3by3" src={parse.food.image} alt={parse.food.label} />
+                    <div className="card-content">
+                      <h2 className="search-item-name">{parse.food.label}</h2>
+                      <p className="nutrients">Calories: {parse.food.nutrients.ENERC_KCAL}kcal</p>
+                      <p className="nutrients">Protein: {parse.food.nutrients.PROCNT}g</p>
+                      <p className="nutrients">Carbohydrates: {parse.food.nutrients.CHOCDF}g</p>
+                      <p className="nutrients">Fat: {parse.food.nutrients.FAT}g</p>
+                      <p className="nutrients">Fiber: {parse.food.nutrients.FIBTG}g</p>
+                      {isLoggedIn && <button className="button" id="go-to-shopping">
+                        <Link to={'/shoppinglist'} style={{ color: 'white' }}>
+                          Go to Shopping List
+                        </Link>
+                      </button>}
+                    </div>
 
-            <div className="column is-one-third is-centered">
-              {!this.state.submitted ? null : this.state.parsed.map((parse, key) => {
-                return <div className="card food-card" key={key}>
-                  <img className="card-image is-3by3" src={parse.food.image} alt={parse.food.label} />
-                  <div className="card-content">
-                    <h2 className="search-item-name">{parse.food.label}</h2>
-                    <p className="nutrients">Calories: {parse.food.nutrients.ENERC_KCAL}kcal</p>
-                    <p className="nutrients">Protein: {parse.food.nutrients.PROCNT}g</p>
-                    <p className="nutrients">Carbohydrates: {parse.food.nutrients.CHOCDF}g</p>
-                    <p className="nutrients">Fat: {parse.food.nutrients.FAT}g</p>
-                    <p className="nutrients">Fiber: {parse.food.nutrients.FIBTG}g</p>
-                    {isLoggedIn && <button className="button" id="go-to-shopping">
-                      <Link to={'/shoppinglist'} style={{ color: 'white' }}>
-                        Go to Shopping List
-                      </Link>
-                    </button>}
                   </div>
-
-                </div>
-              })
-              }
+                })
+                }
+              </div>
             </div>
           </div>
         </section>
