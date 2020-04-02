@@ -264,7 +264,7 @@ form.form.shopping{
   margin-top: 15px;
   padding: 5px;
   background-color: #ffad00;
-  width: 245px;
+  // width: 245px;
   color: white;
 }
 
@@ -337,14 +337,28 @@ h1.title.register {
 button.is-link {
   border-radius: 20px;
   width: 500px;
-.food-card {
-margin-top: 35px;
-// margin-right: 0px;
 }
+.food-card {
+  margin-top: 35px;
+  // margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-item-name {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 15px;
+}
+
+.search-and-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search-input {
+  width: 100%;
 }

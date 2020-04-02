@@ -65,16 +65,17 @@ class FoodSearchBar extends React.Component {
       return <>
         <Hero />
         <section className="section">
-          <div className="container">
-            <FoodSearchForm
-              handleChange={(event) => this.handleChange(event)}
-              handleSubmit={(event) => this.handleSubmit(event)}
-              query={this.state.query}
-            />
+          <FoodSearchForm
+            handleChange={(event) => this.handleChange(event)}
+            handleSubmit={(event) => this.handleSubmit(event)}
+            query={this.state.query}
+          />
+          <div className="container search-and-card">
+
             <div className="column is-one-third is-centered">
               {!this.state.submitted ? null : this.state.parsed.map((parse, key) => {
                 return <div className="card food-card" key={key}>
-                  <img clasName="card-image is-3by3" src={parse.food.image} alt={parse.food.label} />
+                  <img className="card-image is-3by3" src={parse.food.image} alt={parse.food.label} />
                   <div className="card-content">
                     <h2 className="search-item-name">{parse.food.label}</h2>
                     <p className="nutrients">Calories: {parse.food.nutrients.ENERC_KCAL}kcal</p>

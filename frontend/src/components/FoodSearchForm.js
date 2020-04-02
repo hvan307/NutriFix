@@ -8,7 +8,7 @@ const FoodSearchForm = ({ query, handleChange, handleSubmit }) => {
           <div className="field has-addons">
             <div className="control is-expanded">
               <input
-                className="input is-medium"
+                className="input is-medium search-input"
                 type="search"
                 placeholder="Search food"
                 value={query}
