@@ -60,9 +60,11 @@ class NavBar extends React.Component {
         </div>}
         {isLoggedIn && <div
           className="navbar-item"
+          
           onClick={() => this.HandleLogout()}
         >
-          Log out
+          <Link to="/recipes">Log out</Link>
+          
         </div>}
       </div>
     </nav>
