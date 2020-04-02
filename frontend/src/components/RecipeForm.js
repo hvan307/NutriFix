@@ -4,13 +4,13 @@ import Tags from './Tags'
 
 const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, data, staticTags, handleTag }) => {
   const { recipeName, image, ingredients, instructions, calories, servings, totalTime } = data
-  return <section className="section">
-    <div className="container ">
+  return <section className="section new-recipe">
+    <div className="container new-recipe">
       <div className="recipe-cross">
         <div></div>
         <Link className="delete" to="/recipes"></Link>
       </div>
-      <div className="title has-text-centered">
+      <div className="title new-recipe has-text-centered">
         Your Recipe
       </div>
       <div className="subtitle has-text-centered">
@@ -106,7 +106,7 @@ const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, dat
           </small>}
         </div>
         <div className="field">
-          <div className="subtitle">Macronutrients</div>
+          <div className="label">Macronutrients:</div>
           <label className="label">
             Fat
           </label>
@@ -213,13 +213,13 @@ const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, dat
         </div>
         <button
           onClick={() => handleSubmit(event)}
-          className="button is-success">
-          Add your recipe
+          className="button add-recipe">
+          Add Recipe
         </button>
       </form>
     </div>
   </section>
-
+  ƒ
 }
 
 export default RecipeForm
