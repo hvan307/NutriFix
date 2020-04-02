@@ -55,6 +55,7 @@ li {
 .Loading {
   display: flex;
   justify-content: center;
+  margin-top: 35px;
   }
 
   p.title {
@@ -257,6 +258,14 @@ form.form.shopping{
   padding: 30px;
 }
 
+#go-to-shopping {
+  margin-top: 15px;
+  padding: 5px;
+  background-color: #ffad00;
+  width: 245px;
+  color: white;
+}
+
 .addedList {
   font-size: 20px;
 }
@@ -303,4 +312,13 @@ h1.title.register {
 button.is-link {
   border-radius: 20px;
   width: 500px;
+.food-card {
+margin-top: 35px;
+// margin-right: 0px;
+}
+
+.search-item-name {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
