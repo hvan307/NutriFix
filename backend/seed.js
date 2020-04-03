@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Recipe = require('./models/recipe')
 const User = require('./models/user')
-const dbURI = 'mongodb://localhost/recipe-db'
+const { dbURI } = require('./config/environment')
 
 mongoose.connect(
   dbURI,
