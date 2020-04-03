@@ -6,7 +6,7 @@ module.exports = {
   entry: './frontend/src/app.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve('dist'),
+    path: path.resolve('./backend/dist'),
     publicPath: '/'
   },
   module: {
@@ -14,7 +14,7 @@ module.exports = {
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.css$/, loader: ['style-loader', 'css-loader'] },
       { test: /\.s(a|c)ss$/, loader: ['style-loader', 'css-loader', 'sass-loader'] },
-      { test: /\.(png|jpg|gif)$/, loader: 'url-loader' }
+      { test: /\.(png|jpg|gif)$/, loader: ['url-loader', 'file-loader'] }
     ]
   },
   devServer: {
