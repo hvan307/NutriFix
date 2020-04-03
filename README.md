@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ### ![GA](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png) General Assembly, Software Engineering Immersive
 # NutriFix™
 
@@ -445,4 +443,3 @@ After the user has submitted the new ingredient, handleSubmit(event) adds the it
 ## Lessons Learned
 
 - A big lesson learnt was the importance of how well you design your schema. This will have a great impact on developing the frontend, to ensure the best user experience.
->>>>>>> 455a27b90fe09573226cc757e5bf21940350cf9c
