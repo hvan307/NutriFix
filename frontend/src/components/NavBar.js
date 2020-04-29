@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import auth from '../lib/auth'
 import { withRouter } from 'react-router-dom'
 
-import logo from '../images/LogoMakr_7lMK7T.png'
+// import logo from '../images/LogoMakr_7lMK7T.png'
 
 class NavBar extends React.Component {
 
@@ -31,7 +31,7 @@ class NavBar extends React.Component {
     return <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link className="navbar-logo" to="/recipes">
-          <img src={logo} alt="Logo" width="112" height="28" />
+          <img src="https://i.imgur.com/PFTeaIi.png" alt="Logo" width="112" height="28" />
         </Link>
 
         <a
