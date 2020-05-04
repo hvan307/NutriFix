@@ -1,10 +1,8 @@
 import React from 'react'
-// import Hero from './Hero'
 import { Link } from 'react-router-dom'
-// import disableScroll from 'disable-scroll'
 
 const WelcomePage = () => {
-  // disableScroll.on()
+  
   return <>
   <section className="welcome-page-hero hero is-fullheight">
     <div className="hero-body">

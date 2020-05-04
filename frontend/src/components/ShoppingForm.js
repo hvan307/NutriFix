@@ -1,6 +1,8 @@
 import React from 'react'
+
 const ShoppingForm = (props) => {
   const { newIngredient, onChange, onSubmit } = props
+
   return <section className="section shoppingForm">
     <div className="container">
       <form
@@ -23,4 +25,5 @@ const ShoppingForm = (props) => {
     </div>
   </section>
 }
+
 export default ShoppingForm

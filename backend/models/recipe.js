@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
 
-
 const schema = new mongoose.Schema({
   recipeName: { type: String, required: true, unique: true },
   image: { type: String, required: true },
@@ -14,6 +13,5 @@ const schema = new mongoose.Schema({
   isPublic: { type: Boolean, required: true },
   user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
 })
-
 
 module.exports = mongoose.model('Recipe', schema)

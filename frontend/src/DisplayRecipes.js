@@ -1,11 +1,12 @@
 import React from 'react'
 import axios from 'axios'
-import 'bulma'
 import { Link } from 'react-router-dom'
+
+import 'bulma'
 import Hero from './components/Hero'
-// import Spinner from './components/Spinner'
 
 class DisplayRecipes extends React.Component {
+
   constructor() {
     super()
     this.state = {
@@ -34,12 +35,12 @@ class DisplayRecipes extends React.Component {
       clickedTags: []
     }
   }
+
   handleTags() {
     const clickedTags = [...this.state.clickedTags]
     if (clickedTags.includes(event.target.innerHTML)) {
       clickedTags.splice(clickedTags.indexOf(event.target.innerHTML), 1)
       event.target.classList.remove('tag-selected')
-
     } else {
       clickedTags.push(event.target.innerHTML)
       event.target.classList.add('tag-selected')
@@ -52,28 +53,14 @@ class DisplayRecipes extends React.Component {
           return recipe.tags.includes(recipeTag.toLowerCase())
         })
       })
-
     this.setState({ filteredRecipes })
-
-    // clickedTags
-    // clickedTags.map((clickedTag) => {
-    //   this.state.recipeList.map((recipe) => {
-    //     recipe.tags.map((recipeTag) => {
-    //       if (recipeTag === clickedTag) {
-    //         return recipe
-    //       }
-    //     })
-    //   })
-    // })
   }
+
   componentDidMount() {
-    // setTimeout(() => {
     axios.get('/api/recipes')
       .then((res) => this.setState({ recipeList: res.data, filteredRecipes: res.data }))
-    // console.log(this.state.recipeList)
-    // }, 1000)
-
   }
+  
   render() {
     return <>
       <Hero />

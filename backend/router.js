@@ -21,5 +21,4 @@ router.route('/register')
 router.route('/login')
   .post(userController.login)
 
-
 module.exports = router

@@ -1,12 +1,13 @@
 import React from 'react'
 import axios from 'axios'
+
 import auth from '../lib/auth'
 import RecipeForm from '../components/RecipeForm'
-// import Tags from './Tags'
+
 let selectedTags = []
 
 class NewRecipe extends React.Component {
-
+  
   constructor() {
     super()
     this.state = {

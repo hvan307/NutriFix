@@ -1,9 +1,10 @@
 import React from 'react'
+
 import ShoppingForm from './ShoppingForm'
 import Hero from './Hero'
 
-
 class ShoppingList extends React.Component {
+
   constructor() {
     super()
     this.state = {
@@ -69,14 +70,11 @@ class ShoppingList extends React.Component {
                     key={todo.id}>
                     <label
                       className="checkbox"
-
                     >
                       <input
                         type="checkbox"
                         onChange={() => this.toggleCompleted(todo.id)}
                         checked={todo.completed ? true : false}
-
-                      // value='completed'
                       />
                     </label>
                     {todo.task}
@@ -90,4 +88,5 @@ class ShoppingList extends React.Component {
     </>
   }
 }
+
 export default ShoppingList

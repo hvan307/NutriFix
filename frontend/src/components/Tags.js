@@ -1,5 +1,7 @@
 import React from 'react'
+
 const Tags = ({ staticTags, handleTag }) => {
+
   return <>
     <div className="field is-grouped is-grouped-multiline">
       {staticTags.map((tag, key) => {
@@ -17,4 +19,5 @@ const Tags = ({ staticTags, handleTag }) => {
     </div>
   </>
 }
+
 export default Tags

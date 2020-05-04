@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import Tags from './Tags'
 
 const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, data, staticTags, handleTag }) => {
   const { recipeName, image, ingredients, instructions, calories, servings, totalTime } = data
+
   return <section className="section new-recipe">
     <div className="container new-recipe">
       <div className="recipe-cross">
@@ -219,7 +221,6 @@ const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, dat
       </form>
     </div>
   </section>
-  ƒ
 }
 
 export default RecipeForm

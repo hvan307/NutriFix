@@ -1,8 +1,8 @@
 import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+
 import auth from './lib/auth'
-// import Hero from './components/Hero'
 
 class DisplaySingleRecipe extends React.Component {
 
@@ -15,7 +15,6 @@ class DisplaySingleRecipe extends React.Component {
         ingredients: [],
         tags: []
       }
-
     }
   }
 
@@ -39,11 +38,9 @@ class DisplaySingleRecipe extends React.Component {
     return auth.getUserId() === this.state.recipes.user
   }
 
-
   render() {
     const recipe = this.state.recipes
     return <div id="big-container">
-      {/* <Hero/> */}
       <div className="tile is-ancestor">
         <div className="tile is-4 is-vertical is-parent">
 
@@ -52,7 +49,6 @@ class DisplaySingleRecipe extends React.Component {
             <img src={recipe.image} className="single-recipe-img" />
             <p>Servings: {recipe.servings}</p>
             <p>Total Time: {recipe.totalTime}</p>
-            {/* {console.log(recipe)} */}
           </div>
           {this.isOwner() && <button
             onClick={() => this.handleDelete()}
@@ -116,14 +112,9 @@ class DisplaySingleRecipe extends React.Component {
         <div className="recipe-cross">
           <Link className="delete" to="/recipes"></Link>
         </div>
-
-
-
       </div>
     </div>
   }
 }
-
-
 
 export default DisplaySingleRecipe

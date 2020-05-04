@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import auth from '../lib/auth'
 import { withRouter } from 'react-router-dom'
 
-// import logo from '../images/LogoMakr_7lMK7T.png'
+import auth from '../lib/auth'
 
 class NavBar extends React.Component {
 
@@ -27,20 +26,17 @@ class NavBar extends React.Component {
 
   render() {
     const isLoggedIn = auth.isLoggedIn()
-
     return <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link className="navbar-logo" to="/recipes">
           <img src={('https://i.imgur.com/PFTeaIi.png')} alt="Logo" width="112" height="28" />
         </Link>
-
         <a
           role="button"
           className={`navbar-burger burger is-transparent ${this.state.navMobileOpen ? 'is-active' : ''}`}
           aria-label="menu"
           aria-expanded="false"
           onClick={() => this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
-
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -61,14 +57,13 @@ class NavBar extends React.Component {
         </div>}
         {isLoggedIn && <div
           className="navbar-item"
-          
           onClick={() => this.HandleLogout()}
         >
-          <Link to="/recipes">Log out</Link>
-          
+          <Link to="/recipes">Log out</Link>  
         </div>}
       </div>
     </nav>
   }
 }
+
 export default withRouter(NavBar)

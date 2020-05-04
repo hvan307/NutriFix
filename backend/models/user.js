@@ -27,7 +27,6 @@ schema
     next()
   })
 
-
 schema
   .pre('save', function hashPassword(next) {
     if (this.isModified('password')) { 
@@ -39,6 +38,5 @@ schema
 schema.methods.validatePassword = function validatePassword(password) {
   return bcrypt.compareSync(password, this.password)
 }
-
 
 module.exports = mongoose.model('User', schema)
