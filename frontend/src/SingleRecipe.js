@@ -91,7 +91,7 @@ class DisplaySingleRecipe extends React.Component {
             </div>
           </div>
           <div className="tile is-child box">
-            <p className="recipeTitle title-cross categories-box">Categories
+            <p className="recipeTitle categories-box">Categories
             </p>
             <ul>
               {this.state.recipes.tags.map((category, key) => {
@@ -104,7 +104,6 @@ class DisplaySingleRecipe extends React.Component {
         </div>
         <div className="tile is-child box instructions-box">
           <p className="recipeTitle">Instructions
-            <Link className="delete" to="/recipes"></Link>
           </p>
           <ol className="instructions-list">
             {this.state.recipes.instructions.map((step, key) => {
@@ -114,6 +113,10 @@ class DisplaySingleRecipe extends React.Component {
             })}
           </ol>
         </div>
+        <div className="recipe-cross">
+          <Link className="delete" to="/recipes"></Link>
+        </div>
+
 
 
       </div>
