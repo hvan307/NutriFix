@@ -58,9 +58,12 @@ We all wanted to create a web app that provides healthy and nutritious recipes t
 - Mongo and Mongoose
 - Git and GitHub
 - Heroku
+- Insomnia
 - Google Fonts
 - Font Awesome
 - Imgur.com
+- Logomakr
+- Trello
 
 # Backend
 
