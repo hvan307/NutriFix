@@ -1,13 +1,33 @@
 ### ![GA](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png) General Assembly, Software Engineering Immersive
-# NutriFix™
 
+![logo](frontend/src/images/LogoMakr_82IDJL.png)
+# NutriFix™
 ## Overview
+This was a week-long group project at General Assembly London by [Hanna Truong Thi](https://github.com/hvan307), [Lucy Maitland](https://github.com/lucymait), [Thomas Bannister](https://github.com/tombannister01) and [Finlay Whittington Devereux](https://github.com/Fin101).
+
+We all wanted to create a web app that provides healthy and nutritious recipes that users can personalise according to their needs, whether you're vegan, gluten-free, or on a high-protein diet. The website allows users to browse a great selection of recipes with the ability to mix-and-match their diet requirements. They can also add recipes of their own to their private recipe page. When in doubt, you can also search for individual ingredients, whether you're unsure how it looks like, or want to learn more about their macronutrients. Lastly, each user will have a shopping list available for their own use where they can add and remove items of their choice. 
 
 ## Brief
+- Work in a team, using git to code collaboratively.
+- Build a full-stack application by making your own backend and your own - front-end
+- Use an Express API to serve your data from a Mongo database
+- Consume your API with a separate front-end built with React
+- Be a complete product which most likely means multiple relationships and CRUD functionality for at least a couple of models
 
 ## Technologies Used
-
-# Approach
+- HTML
+- CSS and SCSS
+- Bulma
+- JavaScript (ES6)
+- React.js
+- Node.js
+- Express
+- Mongo and Mongoose
+- Git and GitHub
+- Heroku
+- Google Fonts
+- Font Awesome
+- Imgur.com
 
 # Backend
 
@@ -211,6 +231,7 @@ Additionally, a secret was implemented, to further elevate security for the user
 ## DisplayRecipes
 
 ### Tags
+![Filtered-recipes](frontend/src/images/recipes-filtered.png)
 ``` js
 handleTags() {
     const clickedTags = [...this.state.clickedTags]
@@ -260,6 +281,7 @@ componentDidMount() {
 
 
 ### Rendering Recipes
+![All-recipes](frontend/src/images/all-recipes.png)
 ``` js
 <div className="container">
           <div className="columns is-multiline">
@@ -290,6 +312,8 @@ componentDidMount() {
 - We mapped over the recipes to display them (similar to the tags).
 
 ### My Recipes (creating your own)
+![New-recipe1](frontend/src/images/new-recipe1.png)
+![New-recipe2](frontend/src/images/new-recipe2.png)
 ```js
 componentDidMount() {
     axios.get('/api/myrecipes',
@@ -302,6 +326,7 @@ componentDidMount() {
 - To achieve this we needed to check if the user has a JWT (JSONWebToken) using the function getToken().
 
 ### Single Recipe
+![Single-recipe](frontend/src/images/single-recipe.png)
 - Single recipe is a page that displays more information about a recipe when the card is clicked from display recipes using Bulma tiles. This page would display information such as Macronutrients, calories, ingredients and instructions on how to make said recipe.
 ``` js
 handleDelete() {
@@ -349,6 +374,7 @@ onClick={() => this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
 ```
 
 ## Ingredient Search
+![Search-ingredients](frontend/src/images/searchbar.png)
 The single ingredient search required two components; FoodSearchForm and FoodSearchBar. The FoodSearchBar takes the query passed down from the FoodSearchForm setting a new state value. The query is inserted into the external API’s URL forming an axios get request.
 ```js
   handleChange(event) {
@@ -367,6 +393,7 @@ The single ingredient search required two components; FoodSearchForm and FoodSea
     }, 1000)
   }
 ```
+![Ingredient-details](frontend/src/images/ingredient-details.png)
 Once the data has been retrieved from the API, it parses the nutrient values to be displayed in the render.
 ```js
   constructor() {
@@ -402,6 +429,7 @@ return <div className="card food-card" key={key}>
 ```
 
 ## Shopping List
+![Shopping-list](frontend/src/images/shopping-list.png)
 Similar to the ingredient search, the shopping list also required a second form component to parse the data into a rendered list.
 Once the user has inputted and submitted the new ingredient in the ShoppingForm component, the data is parsed to the ShoppingList component, where the new state is set by handleChange(event).
 ```js
@@ -433,6 +461,16 @@ After the user has submitted the new ingredient, handleSubmit(event) adds the it
     })
   }
 ```
+## Screenshots
+### Public Visitor Endpoints
+![Welcome-desktop](frontend/src/images/welcome-desktop.png)
+![Welcome-desktop](frontend/src/images/nutrifix-mobile.png)
+![Register](frontend/src/images/register.png)
+![Login](frontend/src/images/login.png)
+### Secure User Endpoints
+![My-recipes](frontend/src/images/my-recipes.png)
+![My-recipe](frontend/src/images/edit-delete-recipe.png)
+![Edit-recipe](frontend/src/images/edit-recipe-form.png)
 
 ## Potential Future Features
 
