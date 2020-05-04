@@ -34,12 +34,9 @@ class Login extends React.Component {
       .catch(err => this.setState({ error: err.response.data.message }))
   }
 
-
-
-
   render() {
     const { error } = this.state
-    return <section className="section">
+    return <section className="section login">
       <div className="container login">
         <h1 className="title login">User Login</h1>
         <form

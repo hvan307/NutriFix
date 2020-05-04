@@ -102,9 +102,9 @@ class EditRecipe extends React.Component {
 
   render() {
     const { errors } = this.state
-    return <section className="section">
-      <div className="container">
-        <h1 className="title"> Edit Cheese
+    return <section className="section edit-recipe">
+      <div className="container edit-recipe">
+        <h1 className="title"> Edit Recipe
           <RecipeForm
             handleSubmit={(event) => this.handleSubmit(event)}
             handleChange={(event) => this.handleChange(event)}

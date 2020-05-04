@@ -1,15 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import NavBar from './NavBar'
 import auth from '../lib/auth'
 
 const Hero = () => {
   const isLoggedIn = auth.isLoggedIn()
   return <section className="hero is-info is-medium">
-    {/* <div className="hero-head"> */}
-    {/* <NavBar /> */}
-    {/* </div> */}
-
     <div className="hero-body">
       <div className="container has-text-centered">
         <p className="title nutrifix">
@@ -20,7 +15,6 @@ const Hero = () => {
         </p>
       </div>
     </div>
-
     <div className="hero-foot">
       <nav className="tabs is-boxed is-fullwidth">
         <div className="container">
@@ -51,7 +45,6 @@ const Hero = () => {
       </nav>
     </div>
   </section>
-
 }
 
 export default Hero

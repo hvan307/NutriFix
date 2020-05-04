@@ -34,7 +34,7 @@ class Register extends React.Component {
 
   render() {
     const { errors } = this.state
-    return <section className="section">
+    return <section className="section register">
       <div className="container register">
         <h1 className="title register">Register</h1>
         <form

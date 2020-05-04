@@ -31,7 +31,7 @@ class NavBar extends React.Component {
     return <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <Link className="navbar-logo" to="/recipes">
-          <img src="https://i.imgur.com/PFTeaIi.png" alt="Logo" width="112" height="28" />
+          <img src={('https://i.imgur.com/PFTeaIi.png')} alt="Logo" width="112" height="28" />
         </Link>
 
         <a
@@ -49,7 +49,6 @@ class NavBar extends React.Component {
       <div className={`navbar-menu ${this.state.navMobileOpen ? 'is-active' : ''}`}>
         <div className="navbar-item">
           <Link to="/recipes"
-          // onClick={() => this.setState({ navMobileOpen: !this.state.navMobileOpen })}>
           >
             Home
           </Link>
