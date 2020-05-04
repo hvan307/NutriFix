@@ -62,7 +62,10 @@ We all wanted to create a web app that provides healthy and nutritious recipes t
 - Google Fonts
 - Font Awesome
 - Imgur.com
+<<<<<<< HEAD
 - Logomakr
+=======
+>>>>>>> 60cf1af5e4a930460edc390f04e1f64e8c5cbb8e
 - Trello
 
 # Backend
