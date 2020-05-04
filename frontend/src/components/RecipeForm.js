@@ -8,7 +8,7 @@ const RecipeForm = ({ handleChange, handleSubmit, handleMacroChange, errors, dat
 
   return <section className="section new-recipe">
     <div className="container new-recipe">
-      <div className="recipe-cross">
+      <div className="title-cross">
         <div></div>
         <Link className="delete" to="/recipes"></Link>
       </div>
