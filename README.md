@@ -2,6 +2,42 @@
 
 ![logo](frontend/src/images/LogoMakr_82IDJL.png)
 # NutriFix™
+
+## Table of Contents
+1. [Overview](#Overview)
+2. [Brief](#Brief)
+3. [Technologies Used](#Technologies-Used)
+4. [Backend](#Backend)
+    - [Approach](#Approach)
+    - [Models](#Models)
+      - [User Model](#1.-User-Model)
+      - [Recipe Model](#2.-Recipe-Model)
+    - [Controllers](#Controllers)
+      - [User Controller](#1.-User-Controller)
+      - [Recipe Controller](#2.-Recipe-Controller)
+    - [Security](#Security)
+      - [Secure Routes](#Secure-Routes)
+      - [Bcrypt](#Bcrypt)
+      - [Token](#Token)
+5. [Frontend](#Frontend)
+    - [Display Recipes](#Display-Recipes)
+      - [Tags](#Tags)
+      - [Rendering Recipes](#Rendering-Recipes)
+      - [My Recipes](#My-Recipes)
+      - [Single Recipe](#Single-Recipe)
+6. [Navbar](#Navbar)
+7. [Ingredient Search](#Ingredient-Search)
+8. [Shopping List](#Shopping-List)
+
+
+
+
+Potential Future Features
+
+Bugs
+
+Lessons learnt
+
 ## Overview
 This was a week-long group project at General Assembly London by [Hanna Truong Thi](https://github.com/hvan307), [Lucy Maitland](https://github.com/lucymait), [Thomas Bannister](https://github.com/tombannister01) and [Finlay Whittington Devereux](https://github.com/Fin101).
 
@@ -109,7 +145,7 @@ For example in our user schema the user would have to fill out:
 - email
 - password
 
-### 1. User
+### 1. User Model
 
 We created a user schema to enable the user to register and login in the frontend. 
 
@@ -123,7 +159,7 @@ const schema = new mongoose.Schema({
 })
 ```
 
-### 2. Recipe
+### 2. Recipe Model
 
 All our properties had a type and were required true, except Tags, to guarantee a user-friendly experience.
 
@@ -151,7 +187,7 @@ const schema = new mongoose.Schema({
 
 All our functions within the controllers, take a req and res, which refer to an API request and its corresponding response.
 
-### 1. User
+### 1. User Controller
 
 There were 2 functions within the user controller:
 
@@ -160,7 +196,7 @@ There were 2 functions within the user controller:
 
 These functions are used to aid the post request as seen in our router.js. 
 
-### 2. Recipe
+### 2. Recipe Controller
 
 There were 6 functions within the user controller:
 
