@@ -23,20 +23,17 @@
     - [Display Recipes](#Display-Recipes)
       - [Tags](#Tags)
       - [Rendering Recipes](#Rendering-Recipes)
-      - [My Recipes](#My-Recipes)
+      - [My Recipes](#My-Recipes-(creating-your-own))
       - [Single Recipe](#Single-Recipe)
 6. [Navbar](#Navbar)
 7. [Ingredient Search](#Ingredient-Search)
 8. [Shopping List](#Shopping-List)
+9. [Screenshots](#Screenshots)
+    - [Public Visitor Endpoints](#Public-Visitor-Endpoints)
+    - [Secure User Endpoint](#Secure-User-Endpoints)
+10. [Potential Future Features](#Potential-Future-Features)
+11. [Lessons Learned](#Lessons-Learned)
 
-
-
-
-Potential Future Features
-
-Bugs
-
-Lessons learnt
 
 ## Overview
 This was a week-long group project at General Assembly London by [Hanna Truong Thi](https://github.com/hvan307), [Lucy Maitland](https://github.com/lucymait), [Thomas Bannister](https://github.com/tombannister01) and [Finlay Whittington Devereux](https://github.com/Fin101).
@@ -250,10 +247,12 @@ router.route('/myrecipes')
 ### Bcrypt
 
 Bcrypt is a encryption library that helps you hash passwords. This ensures that the actual password is never stored in our database, instead it asigns the hash password to the users password. Using this library in conjunction with **mongoose-hidden** (which hides the users password), improves the security of the website and privacy of the user.
+![Hidden-password](frontend/src/images/mongoose-hidden.png)
 
 ### Token
 
-A token is assigned to the user which has an expiry of 12 hours.
+A token is assigned to the user once logged in and has an expiry of 12 hours.
+![Token](frontend/src/images/token.png)
 
 JWT (json web token) allows the user to access routes, services, and resources that are permitted with that token. In this case, the user is able to post, edit and delete their recipe. 
 
@@ -264,7 +263,7 @@ Additionally, a secret was implemented, to further elevate security for the user
 
 # Frontend
 
-## DisplayRecipes
+## Display Recipes
 
 ### Tags
 ![Filtered-recipes](frontend/src/images/recipes-filtered.png)
