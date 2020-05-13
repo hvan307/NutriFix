@@ -40,6 +40,31 @@ This was a 10-day group project at General Assembly London by [Hanna Truong Thi]
 
 We all wanted to create a web app that provides healthy and nutritious recipes that users can personalise according to their needs, whether you're vegan, gluten-free, or on a high-protein diet. The website allows users to browse a great selection of recipes with the ability to mix-and-match their diet requirements. They can also add recipes of their own to their private recipe page. When in doubt, you can also search for individual ingredients, whether you're unsure how it looks like, or want to learn more about their macronutrients. Lastly, each user will have a shopping list available for their own use where they can add and remove items of their choice. 
 
+### My contributions
+- Backend:
+    * app.js
+    * secureRoute.js
+    * router.js
+    * environment.js
+    * userController.js
+    * recipeController.js (jointly)
+    * models (jointly)
+    * seed.js (jointly)
+
+- Front-end components:
+    * auth.js
+    * Login.js
+    * Tags.js
+    * NewRecipe.js
+    * RecipeForm.js
+    * EditRecipe.js
+    * WelcomePage.js
+    * ShoppingList.js (jointly)
+    * ShoppingForm.js (jointly)
+    * FoodSearchBar (jointly)
+    * FoodSearchForm (jointly)
+    * app.js (jointly)
+
 ## Brief
 - Work in a team, using git to code collaboratively.
 - Build a full-stack application by making your own backend and your own - front-end
@@ -515,6 +540,10 @@ After the user has submitted the new ingredient, handleSubmit(event) adds the it
 - Create a shopping list schema and controller, to store our frontend data.
 - Enable our frontend external API to talk to our backend database. For example when you search chicken, we can display all the recipes containing chicken.
 
+## Wins
+
+- Combined and multiple filtering of the recipes to be displayed. 
+- Allowing the user to select and deselect the tags (for both browsing and adding/editing a new recipe).
 
 ## Lessons Learned
 
