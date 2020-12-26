@@ -1,7 +1,7 @@
 ### ![GA](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png) General Assembly, Software Engineering Immersive
 
 ![logo](frontend/src/images/LogoMakr_82IDJL.png)
-# NutriFix™
+# NutriFix
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -67,9 +67,9 @@ We all wanted to create a web app that provides healthy and nutritious recipes t
 
 ## Brief
 - Work in a team, using git to code collaboratively.
-- Build a full-stack application by making your own backend and your own - front-end
-- Use an Express API to serve your data from a Mongo database
-- Consume your API with a separate front-end built with React
+- Build a full-stack application by making backend and frontend
+- Use an Express API to serve data from a Mongo database
+- Consume API with a separate front-end built with React
 - Be a complete product which most likely means multiple relationships and CRUD functionality for at least a couple of models
 
 ## Technologies Used
@@ -102,7 +102,7 @@ The components we used consisted of:
 - View (router.js),
 - Controllers (recipeController.js and userController.js).
 
-Our api seed consisted of a User Database:
+Our API seed consisted of a User Database:
 
 ```js
  .then(() => {
@@ -248,13 +248,13 @@ function myRecipes(req, res) {
     })
 }
 ```
-Having a secure route on this endpoint, ensured the recipes the user created, are only visible, by the creator, once logged in. The created recipes will be both visible on the 'All Recipes' and 'My Recipes' page,
+Having a secure route on this endpoint, ensured the recipes the user created, are only visible, by the creator, once logged in. The created recipes will be both visible on the 'All Recipes' and 'My Recipes' page.
 
 ## Security
 
 ### Secure Routes
 
-Secure Route was added to all our endpoints, which were only accessible to the logged in user.
+Secure Route was added to all our endpoints, which were only accessible to the logged-in user.
 
 The user's privileges were to:
 
